@@ -2,220 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Reliable tax and accounting services for your business | Galja Spelman</title>
+  <title>Galja Spelman · Tax and Accounting Advisory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Reliable tax and accounting services for businesses and professionals in Italy. Practice of Galja Spelman, CPA and tax advisor based in Bolzano.">
   <style>
-    body { margin:0; font-family:system-ui, sans-serif; color:#222; background:#f7f7f9; }
-    header { background:linear-gradient(135deg,#0b4f8a,#0f7ac0); color:#fff; padding:2.5rem 1.5rem 3rem; }
-    .container { max-width:1000px; margin:0 auto; }
-    nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem; flex-wrap:wrap; gap:0.75rem; }
-    nav .brand { font-weight:700; letter-spacing:0.03em; }
-    nav .langs a { color:#e0f2ff; text-decoration:none; font-size:0.9rem; margin-left:0.75rem; }
-    nav .langs a:hover { text-decoration:underline; }
-    .hero { display:grid; gap:2rem; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); align-items:center; }
-    @media (max-width:800px){ .hero { grid-template-columns:1fr; } }
-    h1 { font-size:2rem; margin:0 0 1rem; }
-    .hero p { margin:0 0 1.5rem; line-height:1.6; }
-    .tag { display:inline-block; padding:0.25rem 0.75rem; border-radius:999px; background:rgba(255,255,255,0.12); font-size:0.8rem; margin-bottom:0.75rem; }
-    .btn-primary {
-      display:inline-block; padding:0.8rem 1.4rem; border-radius:999px;
-      background:#ffb300; color:#1b2733; text-decoration:none; font-weight:600;
-      box-shadow:0 6px 16px rgba(0,0,0,0.25); transition:transform 0.1s, box-shadow 0.1s;
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f9;
+      color: #222;
+      line-height: 1.6;
     }
-    .btn-primary:hover { transform:translateY(-1px); box-shadow:0 10px 24px rgba(0,0,0,0.3); }
-    .hero-card {
-      background:#fff; border-radius:14px; padding:1.5rem; box-shadow:0 10px 30px rgba(0,0,0,0.18);
+    header {
+      background: linear-gradient(135deg, #0b4f8a, #0f7ac0);
+      color: white;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
     }
-    .hero-card h2 { margin-top:0; font-size:1.1rem; margin-bottom:0.75rem; }
-    .hero-card ul { padding-left:1.1rem; margin:0.5rem 0 0; font-size:0.95rem; }
-    main { padding:2.5rem 1.5rem 3rem; }
-    section { margin-bottom:2.5rem; }
-    h2 { font-size:1.4rem; margin-bottom:0.75rem; }
-    .grid-2 { display:grid; gap:1.5rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+    header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
+    header p { margin: 0.2rem 0; opacity: 0.9; }
+    main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+    .muted { color: #555; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
     .card {
-      background:#fff; border-radius:12px; padding:1.5rem;
-      box-shadow:0 4px 14px rgba(0,0,0,0.06);
+      background: white;
+      border-radius: 14px;
+      padding: 1.2rem 1.3rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      border: 1px solid #e3e5ea;
     }
-    .card h3 { margin-top:0; font-size:1.1rem; margin-bottom:0.5rem; }
-    .muted { color:#666; font-size:0.95rem; }
-    .contact-list { list-style:none; padding:0; margin:0.5rem 0 0; }
-    .contact-list li { margin-bottom:0.35rem; }
-    .contact-list a { color:#0b4f8a; text-decoration:none; }
-    .contact-list a:hover { text-decoration:underline; }
-    .whatsapp-btn {
-      display:inline-block; margin-top:0.75rem; padding:0.6rem 1.1rem; border-radius:999px;
-      background:#25d366; color:#fff; text-decoration:none; font-weight:600; font-size:0.95rem;
+    h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
+    h3 { margin-top: 0; margin-bottom: 0.4rem; }
+    a { color: #0b4f8a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #777;
     }
-    .whatsapp-btn:hover { filter:brightness(1.05); }
-    footer { padding:1.5rem; background:#111827; color:#9ca3af; font-size:0.85rem; text-align:center; }
-    footer a { color:#e5e7eb; text-decoration:none; }
-    footer a:hover { text-decoration:underline; }
+    @media (max-width: 720px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <nav>
-        <div class="brand">Galja Spelman · CPA · Tax Advisor</div>
-        <div class="langs">
-          <span>Language:</span>
-          <a href="../it/index.html">IT</a>
-          <a href="../de/index.html">DE</a>
-          <a href="../en/index.html">EN</a>
-          <a href="../ru/index.html">RU</a>
-        </div>
-      </nav>
-      <div class="hero">
-        <div>
-          <div class="tag">Bolzano · Italy · Tax and accounting advisory</div>
-          <h1>Reliable tax and accounting services for your business</h1>
-          <p>
-            I provide tailored tax and accounting support for businesses, professionals and individuals operating in Italy,
-            with a strong focus on cross-border situations and regulatory clarity.
-          </p>
-          <a class="btn-primary" href="#contact">Request a consultation</a>
-        </div>
-        <div class="hero-card">
-          <h2>CPA · Dottore Commercialista · Steuerberaterin</h2>
-          <p class="muted">
-            Assistance in Italian, German, English and Russian for clients who need a single, reliable point of contact
-            for tax and accounting matters in Italy.
-          </p>
-          <ul>
-            <li>Ongoing bookkeeping and reporting</li>
-            <li>Tax returns and periodic filings</li>
-            <li>Advice for residents and non-residents</li>
-            <li>Continuous support, also remotely</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <h1>Galja Spelman</h1>
+    <p>Certified Public Accountant · Dottore Commercialista · Steuerberaterin</p>
+    <p>Tax and accounting advisory · Bolzano, Italy</p>
   </header>
 
-  <main class="container">
+  <main>
+    <!-- HERO -->
+    <div style="margin-top:1rem;">
+      <img src="../Foto remoto.png" alt="Remote tax advisory" style="width:100%; border-radius:14px;">
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="grid-2">
+        <div>
+          <p class="muted">
+            I am <strong>Galja Spelman</strong>, a <strong>Dottore Commercialista (Albo A)</strong>,
+            <strong>Certified Public Accountant (CPA)</strong> and <strong>Steuerberaterin</strong>.
+            I provide tax and accounting advisory to companies, professionals and individuals, with a particular focus on cross‑border and international situations.
+          </p>
+          <p class="muted">
+            I work with precision, clarity and flexibility, offering services in Italian, German, English and Russian.
+            My practice is based in Bolzano, Italy, and I also support clients remotely with a structured and personalised approach.
+          </p>
+        </div>
+        <div class="card" style="text-align:center;">
+          <img src="../IMG-20260127-WA0053.jpg" alt="Galja Spelman" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+          <h3>Galja Spelman</h3>
+          <p class="muted">CPA · Dottore Commercialista · Steuerberaterin</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
     <section id="services">
       <h2>Services</h2>
-      <div class="grid-2">
+      <div class="cards">
         <div class="card">
-          <h3>Bookkeeping for businesses and professionals</h3>
+          <img src="../Gestione della contabilita.png" alt="Accounting management" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+          <h3>Accounting</h3>
           <p class="muted">
-            Full bookkeeping support, reconciliations and periodic reports, with a focus on clear information and timely
-            planning of tax deadlines.
+            Ongoing bookkeeping for companies and professionals, reconciliations, financial statements and recurring compliance.
           </p>
         </div>
+
         <div class="card">
-          <h3>Tax returns and compliance</h3>
+          <img src="../Consulenza fiscale.png" alt="Tax consulting" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+          <h3>Tax consulting</h3>
           <p class="muted">
-            Preparation of income tax returns, VAT returns, local taxes and other filings, in full compliance with Italian
-            regulations and deadlines.
+            Tax planning, returns, assessment of tax impacts and tailored solutions for individuals and businesses.
           </p>
         </div>
+
         <div class="card">
-          <h3>Tailored tax advice</h3>
+          <img src="../Sede secondarie.png" alt="EU tax and cross-border" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+          <h3>International taxation · EU Tax</h3>
           <p class="muted">
-            Analysis of your tax position, optimisation of your tax burden and support in strategic decisions and
-            medium- to long-term planning.
-          </p>
-        </div>
-        <div class="card">
-          <h3>International and cross-border clients</h3>
-          <p class="muted">
-            Support for foreign clients operating in Italy or relocating to the country, with particular attention to
-            residence issues and foreign-source income.
+            Support with branches, permanent establishments, cross‑border operations, EU rules and coordination with foreign advisors.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="about">
-      <h2>About me</h2>
-      <div class="grid-2">
-        <div>
-          <p class="muted">
-            I am Galja Spelman, CPA, Dottore Commercialista and Steuerberaterin based in Bolzano, Italy. I combine
-            international experience with in-depth knowledge of the Italian tax system to support clients operating in
-            both local and cross-border contexts.
-          </p>
-          <p class="muted">
-            My approach is structured yet flexible, focused on clarity, transparency and building long-term, trust-based
-            relationships with clients.
-          </p>
-        </div>
-        <div class="card">
-          <h3>At a glance</h3>
-          <ul class="muted">
-            <li>Practice based in Bolzano, Italy</li>
-            <li>Assistance in IT · DE · EN · RU</li>
-            <li>Clients: individuals, professionals, businesses</li>
-            <li>Meetings in person or remotely</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="why">
-      <h2>Why work with my practice</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Clear communication</h3>
-          <p class="muted">
-            I explain tax matters in a clear and accessible way, so you can make informed decisions without getting lost
-            in technical language.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Reliable ongoing support</h3>
-          <p class="muted">
-            I accompany clients over time, not only at specific deadlines, providing consistent and timely support.
-          </p>
-        </div>
-        <div class="card">
-          <h3>International perspective</h3>
-          <p class="muted">
-            Working in several languages and with international clients allows me to handle complex and cross-border
-            situations with confidence.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Flexible way of working</h3>
-          <p class="muted">
-            Meetings can take place in Bolzano or online, depending on your needs and availability.
-          </p>
-        </div>
-      </div>
-    </section>
-
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Contact details</h3>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:tax.spelman@gmail.com">tax.spelman@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+393273480543">+39 327 3480543</a></li>
-            <li><strong>Address:</strong> 39100 Bolzano, Viale Druso 2, Italy</li>
-          </ul>
-          <a class="whatsapp-btn" href="https://wa.me/393273480543?text=Hello,%20I%20would%20like%20to%20receive%20information%20about%20your%20tax%20and%20accounting%20services." target="_blank" rel="noopener">
-            Message me on WhatsApp
-          </a>
-        </div>
-        <div>
-          <p class="muted">
-            Feel free to get in touch for an initial, non-binding assessment of your tax or accounting situation.
-            Together we will define the type of support that best fits your needs.
-          </p>
-        </div>
+      <div class="card">
+        <p class="muted">
+          Studio Galja Spelman · Bolzano (BZ), Italy<br>
+          Advisory in Italian, German, English and Russian.
+        </p>
+        <p class="muted">
+          E‑mail: <a href="mailto:info@spelmantax.com">info@spelmantax.com</a><br>
+          Website: <a href="https://spelmantax.com">spelmantax.com</a>
+        </p>
       </div>
     </section>
   </main>
 
   <footer>
-    © <span id="year"></span> Galja Spelman – CPA · Dottore Commercialista · Steuerberaterin – Bolzano, Italy
-    <br>IT · DE · EN · RU
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    © <span id="year-en"></span> Galja Spelman · All rights reserved
   </footer>
+
+  <script>
+    document.getElementById('year-en').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
