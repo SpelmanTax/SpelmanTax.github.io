@@ -2,221 +2,151 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Надёжные налоговые и бухгалтерские услуги для вашего бизнеса | Galja Spelman</title>
+  <title>Галя Спелман · Налоговый и бухгалтерский консультант</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Надёжные налоговые и бухгалтерские услуги для компаний и частных лиц в Италии. Практика Galja Spelman, CPA и налогового консультанта в Больцано.">
   <style>
-    body { margin:0; font-family:system-ui, sans-serif; color:#222; background:#f7f7f9; }
-    header { background:linear-gradient(135deg,#0b4f8a,#0f7ac0); color:#fff; padding:2.5rem 1.5rem 3rem; }
-    .container { max-width:1000px; margin:0 auto; }
-    nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem; flex-wrap:wrap; gap:0.75rem; }
-    nav .brand { font-weight:700; letter-spacing:0.03em; }
-    nav .langs a { color:#e0f2ff; text-decoration:none; font-size:0.9rem; margin-left:0.75rem; }
-    nav .langs a:hover { text-decoration:underline; }
-    .hero { display:grid; gap:2rem; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); align-items:center; }
-    @media (max-width:800px){ .hero { grid-template-columns:1fr; } }
-    h1 { font-size:2rem; margin:0 0 1rem; }
-    .hero p { margin:0 0 1.5rem; line-height:1.6; }
-    .tag { display:inline-block; padding:0.25rem 0.75rem; border-radius:999px; background:rgba(255,255,255,0.12); font-size:0.8rem; margin-bottom:0.75rem; }
-    .btn-primary {
-      display:inline-block; padding:0.8rem 1.4rem; border-radius:999px;
-      background:#ffb300; color:#1b2733; text-decoration:none; font-weight:600;
-      box-shadow:0 6px 16px rgba(0,0,0,0.25); transition:transform 0.1s, box-shadow 0.1s;
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f9;
+      color: #222;
+      line-height: 1.6;
     }
-    .btn-primary:hover { transform:translateY(-1px); box-shadow:0 10px 24px rgba(0,0,0,0.3); }
-    .hero-card {
-      background:#fff; border-radius:14px; padding:1.5rem; box-shadow:0 10px 30px rgba(0,0,0,0.18);
+    header {
+      background: linear-gradient(135deg, #0b4f8a, #0f7ac0);
+      color: white;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
     }
-    .hero-card h2 { margin-top:0; font-size:1.1rem; margin-bottom:0.75rem; }
-    .hero-card ul { padding-left:1.1rem; margin:0.5rem 0 0; font-size:0.95rem; }
-    main { padding:2.5rem 1.5rem 3rem; }
-    section { margin-bottom:2.5rem; }
-    h2 { font-size:1.4rem; margin-bottom:0.75rem; }
-    .grid-2 { display:grid; gap:1.5rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+    header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
+    header p { margin: 0.2rem 0; opacity: 0.9; }
+    main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+    .muted { color: #555; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
     .card {
-      background:#fff; border-radius:12px; padding:1.5rem;
-      box-shadow:0 4px 14px rgba(0,0,0,0.06);
+      background: white;
+      border-radius: 14px;
+      padding: 1.2rem 1.3rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      border: 1px solid #e3e5ea;
     }
-    .card h3 { margin-top:0; font-size:1.1rem; margin-bottom:0.5rem; }
-    .muted { color:#666; font-size:0.95rem; }
-    .contact-list { list-style:none; padding:0; margin:0.5rem 0 0; }
-    .contact-list li { margin-bottom:0.35rem; }
-    .contact-list a { color:#0b4f8a; text-decoration:none; }
-    .contact-list a:hover { text-decoration:underline; }
-    .whatsapp-btn {
-      display:inline-block; margin-top:0.75rem; padding:0.6rem 1.1rem; border-radius:999px;
-      background:#25d366; color:#fff; text-decoration:none; font-weight:600; font-size:0.95rem;
+    h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
+    h3 { margin-top: 0; margin-bottom: 0.4rem; }
+    a { color: #0b4f8a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #777;
     }
-    .whatsapp-btn:hover { filter:brightness(1.05); }
-    footer { padding:1.5rem; background:#111827; color:#9ca3af; font-size:0.85rem; text-align:center; }
-    footer a { color:#e5e7eb; text-decoration:none; }
-    footer a:hover { text-decoration:underline; }
+    @media (max-width: 720px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <nav>
-        <div class="brand">Galja Spelman · CPA · Налоговый консультант</div>
-        <div class="langs">
-          <span>Язык:</span>
-          <a href="../it/index.html">IT</a>
-          <a href="../de/index.html">DE</a>
-          <a href="../en/index.html">EN</a>
-          <a href="../ru/index.html">RU</a>
-        </div>
-      </nav>
-      <div class="hero">
-        <div>
-          <div class="tag">Больцано · Италия · Налоговое и бухгалтерское сопровождение</div>
-          <h1>Надёжные налоговые и бухгалтерские услуги для вашего бизнеса</h1>
-          <p>
-            Я оказываю индивидуальные налоговые и бухгалтерские услуги для компаний, профессионалов и частных лиц,
-            работающих в Италии, с особым вниманием к трансграничным ситуациям и соблюдению законодательства.
-          </p>
-          <a class="btn-primary" href="#contacts">Связаться</a>
-        </div>
-        <div class="hero-card">
-          <h2>CPA · Dottore Commercialista · Steuerberaterin</h2>
-          <p class="muted">
-            Консультации на итальянском, немецком, английском и русском языках для клиентов, которым нужен один
-            надёжный консультант по налоговым и бухгалтерским вопросам в Италии.
-          </p>
-          <ul>
-            <li>Ведение бухгалтерского учёта</li>
-            <li>Налоговые декларации и отчётность</li>
-            <li>Консультации для резидентов и нерезидентов</li>
-            <li>Постоянное сопровождение, в том числе дистанционно</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <h1>Галя Спелман</h1>
+    <p>Dottore Commercialista · CPA · Steuerberaterin</p>
+    <p>Налоговое и бухгалтерское консультирование · Больцано, Италия</p>
   </header>
 
-  <main class="container">
-    <section id="services">
-      <h2>Услуги</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Бухгалтерское сопровождение</h3>
-          <p class="muted">
-            Полное ведение бухгалтерского учёта, сверки и периодическая отчётность с акцентом на прозрачность
-            и своевременное планирование налоговых обязательств.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Налоговые декларации и отчётность</h3>
-          <p class="muted">
-            Подготовка налоговых деклараций, отчётности по НДС, местным налогам и другим обязательным формам
-            в соответствии с итальянским законодательством.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Индивидуальное налоговое консультирование</h3>
-          <p class="muted">
-            Анализ налоговой ситуации, оптимизация налоговой нагрузки и поддержка при принятии стратегических решений
-            и долгосрочном планировании.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Международные и трансграничные клиенты</h3>
-          <p class="muted">
-            Сопровождение иностранных клиентов, ведущих деятельность в Италии или переезжающих в страну, с особым
-            вниманием к вопросам налогового резидентства и доходов из-за рубежа.
-          </p>
-        </div>
-      </div>
-    </section>
+  <main>
+    <!-- HERO -->
+    <div style="margin-top:1rem;">
+      <img src="../Foto remoto.png" alt="Дистанционное консультирование" style="width:100%; border-radius:14px;">
+    </div>
 
+    <!-- ОБО МНЕ -->
     <section id="about">
       <h2>Обо мне</h2>
       <div class="grid-2">
         <div>
           <p class="muted">
-            Я — Galja Spelman, CPA, Dottore Commercialista и налоговый консультант (Steuerberaterin), базируюсь в Больцано, Италия.
-            Я совмещаю международный опыт и глубокое знание итальянской налоговой системы, чтобы эффективно сопровождать клиентов
-            в локальном и трансграничном контексте.
+            Я — <strong>Галя Спелман</strong>, <strong>Dottore Commercialista (Albo A)</strong>,
+            <strong>Certified Public Accountant (CPA)</strong> и <strong>Steuerberaterin</strong>.
+            Я оказываю услуги по налоговому и бухгалтерскому консультированию для компаний, профессионалов и частных лиц,
+            с особым вниманием к международным и трансграничным ситуациям.
           </p>
           <p class="muted">
-            Мой подход — структурированный и в то же время гибкий, с акцентом на ясность, прозрачность и долгосрочные
-            доверительные отношения с клиентами.
+            Я работаю точно, прозрачно и гибко, консультируя на итальянском, немецком, английском и русском языках.
+            Мой офис находится в Больцано, но я также сопровождаю клиентов дистанционно, с индивидуальным и структурированным подходом.
           </p>
         </div>
-        <div class="card">
-          <h3>Кратко</h3>
-          <ul class="muted">
-            <li>Офис в Больцано, Италия</li>
-            <li>Консультации на IT · DE · EN · RU</li>
-            <li>Клиенты: частные лица, профессионалы, компании</li>
-            <li>Встречи лично или онлайн</li>
-          </ul>
+        <div class="card" style="text-align:center;">
+          <img src="../IMG-20260127-WA0053.jpg" alt="Галья Спелман" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+          <h3>Галя Спелман</h3>
+          <p class="muted">Dottore Commercialista · CPA · Steuerberaterin</p>
         </div>
       </div>
     </section>
 
-    <section id="why">
-      <h2>Почему стоит обратиться ко мне</h2>
-      <div class="grid-2">
+    <!-- УСЛУГИ -->
+    <section id="services">
+      <h2>Услуги</h2>
+      <div class="cards">
         <div class="card">
-          <h3>Понятные объяснения</h3>
+          <img src="../Gestione della contabilita.png" alt="Бухгалтерский учет" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+          <h3>Бухгалтерский учет</h3>
           <p class="muted">
-            Я объясняю налоговые вопросы простым и понятным языком, чтобы вы могли принимать решения осознанно,
-            не теряясь в сложной терминологии.
+            Ведение бухгалтерского учета для компаний и профессионалов, сверки, подготовка отчетности и текущие обязательства.
           </p>
         </div>
+
         <div class="card">
-          <h3>Надёжное сопровождение</h3>
+          <img src="../Consulenza fiscale.png" alt="Налоговое консультирование" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+          <h3>Налоговое консультирование</h3>
           <p class="muted">
-            Я сопровождаю клиентов не только к отдельным срокам сдачи отчётности, но и на постоянной основе,
-            обеспечивая своевременную поддержку.
+            Налоговое планирование, декларации, анализ налоговых последствий и индивидуальные решения для частных лиц и бизнеса.
           </p>
         </div>
+
         <div class="card">
-          <h3>Международный взгляд</h3>
+          <img src="../Sede secondarie.png" alt="Международное налогообложение" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+          <h3>Международное налогообложение · EU Tax</h3>
           <p class="muted">
-            Работа с клиентами из разных стран и на нескольких языках позволяет уверенно решать сложные и
-            трансграничные вопросы.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Гибкий формат работы</h3>
-          <p class="muted">
-            Встречи возможны в офисе в Больцано или онлайн — в зависимости от ваших потребностей и графика.
+            Поддержка по вопросам филиалов, постоянных представительств, трансграничной деятельности, норм ЕС и взаимодействия с иностранными консультантами.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- КОНТАКТЫ -->
     <section id="contacts">
       <h2>Контакты</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Контактные данные</h3>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:tax.spelman@gmail.com">tax.spelman@gmail.com</a></li>
-            <li><strong>Телефон:</strong> <a href="tel:+393273480543">+39 327 3480543</a></li>
-            <li><strong>Адрес:</strong> 39100 Болцано, Viale Druso 2, Италия</li>
-          </ul>
-          <a class="whatsapp-btn" href="https://wa.me/393273480543?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C,%20%D1%8F%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB(%D0%B0)%20%D0%B1%D1%8B%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E%20%D0%BE%20%D0%B2%D0%B0%D1%88%D0%B8%D1%85%20%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D1%85%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B0%D1%85." target="_blank" rel="noopener">
-            Написать в WhatsApp
-          </a>
-        </div>
-        <div>
-          <p class="muted">
-            Вы можете связаться со мной для первичной оценки вашей налоговой или бухгалтерской ситуации без обязательств.
-            Вместе мы определим формат сотрудничества, который лучше всего подойдёт именно вам.
-          </p>
-        </div>
+      <div class="card">
+        <p class="muted">
+          Studio Galja Spelman · Больцано (BZ), Италия<br>
+          Консультирование на итальянском, немецком, английском и русском языках.
+        </p>
+        <p class="muted">
+          E‑mail: <a href="mailto:info@spelmantax.com">info@spelmantax.com</a><br>
+          Сайт: <a href="https://spelmantax.com">spelmantax.com</a>
+        </p>
       </div>
     </section>
   </main>
 
   <footer>
-    © <span id="year"></span> Galja Spelman – CPA · Dottore Commercialista · Steuerberaterin – Больцано, Италия
-    <br>IT · DE · EN · RU
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    © <span id="year-ru"></span> Галья Спелман · Все права защищены
   </footer>
+
+  <script>
+    document.getElementById('year-ru').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
