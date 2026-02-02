@@ -21,20 +21,40 @@
     }
     header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
     header p { margin: 0.2rem 0; opacity: 0.9; }
+
+    nav {
+      text-align:center;
+      margin-top:1rem;
+      margin-bottom:1.5rem;
+    }
+    nav a {
+      margin:0 0.7rem;
+      text-decoration:none;
+      color:#0b4f8a;
+      font-weight:600;
+    }
+    nav a.active {
+      color:#000;
+      text-decoration:underline;
+    }
+
     main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
     .muted { color: #555; }
+
     .grid-2 {
       display: grid;
       grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
       gap: 1.5rem;
       align-items: start;
     }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.5rem;
       margin-top: 1rem;
     }
+
     .card {
       background: white;
       border-radius: 14px;
@@ -42,29 +62,43 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.04);
       border: 1px solid #e3e5ea;
     }
+
     h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
     h3 { margin-top: 0; margin-bottom: 0.4rem; }
-    a { color: #0b4f8a; text-decoration: none; }
+
+    a { color: #0b4f8a; }
     a:hover { text-decoration: underline; }
+
     footer {
       text-align: center;
       padding: 1.5rem;
       font-size: 0.9rem;
       color: #777;
     }
+
     @media (max-width: 720px) {
       .grid-2 { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Галя Спелман</h1>
     <p>Dottore Commercialista · CPA · Steuerberaterin</p>
     <p>Налоговое и бухгалтерское консультирование · Больцано, Италия</p>
   </header>
 
+  <!-- МЕНЮ ЯЗЫКОВ -->
+  <nav>
+    <a href="../it/index.html">🇮🇹 IT</a>
+    <a href="../de/index.html">🇩🇪 DE</a>
+    <a href="../en/index.html">🇬🇧 EN</a>
+    <a href="../ru/index.html" class="active">🇷🇺 RU</a>
+  </nav>
+
   <main>
+
     <!-- HERO -->
     <div style="margin-top:1rem;">
       <img src="../Foto remoto.png" alt="Дистанционное консультирование" style="width:100%; border-radius:14px;">
@@ -86,8 +120,9 @@
             Мой офис находится в Больцано, но я также сопровождаю клиентов дистанционно, с индивидуальным и структурированным подходом.
           </p>
         </div>
+
         <div class="card" style="text-align:center;">
-          <img src="../IMG-20260127-WA0053.jpg" alt="Галья Спелман" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+          <img src="../IMG-20260127-WA0053.jpg" alt="Галя Спелман" style="width:100%; border-radius:12px; margin-bottom:1rem;">
           <h3>Галя Спелман</h3>
           <p class="muted">Dottore Commercialista · CPA · Steuerberaterin</p>
         </div>
@@ -97,7 +132,9 @@
     <!-- УСЛУГИ -->
     <section id="services">
       <h2>Услуги</h2>
+
       <div class="cards">
+
         <div class="card">
           <img src="../Gestione della contabilita.png" alt="Бухгалтерский учет" style="width:100%; border-radius:10px; margin-bottom:1rem;">
           <h3>Бухгалтерский учет</h3>
@@ -121,6 +158,7 @@
             Поддержка по вопросам филиалов, постоянных представительств, трансграничной деятельности, норм ЕС и взаимодействия с иностранными консультантами.
           </p>
         </div>
+
       </div>
     </section>
 
@@ -138,15 +176,18 @@
         </p>
       </div>
     </section>
+
   </main>
 
   <footer>
-    © <span id="year-ru"></span> Галья Спелман · Все права защищены
+    © <span id="year-ru"></span> Галя Спелман · Все права защищены
   </footer>
 
   <script>
     document.getElementById('year-ru').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
+
 
