@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Studio Galja Spelman · Steuerberaterin · CPA</title>
+  <title>Studio Galja Spelman · Steuerberaterin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -13,12 +13,14 @@
       color: #222;
       line-height: 1.6;
     }
+
     header {
       background: linear-gradient(135deg, #0b4f8a, #0f7ac0);
       color: white;
       padding: 2.5rem 1.5rem 2rem;
       text-align: center;
     }
+
     header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
     header p { margin: 0.2rem 0; opacity: 0.9; }
 
@@ -27,12 +29,14 @@
       margin-top:1rem;
       margin-bottom:1.5rem;
     }
+
     nav a {
       margin:0 0.7rem;
       text-decoration:none;
       color:#0b4f8a;
       font-weight:600;
     }
+
     nav a.active {
       color:#000;
       text-decoration:underline;
@@ -61,6 +65,13 @@
       padding: 1.2rem 1.3rem;
       box-shadow: 0 8px 20px rgba(0,0,0,0.04);
       border: 1px solid #e3e5ea;
+      height: 100%;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
@@ -110,14 +121,15 @@
       <div class="grid-2">
         <div>
           <p class="muted">
-            Ich bin <strong>Galja Spelman</strong>, Steuerberaterin, <strong>Certified Public Accountant (CPA)</strong> 
-            und <strong>Dottore Commercialista</strong>. Ich betreue Unternehmen, Freiberufler und Privatpersonen 
-            in allen steuerlichen und buchhalterischen Fragen – mit besonderem Fokus auf grenzüberschreitende 
-            Sachverhalte und internationale Steuerregelungen.
+            Ich bin <strong>Galja Spelman</strong>, <strong>Steuerberaterin</strong>, 
+            <strong>Certified Public Accountant (CPA)</strong> und <strong>Dottore Commercialista</strong>.
+            Ich betreue Unternehmen, Freiberufler und Privatpersonen in steuerlichen und buchhalterischen Fragen – 
+            mit besonderem Fokus auf grenzüberschreitende Sachverhalte und internationale Steuerregelungen.
           </p>
+
           <p class="muted">
-            Ich arbeite strukturiert, präzise und lösungsorientiert. Die Beratung erfolgt auf Deutsch, Italienisch, 
-            Englisch und Russisch – persönlich in Bozen oder flexibel online.
+            Ich arbeite strukturiert, präzise und lösungsorientiert.  
+            Die Beratung erfolgt auf Deutsch, Italienisch, Englisch und Russisch – persönlich oder online.
           </p>
         </div>
 
@@ -129,79 +141,42 @@
       </div>
     </section>
 
-    <!-- DIENSTLEISTUNGEN -->
-    <section id="dienstleistungen">
-      <h2>Dienstleistungen</h2>
+    <!-- LEISTUNGEN -->
+    <section id="leistungen">
+      <h2>Leistungen</h2>
 
       <div class="cards">
 
-        <div class="card">
-          <img src="../Gestione della contabilità.png" alt="Buchhaltung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-          <h3>Buchhaltung</h3>
-          <p class="muted">
-            Laufende Buchführung für Unternehmen und Freiberufler, Abstimmungen, Jahresabschlüsse, 
-            periodische Meldungen und kontinuierliche Betreuung.
-          </p>
-        </div>
+        <a href="../gestione-contabilita.html" class="card-link">
+          <div class="card">
+            <img src="../Gestione della contabilità.png" alt="Buchhaltung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Buchhaltung</h3>
+            <p class="muted">
+              Laufende Buchhaltung, Abstimmungen, Jahresabschlüsse, periodische Meldungen und laufende Betreuung.
+            </p>
+          </div>
+        </a>
 
-        <div class="card">
-          <img src="../Consulenza fiscale.png" alt="Steuerberatung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-          <h3>Steuerberatung</h3>
-          <p class="muted">
-            Steuerplanung, Steuererklärungen, Prüfung steuerlicher Auswirkungen und maßgeschneiderte Lösungen 
-            für Privatpersonen und Unternehmen.
-          </p>
-        </div>
+        <a href="../consulenza-fiscale.html" class="card-link">
+          <div class="card">
+            <img src="../Consulenza fiscale.png" alt="Steuerberatung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Steuerberatung</h3>
+            <p class="muted">
+              Steuerplanung, Steuererklärungen, Prüfungen, steuerliche Analysen und individuelle Lösungen.
+            </p>
+          </div>
+        </a>
 
-        <div class="card">
-          <img src="../Sede secondarie.png" alt="Internationale Besteuerung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-          <h3>Internationale Besteuerung · EU Tax</h3>
-          <p class="muted">
-            Unterstützung bei Zweigniederlassungen, Betriebsstätten, grenzüberschreitenden Tätigkeiten, 
-            EU‑Regelungen und Zusammenarbeit mit ausländischen Beratern.
-          </p>
-        </div>
+        <a href="../fiscalita-internazionale.html" class="card-link">
+          <div class="card">
+            <img src="../Sede secondarie.png" alt="Internationale Besteuerung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Internationale Besteuerung · EU Tax</h3>
+            <p class="muted">
+              Unterstützung bei Betriebsstätten, Zweigniederlassungen, grenzüberschreitenden Vorgängen und EU‑Regelungen.
+            </p>
+          </div>
+        </a>
 
-      </div>
-    </section>
-
-    <!-- ERWEITERTE STEUERLEISTUNGEN -->
-    <section id="steuerleistungen">
-      <h2>Buchhaltung und Steuererklärungen</h2>
-
-      <div class="card">
-        <p class="muted">
-          Ich biete eine umfassende und professionelle Betreuung in allen Bereichen der Buchhaltung und 
-          Steuererklärungen – für Unternehmen, Freiberufler und Privatpersonen. Alle Meldungen und Erklärungen 
-          werden fristgerecht und gesetzeskonform elektronisch übermittelt.
-        </p>
-
-        <ul class="muted">
-          <li>Ordentliche Buchhaltung</li>
-          <li>Einfache Buchhaltung</li>
-          <li>Forfettario-Regime</li>
-          <li>Regime dei minimi</li>
-          <li>Buchhaltung für Freiberufler</li>
-          <li>Einkommensteuererklärung – Modell UNICO</li>
-          <li>Einkommensteuererklärung – Modell 730</li>
-          <li>CAF‑Unterstützung</li>
-          <li>IRAP‑Erklärung</li>
-          <li>Berechnung von IVA, IRPEF, IRES, IRAP, IVIE</li>
-          <li>IVA‑Datenübermittlung</li>
-          <li>Jährliche IVA‑Erklärung</li>
-          <li>ISA / Studi di settore</li>
-          <li>F24‑Formulare</li>
-          <li>Telematische Übermittlungen</li>
-          <li>Jahresabschluss und Versammlungsprotokolle</li>
-          <li>INTRASTAT‑Meldungen</li>
-          <li>Black‑List‑Mitteilungen</li>
-          <li>Steuerliche Konformitätsbescheinigung</li>
-          <li>Führung von Registern und Büchern</li>
-          <li>Gesellschaftsbücher</li>
-          <li>Meldungen zu Gesellschafterdarlehen</li>
-          <li>Digitale Archivierung</li>
-          <li>Elektronische Rechnungsstellung und Archivierung</li>
-        </ul>
       </div>
     </section>
 
