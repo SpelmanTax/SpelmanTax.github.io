@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Studio Galja Spelman – Dottore Commercialista</title>
+  <title>Studio Galja Spelman · Dottore Commercialista</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -13,148 +13,117 @@
       color: #222;
       line-height: 1.6;
     }
-
     header {
-      background: linear-gradient(135deg, #b04f6a, #b04f6a, #07a7e0);
+      background: linear-gradient(135deg, #0b4f8a, #0f7ac0);
       color: white;
-      padding: 2.5rem 1.5rem 2rem 2rem;
+      padding: 2.5rem 1.5rem 2rem;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0 0 0.5rem;
-      font-size: 2rem;
-    }
-
-    header p {
-      margin: 0.2rem 0;
-      opacity: 0.9;
-    }
+    header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
+    header p { margin: 0.2rem 0; opacity: 0.9; }
 
     nav {
-      text-align: center;
-      margin: 1rem 0 2rem;
+      text-align:center;
+      margin-top:1rem;
+      margin-bottom:1.5rem;
     }
-
     nav a {
-      margin: 0 0.7rem;
-      text-decoration: none;
-      color: #b04f6a;
-      font-weight: 600;
+      margin:0 0.7rem;
+      text-decoration:none;
+      color:#0b4f8a;
+      font-weight:600;
     }
-
     nav a.active {
-      text-decoration: underline;
+      color:#000;
+      text-decoration:underline;
     }
 
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
+    main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+    .muted { color: #555; }
 
-    .cards-container {
+    .grid-2 {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
       gap: 1.5rem;
+      align-items: start;
     }
 
-    .service-card {
-      display: block;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
       background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1rem;
+      border-radius: 14px;
+      padding: 1.2rem 1.3rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      border: 1px solid #e3e5ea;
+      height: 100%;
+    }
+
+    .card-link {
       text-decoration: none;
       color: inherit;
-      transition: box-shadow 0.2s ease;
-    }
-
-    .service-card:hover {
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .service-card img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 0.8rem;
       display: block;
     }
 
-    .service-card h3 {
-      margin: 0.5rem 0;
-      color: #b04f6a;
-    }
+    h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
+    h3 { margin-top: 0; margin-bottom: 0.4rem; }
+
+    a { color: #0b4f8a; }
+    a:hover { text-decoration: underline; }
 
     footer {
       text-align: center;
-      padding: 2rem;
-      color: #555;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 720px) {
+      .grid-2 { grid-template-columns: 1fr; }
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Studio Galja Spelman</h1>
-  <p>Dottore Commercialista · Steuerberaterin · Certified Public Accountant</p>
-  <p>Consulenza in italiano, tedesco, inglese e russo</p>
-</header>
+  <header>
+    <h1>Studio Galja Spelman</h1>
+    <p>Dottore Commercialista · CPA · Steuerberaterin</p>
+    <p>Consulenza fiscale e contabile · Bolzano</p>
+  </header>
 
-<nav>
-  <a href="index.html" class="active">Home</a>
-  <a href="gestione-contabilita.html">Contabilità</a>
-  <a href="consulenza-fiscale.html">Fiscale</a>
-  <a href="fiscalita-internazionale.html">Internazionale</a>
-  <a href="de/index.html">DE</a>
-  <a href="en/index.html">EN</a>
-  <a href="ru/index.html">RU</a>
-</nav>
+  <!-- MENU LINGUE -->
+  <nav>
+    <a href="index.html" class="active">🇮🇹 IT</a>
+    <a href="de/index.html">🇩🇪 DE</a>
+    <a href="en/index.html">🇬🇧 EN</a>
+    <a href="ru/index.html">🇷🇺 RU</a>
+  </nav>
 
-<main>
-  <section id="servizi">
-    <h2>Servizi</h2>
+  <main>
 
-    <div class="cards-container">
-
-      <!-- CARD 1 – Gestione della contabilità -->
-      <a class="service-card" href="gestione-contabilita.html">
-        <img src="Gestione della contabilità.png" alt="Gestione della contabilità">
-        <h3>Gestione della contabilità</h3>
-        <p>Tenuta della contabilità per imprese e professionisti, riconciliazioni, bilanci, adempimenti periodici e supporto continuativo.</p>
-      </a>
-
-      <!-- CARD 2 – Consulenza fiscale -->
-      <a class="service-card" href="consulenza-fiscale.html">
-        <img src="Consulenza fiscale.png" alt="Consulenza fiscale">
-        <h3>Consulenza fiscale</h3>
-        <p>Pianificazione fiscale, dichiarazioni, verifiche, analisi degli impatti fiscali e soluzioni su misura per privati e aziende.</p>
-      </a>
-
-      <!-- CARD 3 – Fiscalità internazionale -->
-      <a class="service-card" href="fiscalita-internazionale.html">
-        <img src="Sede secondarie.png" alt="Fiscalità internazionale">
-        <h3>Fiscalità internazionale • EU Tax</h3>
-        <p>Assistenza per sedi secondarie, stabile organizzazione, operazioni transfrontaliere, normativa UE e coordinamento con consulenti esteri.</p>
-      </a>
-
+    <!-- HERO -->
+    <div style="margin-top:1rem;">
+      <img src="Foto remoto.png" alt="Consulenza da remoto" style="width:100%; border-radius:14px;">
     </div>
-  </section>
-</main>
 
-<footer>
-  <span id="year"></span> Studio Galja Spelman – Tutti i diritti riservati
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
-
-
+    <!-- CHI SONO -->
+    <section id="chi-sono">
+      <h2>Chi sono</h2>
+      <div class="grid-2">
+        <div>
+          <p class="muted">
+            Mi chiamo <strong>Galja Spelman</strong> sono <strong>Dottore Commercialista iscritta all’Albo A</strong>,
+            <strong>Certified Public Accountant (CPA)</strong> e <strong>Steuerberaterin</strong>.
+            Offro consulenza fiscale e contabile a imprese, professionisti e privati, con particolare attenzione alle situazioni internazionali e transfrontaliere.
+          </p>
+          <p class="muted">
+            Lavoro con precisione, chiarezza e flessibilità, offrendo assistenza in italiano, tedesco, inglese e russo.
+            Lo studio ha sede a
 
 
 
