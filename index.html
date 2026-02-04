@@ -1,149 +1,198 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Galja Spelman – Studio Fiscale a Bolzano</title>
+  <meta charset="UTF-8">
+  <title>Studio Galja Spelman · Dottore Commercialista</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0b4f8a, #0f7ac0);
+      color: white;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
+    header p { margin: 0.2rem 0; opacity: 0.9; }
 
-    <style>
-        body {
-            font-family: system-ui, sans-serif;
-            margin: 0;
-            background: #f7f7f7;
-            color: #333;
-        }
+    nav {
+      text-align:center;
+      margin-top:1rem;
+      margin-bottom:1.5rem;
+    }
+    nav a {
+      margin:0 0.7rem;
+      text-decoration:none;
+      color:#0b4f8a;
+      font-weight:600;
+    }
+    nav a.active {
+      color:#000;
+      text-decoration:underline;
+    }
 
-        header {
-            background: #ffffff;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: flex-end;
-            border-bottom: 1px solid #ddd;
-        }
+    main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+    .muted { color: #555; }
 
-        nav a {
-            margin-left: 1rem;
-            text-decoration: none;
-            color: #0066cc;
-            font-weight: 600;
-        }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            background: #fff;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-        }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
 
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 1.2rem 1.3rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      border: 1px solid #e3e5ea;
+    }
 
-        h2 {
-            margin-top: 2rem;
-            color: #0066cc;
-        }
+    h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
+    h3 { margin-top: 0; margin-bottom: 0.4rem; }
 
-        p, ul {
-            line-height: 1.6;
-        }
+    a { color: #0b4f8a; }
+    a:hover { text-decoration: underline; }
 
-        ul {
-            margin-top: 0.5rem;
-        }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
 
-        .contact-box {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background: #eef5ff;
-            border-left: 4px solid #0066cc;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 3rem;
-            padding: 1.5rem;
-            color: #777;
-        }
-    </style>
+    @media (max-width: 720px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-    <nav>
-        <a href="index.html">Italiano</a>
-        <a href="de/index.html">Deutsch</a>
-        <a href="en/index.html">English</a>
-        <a href="ru/index.html">Русский</a>
-    </nav>
-</header>
+  <header>
+    <h1>Studio Galja Spelman</h1>
+    <p>Dottore Commercialista · CPA · Steuerberaterin</p>
+    <p>Consulenza fiscale e contabile · Bolzano</p>
+  </header>
 
-<div class="container">
+  <!-- MENU LINGUE -->
+  <nav>
+    <a href="../it/index.html" class="active">🇮🇹 IT</a>
+    <a href="../de/index.html">🇩🇪 DE</a>
+    <a href="../en/index.html">🇬🇧 EN</a>
+    <a href="../ru/index.html">🇷🇺 RU</a>
+  </nav>
 
-    <h1>Galja Spelman – Studio Fiscale a Bolzano</h1>
-    <p>CPA · Dottore Commercialista · Steuerberaterin</p>
+  <main>
 
-    <p>
-        Lo studio offre consulenza fiscale e contabile per imprese, professionisti e privati,
-        con particolare attenzione alle esigenze delle attività transfrontaliere e multilingue.
-        L’obiettivo è garantire precisione, conformità normativa e un’assistenza continua durante tutto l’anno.
-    </p>
-
-    <h2>Contabilità e dichiarazioni fiscali</h2>
-    <p>
-        Gestione contabile completa e professionale per imprese, professionisti e lavoratori autonomi,
-        con servizi adattati ai diversi regimi fiscali.  
-        Predisposizione e invio telematico di tutte le dichiarazioni fiscali obbligatorie.
-    </p>
-
-    <h3>Servizi disponibili</h3>
-    <ul>
-        <li>Contabilità ordinaria</li>
-        <li>Contabilità semplificata</li>
-        <li>Regime forfettario</li>
-        <li>Regime dei minimi</li>
-        <li>Contabilità professionisti</li>
-        <li>Dichiarazione dei redditi – Modello UNICO</li>
-        <li>Dichiarazione dei redditi – Modello 730</li>
-        <li>Centro assistenza fiscale – CAF</li>
-        <li>Dichiarazione IRAP</li>
-        <li>Calcolo versamenti IVA – IRPEF – IRES – IRAP – IVIE</li>
-        <li>Comunicazione dati IVA</li>
-        <li>Dichiarazione annuale IVA</li>
-        <li>Studi di settore / ISA</li>
-        <li>Modelli F24</li>
-        <li>Invii telematici</li>
-        <li>Bilancio d’esercizio e verbali d’assemblea</li>
-        <li>Modello INTRASTAT</li>
-        <li>Comunicazioni Black-list</li>
-        <li>Rilascio visto di conformità</li>
-        <li>Tenuta registri e libri contabili</li>
-        <li>Libri societari</li>
-        <li>Comunicazione beni e finanziamenti dei soci</li>
-        <li>Archiviazione sostitutiva</li>
-        <li>Fatturazione elettronica conto terzi e conservazione</li>
-    </ul>
-
-    <div class="contact-box">
-        <h2>Contatti</h2>
-        <p>
-            📞 +39 327 348 05 43<br>
-            📧 tax.spelman@gmail.com – info@spelmantax.com<br>
-            📍 Viale Druso 2, 39100 Bolzano (BZ), Italia<br>
-            🌐 www.spelmantax.com
-        </p>
+    <!-- HERO -->
+    <div style="margin-top:1rem;">
+      <img src="../Foto remoto.png" alt="Consulenza da remoto" style="width:100%; border-radius:14px;">
     </div>
 
-</div>
+    <!-- CHI SONO -->
+    <section id="chi-sono">
+      <h2>Chi sono</h2>
+      <div class="grid-2">
+        <div>
+          <p class="muted">
+            Mi chiamo <strong>Galja Spelman</strong> e sono <strong>Dottore Commercialista iscritta all’Albo A</strong>,
+            <strong>Certified Public Accountant (CPA)</strong> e <strong>Steuerberaterin</strong>.
+            Offro consulenza fiscale e contabile a imprese, professionisti e privati, con particolare attenzione alle situazioni internazionali e transfrontaliere.
+          </p>
+          <p class="muted">
+            Lavoro con precisione, chiarezza e flessibilità, offrendo assistenza in italiano, tedesco, inglese e russo.
+            Lo studio ha sede a Bolzano e accompagna i clienti anche da remoto, con un approccio strutturato e personalizzato.
+          </p>
+        </div>
 
-<footer>
-    © 2026 – Studio Fiscale Galja Spelman – Bolzano
-</footer>
+        <div class="card" style="text-align:center;">
+          <img src="../IMG-20260127-WA0053.jpg" alt="Galja Spelman" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+          <h3>Galja Spelman</h3>
+          <p class="muted">Dottore Commercialista · CPA · Steuerberaterin</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIZI -->
+    <section id="servizi">
+      <h2>Servizi</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="../Gestione della contabilita.png" alt="Gestione della contabilità" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+          <h3>Gestione della contabilità</h3>
+          <p class="muted">
+            Tenuta della contabilità per imprese e professionisti, riconciliazioni, bilanci, adempimenti periodici e supporto continuativo.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="../Consulenza fiscale.png" alt="Consulenza fiscale" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+          <h3>Consulenza fiscale</h3>
+          <p class="muted">
+            Pianificazione fiscale, dichiarazioni, verifiche, analisi degli impatti fiscali e soluzioni su misura per privati e aziende.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="../Sede secondarie.png" alt="Sedi secondarie e stabile organizzazione" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+          <h3>Fiscalità internazionale · EU Tax</h3>
+          <p class="muted">
+            Assistenza per sedi secondarie, stabile organizzazione, operazioni transfrontaliere, normativa UE e coordinamento con consulenti esteri.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <div class="card">
+        <p class="muted">
+          Studio Galja Spelman · Viale Druso 2 · 39100 Bolzano (BZ), Italia<br>
+          Consulenza in italiano, tedesco, inglese e russo.
+        </p>
+
+        <p class="muted">
+          E‑mail: 
+          <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> · 
+          <a href="mailto:galspelman@gmail.com">galspelman@gmail.com</a><br>
+
+          WhatsApp: <a href="https://wa.me/393273480543">+39 327 348 0543</a><br>
+
+          LinkedIn: <a href="https://www.linkedin.com/in/galja-spelman/" target="_blank">Galja Spelman</a><br>
+
+          Website: <a href="https://spelmantax.com">spelmantax.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year-it"></span> Studio Galja Spelman · Tutti i diritti riservati
+  </footer>
+
+  <script>
+    document.getElementById('year-it').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
