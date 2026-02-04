@@ -13,12 +13,14 @@
       color: #222;
       line-height: 1.6;
     }
+
     header {
       background: linear-gradient(135deg, #0b4f8a, #0f7ac0);
       color: white;
       padding: 2.5rem 1.5rem 2rem;
       text-align: center;
     }
+
     header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
     header p { margin: 0.2rem 0; opacity: 0.9; }
 
@@ -27,12 +29,14 @@
       margin-top:1rem;
       margin-bottom:1.5rem;
     }
+
     nav a {
       margin:0 0.7rem;
       text-decoration:none;
       color:#0b4f8a;
       font-weight:600;
     }
+
     nav a.active {
       color:#000;
       text-decoration:underline;
@@ -61,6 +65,13 @@
       padding: 1.2rem 1.3rem;
       box-shadow: 0 8px 20px rgba(0,0,0,0.04);
       border: 1px solid #e3e5ea;
+      height: 100%;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
@@ -110,21 +121,22 @@
       <div class="grid-2">
         <div>
           <p class="muted">
-            Меня зовут <strong>Галья Спельман</strong>. Я — <strong>налоговый консультант</strong>, 
-            <strong>Certified Public Accountant (CPA)</strong> и <strong>Dottore Commercialista</strong>.  
-            Я сопровождаю компании, профессионалов и частных клиентов по вопросам налогообложения и бухгалтерии, 
-            уделяя особое внимание международным и трансграничным ситуациям.
+            Я — <strong>Галья Спельман</strong>, <strong>Certified Public Accountant (CPA)</strong>, 
+            <strong>Steuerberaterin</strong> и <strong>Dottore Commercialista</strong>.
+            Я сопровождаю компании, фрилансеров и частных лиц по вопросам налогообложения и бухгалтерского учета,
+            уделяя особое внимание трансграничным ситуациям и международному налоговому регулированию.
           </p>
+
           <p class="muted">
-            Я работаю структурированно, точно и ориентирована на результат. Консультации доступны на русском, 
-            итальянском, немецком и английском языках — лично в Больцано или дистанционно.
+            Работаю структурированно, точно и ориентированно на результат.  
+            Консультации доступны на русском, итальянском, немецком и английском языках — очно или онлайн.
           </p>
         </div>
 
         <div class="card" style="text-align:center;">
           <img src="../IMG-20260127-WA0053.jpg" alt="Galja Spelman" style="width:100%; border-radius:12px; margin-bottom:1rem;">
           <h3>Галья Спельман</h3>
-          <p class="muted">Налоговый консультант · CPA · Dottore Commercialista</p>
+          <p class="muted">CPA · Steuerberaterin · Dottore Commercialista</p>
         </div>
       </div>
     </section>
@@ -135,77 +147,40 @@
 
       <div class="cards">
 
-        <div class="card">
-          <img src="../Gestione della contabilità.png" alt="Бухгалтерское сопровождение" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-          <h3>Бухгалтерское сопровождение</h3>
-          <p class="muted">
-            Ведение бухгалтерии для компаний и профессионалов, сверки, отчётность, периодические обязательства 
-            и постоянная поддержка.
-          </p>
-        </div>
+        <a href="../gestione-contabilita.html" class="card-link">
+          <div class="card">
+            <img src="../Gestione della contabilità.png" alt="Бухгалтерский учет" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Бухгалтерский учет</h3>
+            <p class="muted">
+              Ведение бухгалтерии, сверки, годовая отчетность, периодические обязательства и постоянное сопровождение.
+            </p>
+          </div>
+        </a>
 
-        <div class="card">
-          <img src="../Consulenza fiscale.png" alt="Налоговое консультирование" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-          <h3>Налоговое консультирование</h3>
-          <p class="muted">
-            Налоговое планирование, подготовка деклараций, анализ налоговых последствий и индивидуальные решения 
-            для частных лиц и бизнеса.
-          </p>
-        </div>
+        <a href="../consulenza-fiscale.html" class="card-link">
+          <div class="card">
+            <img src="../Consulenza fiscale.png" alt="Налоговое консультирование" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Налоговое консультирование</h3>
+            <p class="muted">
+              Налоговое планирование, декларации, проверки, анализ налоговых последствий и индивидуальные решения.
+            </p>
+          </div>
+        </a>
 
-        <div class="card">
-          <img src="../Sede secondarie.png" alt="Международное налогообложение" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-          <h3>Международное налогообложение · EU Tax</h3>
-          <p class="muted">
-            Сопровождение филиалов и постоянных представительств, трансграничных операций, требований ЕС 
-            и взаимодействие с иностранными консультантами.
-          </p>
-        </div>
+        <a href="../fiscalita-internazionale.html" class="card-link">
+          <div class="card">
+            <img src="../Sede secondarie.png" alt="Международное налогообложение" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Международное налогообложение · EU Tax</h3>
+            <p class="muted">
+              Сопровождение по вопросам постоянных представительств, филиалов, трансграничных операций и норм ЕС.
+            </p>
+          </div>
+        </a>
 
       </div>
     </section>
 
-    <!-- РАСШИРЕННЫЕ НАЛОГОВЫЕ УСЛУГИ -->
-    <section id="tax-services">
-      <h2>Бухгалтерия и налоговая отчётность</h2>
-
-      <div class="card">
-        <p class="muted">
-          Я предоставляю комплексное и профессиональное сопровождение по всем вопросам бухгалтерии и налоговой отчётности — 
-          для компаний, фрилансеров и частных клиентов. Все декларации и отчёты подаются в электронном виде 
-          в полном соответствии с действующим законодательством.
-        </p>
-
-        <ul class="muted">
-          <li>Полная (ord.) бухгалтерия</li>
-          <li>Упрощённая бухгалтерия</li>
-          <li>Режим Forfettario</li>
-          <li>Regime dei minimi</li>
-          <li>Бухгалтерия для профессионалов</li>
-          <li>Декларация доходов — Modello UNICO</li>
-          <li>Декларация доходов — Modello 730</li>
-          <li>Поддержка CAF</li>
-          <li>Декларация IRAP</li>
-          <li>Расчёт IVA, IRPEF, IRES, IRAP, IVIE</li>
-          <li>Передача данных IVA</li>
-          <li>Годовая декларация IVA</li>
-          <li>ISA / Studi di settore</li>
-          <li>Формы F24</li>
-          <li>Телематическая подача документов</li>
-          <li>Годовая отчётность и протоколы собраний</li>
-          <li>INTRASTAT</li>
-          <li>Сообщения Black‑list</li>
-          <li>Сертификат налогового соответствия</li>
-          <li>Ведение регистров и бухгалтерских книг</li>
-          <li>Корпоративные книги</li>
-          <li>Сообщения о финансировании от участников</li>
-          <li>Цифровой архив</li>
-          <li>Электронные счета и хранение</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- КОНТАКТ -->
+    <!-- КОНТАКТЫ -->
     <section id="contact">
       <h2>Контакты</h2>
       <div class="card">
@@ -215,7 +190,7 @@
         </p>
 
         <p class="muted">
-          Email: 
+          E‑mail: 
           <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> · 
           <a href="mailto:galspelman@gmail.com">galspelman@gmail.com</a><br>
 
@@ -240,3 +215,4 @@
 
 </body>
 </html>
+
