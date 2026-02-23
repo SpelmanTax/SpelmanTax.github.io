@@ -1,33 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage (IT) -->
+  <!-- Homepage IT -->
   <url>
     <loc>https://spelmantax.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Versione DE -->
-  <url>
-    <loc>https://spelmantax.com/de/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Versione EN -->
+  <!-- Versioni multilingue -->
   <url>
     <loc>https://spelmantax.com/en/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Versione RU -->
+  <url>
+    <loc>https://spelmantax.com/de/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <url>
     <loc>https://spelmantax.com/ru/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-</urlset>
+  <!-- Pagine servizi (IT) -->
+  <url>
+    <loc>https://spelmantax.com/chi-sono.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
+  <url>
+    <loc>https://spelmantax.com/commercialista-bolzano-sudtirol.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/consulenza-fiscale.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/contabilità-aziende-professionisti.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/contabilità-italiano-tedesco.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/contabilità-ordinaria-semplificata.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/dichiarazione-730.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/fiscalità-internazionale.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/gestione-contabilità.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/gestione-iva-adempimenti-fiscali.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/perche-contabilità-esterna.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/servizi-aziende-straniere-expat.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/servizi-contabilità-esterna.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spelmantax.com/servizi-professionisti-freelance.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
