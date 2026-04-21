@@ -1,0 +1,76 @@
+---
+layout: default
+title: Запрос информации
+---
+
+<h1>Запрос информации</h1>
+<p>Пожалуйста, заполните форму ниже, чтобы запросить информацию об выбранной услуге. Я отвечу в течение 24 часов.</p>
+
+<form action="https://formspree.io/f/xpqkjevo" method="POST">
+
+  <label for="service">Услуга</label>
+  <input type="text" id="service" name="service" value="{{ page.service | default: site.service }}" readonly>
+
+  <label for="name">Ваше имя</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Ваш email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Сообщение</label>
+  <textarea id="message" name="message" rows="5" placeholder="Напишите ваш запрос..." required></textarea>
+
+  <button type="submit">Отправить запрос</button>
+</form>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    color: #003366;
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #003366;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background: #005fa3;
+  }
+</style>
