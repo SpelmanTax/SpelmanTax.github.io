@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Richiedi informazioni
+title: Richiesta informazioni
 ---
 
-<h1>Richiedi informazioni</h1>
-<p>Compila il modulo qui sotto per richiedere informazioni sul servizio selezionato. Risponderò entro 24 ore.</p>
+<h1>Richiesta informazioni</h1>
+<p>Compila il modulo qui sotto per richiedere informazioni su un servizio. Rispondo entro 24 ore.</p>
 
 <form action="https://formspree.io/f/xpqkjevo" method="POST">
 
   <label for="service">Servizio</label>
   <input type="text" id="service" name="service" value="{{ page.service | default: site.service }}" readonly>
 
-  <label for="name">Il tuo nome</label>
+  <label for="name">Nome e cognome</label>
   <input type="text" id="name" name="name" required>
 
-  <label for="email">La tua email</label>
+  <label for="email">Email</label>
   <input type="email" id="email" name="email" required>
 
   <label for="message">Messaggio</label>
