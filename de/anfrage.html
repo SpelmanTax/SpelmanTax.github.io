@@ -1,0 +1,76 @@
+---
+layout: default
+title: Anfrage
+---
+
+<h1>Anfrage senden</h1>
+<p>Bitte füllen Sie das folgende Formular aus, um Informationen zum ausgewählten Dienst anzufordern. Ich antworte innerhalb von 24 Stunden.</p>
+
+<form action="https://formspree.io/f/xpqkjevo" method="POST">
+
+  <label for="service">Dienst</label>
+  <input type="text" id="service" name="service" value="{{ page.service | default: site.service }}" readonly>
+
+  <label for="name">Ihr Name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Ihre E‑Mail</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Nachricht</label>
+  <textarea id="message" name="message" rows="5" placeholder="Ihre Anfrage..." required></textarea>
+
+  <button type="submit">Anfrage senden</button>
+</form>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    color: #003366;
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #003366;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background: #005fa3;
+  }
+</style>
