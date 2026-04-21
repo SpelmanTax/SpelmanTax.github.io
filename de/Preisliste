@@ -1,0 +1,183 @@
+---
+layout: default
+title: Preisliste
+---
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    color: #003366;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    color: #003366;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+
+  .servizio {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .servizio h3 {
+    margin-top: 0;
+    color: #003366;
+  }
+
+  .prezzo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0077cc;
+    margin: 10px 0;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  .btn:hover {
+    background: #005fa3;
+  }
+
+  /* FAQ */
+  .faq {
+    background: #f5f9ff;
+    border-left: 4px solid #0077cc;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  .faq p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+</style>
+
+<h1>Preisliste 2026</h1>
+<p>Klare und transparente Preise für die wichtigsten steuerlichen und buchhalterischen Dienstleistungen. Keine versteckten Kosten.</p>
+
+<!-- STEUERERKLÄRUNGEN -->
+<h2><span class="icon">📄</span> Steuererklärungen</h2>
+
+<div class="servizio">
+  <h3>Modello 730</h3>
+  <p class="prezzo">€120</p>
+  <a class="btn" href="/de/anfrage.html?dienst=Modello%20730">Informationen anfordern</a>
+</div>
+
+<div class="servizio">
+  <h3>Einkommensteuererklärung für Privatpersonen (ohne MwSt.-Nr.)</h3>
+  <p class="prezzo">€130</p>
+  <a class="btn" href="/de/anfrage.html?dienst=Einkommensteuer%20PF">Informationen anfordern</a>
+</div>
+
+<div class="servizio">
+  <h3>USt.-Erklärung</h3>
+  <p class="prezzo">ab €191</p>
+  <a class="btn" href="/de/anfrage.html?dienst=USt-Erklaerung">Informationen anfordern</a>
+</div>
+
+<h3>FAQ — Steuererklärungen</h3>
+<div class="faq">
+  <p><strong>Wie lange dauert die Erstellung?</strong><br>
+  In der Regel 24–48 Stunden nach Erhalt aller Unterlagen.</p>
+
+  <p><strong>Können die Unterlagen online übermittelt werden?</strong><br>
+  Ja, per E‑Mail oder über einen sicheren Upload-Link.</p>
+
+  <p><strong>Können zusätzliche Kosten entstehen?</strong><br>
+  Nur in besonderen Fällen (komplexe Situationen, mehrere CU, ausländische Einkünfte). Ich informiere Sie immer im Voraus.</p>
+</div>
+
+<!-- BUCHHALTUNG -->
+<h2><span class="icon">📊</span> Buchhaltung</h2>
+
+<div class="servizio">
+  <h3>Einfache Buchhaltung</h3>
+  <p class="prezzo">ab €1.190 / Jahr</p>
+  <a class="btn" href="/de/anfrage.html?dienst=Einfache%20Buchhaltung">Informationen anfordern</a>
+</div>
+
+<div class="servizio">
+  <h3>Doppelte Buchhaltung</h3>
+  <p class="prezzo">ab €2.730 / Jahr</p>
+  <a class="btn" href="/de/anfrage.html?dienst=Doppelte%20Buchhaltung">Informationen anfordern</a>
+</div>
+
+<h3>FAQ — Buchhaltung</h3>
+<div class="faq">
+  <p><strong>Wie funktioniert die Aktivierung?</strong><br>
+  Nach Auswahl des Dienstes bereite ich das Mandat vor und aktiviere die Buchhaltung innerhalb von 24 Stunden.</p>
+
+  <p><strong>Kann man von einfacher zu doppelter Buchhaltung wechseln?</strong><br>
+  Ja, ich helfe Ihnen bei der Wahl der günstigsten Lösung.</p>
+
+  <p><strong>Ist Unterstützung während des Jahres inbegriffen?</strong><br>
+  Ja, ich beantworte Fragen per E‑Mail oder Telefon ohne zusätzliche Kosten.</p>
+</div>
+
+<!-- ERBFOLGE -->
+<h2><span class="icon">🏛️</span> Erbschaft</h2>
+
+<div class="servizio">
+  <h3>Erbschaftserklärung</h3>
+  <p class="prezzo">ab €700</p>
+  <a class="btn" href="/de/anfrage.html?dienst=Erbschaft">Informationen anfordern</a>
+</div>
+
+<h3>FAQ — Erbschaft</h3>
+<div class="faq">
+  <p><strong>Welche Unterlagen werden benötigt?</strong><br>
+  Katasterauszüge, Sterbeurkunde, Familienstandsnachweis, eventuelle notarielle Dokumente.</p>
+
+  <p><strong>Wie lange dauert die Bearbeitung?</strong><br>
+  In der Regel 5–7 Arbeitstage.</p>
+
+  <p><strong>Können die Kosten variieren?</strong><br>
+  Ja, je nach Anzahl der Immobilien und Komplexität des Falls.</p>
+</div>
+
+<!-- IMU -->
+<h2><span class="icon">🏠</span> IMU</h2>
+
+<div class="servizio">
+  <h3>IMU‑Berechnung und F24‑Erstellung</h3>
+  <p class="prezzo">€60 pro Immobilie</p>
+  <a class="btn" href="/de/anfrage.html?dienst=IMU">Informationen anfordern</a>
+</div>
+
+<h3>FAQ — IMU</h3>
+<div class="faq">
+  <p><strong>Welche Daten werden benötigt?</strong><br>
+  Katasterwert, Katasterkategorie, Besitzquote und Besitzmonate.</p>
+
+  <p><strong>Wie schnell erhalte ich die Berechnung?</strong><br>
+  In der Regel innerhalb von 24 Stunden.</p>
+
+  <p><strong>Können die Kosten variieren?</strong><br>
+  Nur bei mehreren Immobilien oder besonderen Situationen (z. B. Leihe, mehrere Nebenräume).</p>
+</div>
