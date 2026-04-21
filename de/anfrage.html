@@ -3,12 +3,12 @@ layout: default
 title: Anfrage
 ---
 
-<h1>Anfrage senden</h1>
-<p>Bitte füllen Sie das folgende Formular aus, um Informationen zum ausgewählten Dienst anzufordern. Ich antworte innerhalb von 24 Stunden.</p>
+<h1>Anfrage</h1>
+<p>Bitte füllen Sie das folgende Formular aus, um Informationen zu einer Dienstleistung anzufordern. Ich antworte innerhalb von 24 Stunden.</p>
 
 <form action="https://formspree.io/f/xpqkjevo" method="POST">
 
-  <label for="service">Dienst</label>
+  <label for="service">Dienstleistung</label>
   <input type="text" id="service" name="service" value="{{ page.service | default: site.service }}" readonly>
 
   <label for="name">Ihr Name</label>
