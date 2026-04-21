@@ -1,0 +1,182 @@
+---
+layout: default
+title: Прайс-лист
+---
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    color: #003366;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    color: #003366;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+
+  .servizio {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .servizio h3 {
+    margin-top: 0;
+    color: #003366;
+  }
+
+  .prezzo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0077cc;
+    margin: 10px 0;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  .btn:hover {
+    background: #005fa3;
+  }
+
+  .faq {
+    background: #f5f9ff;
+    border-left: 4px solid #0077cc;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  .faq p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+</style>
+
+<h1>Прайс-лист 2026</h1>
+<p>Прозрачные и понятные цены на основные налоговые и бухгалтерские услуги. Никаких скрытых расходов.</p>
+
+<!-- НАЛОГОВЫЕ ДЕКЛАРАЦИИ -->
+<h2><span class="icon">📄</span> Налоговые декларации</h2>
+
+<div class="servizio">
+  <h3>Декларация 730</h3>
+  <p class="prezzo">€120</p>
+  <a class="btn" href="/ru/zapros.html?usluga=730">Запросить информацию</a>
+</div>
+
+<div class="servizio">
+  <h3>Декларация о доходах физических лиц (без П.IVA)</h3>
+  <p class="prezzo">€130</p>
+  <a class="btn" href="/ru/zapros.html?usluga=Redditi%20PF">Запросить информацию</a>
+</div>
+
+<div class="servizio">
+  <h3>Декларация по НДС</h3>
+  <p class="prezzo">от €191</p>
+  <a class="btn" href="/ru/zapros.html?usluga=IVA">Запросить информацию</a>
+</div>
+
+<h3>FAQ — Налоговые декларации</h3>
+<div class="faq">
+  <p><strong>Сколько времени занимает подготовка?</strong><br>
+  Обычно 24–48 часов после получения всех документов.</p>
+
+  <p><strong>Можно ли отправить документы онлайн?</strong><br>
+  Да, по email или через защищённую ссылку.</p>
+
+  <p><strong>Может ли цена увеличиться?</strong><br>
+  Только в особых случаях (сложные ситуации, несколько CU, иностранные доходы). Я всегда предупреждаю заранее.</p>
+</div>
+
+<!-- БУХГАЛТЕРИЯ -->
+<h2><span class="icon">📊</span> Бухгалтерское обслуживание</h2>
+
+<div class="servizio">
+  <h3>Упрощённая бухгалтерия</h3>
+  <p class="prezzo">от €1.190 / год</p>
+  <a class="btn" href="/ru/zapros.html?usluga=Semplificata">Запросить информацию</a>
+</div>
+
+<div class="servizio">
+  <h3>Полная бухгалтерия</h3>
+  <p class="prezzo">от €2.730 / год</p>
+  <a class="btn" href="/ru/zapros.html?usluga=Ordinaria">Запросить информацию</a>
+</div>
+
+<h3>FAQ — Бухгалтерия</h3>
+<div class="faq">
+  <p><strong>Как происходит подключение?</strong><br>
+  После выбора услуги я готовлю мандат и активирую обслуживание в течение 24 часов.</p>
+
+  <p><strong>Можно ли перейти с упрощённой на полную бухгалтерию?</strong><br>
+  Да, я помогу выбрать наиболее выгодный вариант.</p>
+
+  <p><strong>Включена ли поддержка в течение года?</strong><br>
+  Да, консультации по email и телефону без доплат.</p>
+</div>
+
+<!-- НАСЛЕДСТВО -->
+<h2><span class="icon">🏛️</span> Наследственные дела</h2>
+
+<div class="servizio">
+  <h3>Декларация о наследстве</h3>
+  <p class="prezzo">от €700</p>
+  <a class="btn" href="/ru/zapros.html?usluga=Successione">Запросить информацию</a>
+</div>
+
+<h3>FAQ — Наследство</h3>
+<div class="faq">
+  <p><strong>Какие документы нужны?</strong><br>
+  Кадастровые выписки, свидетельство о смерти, семейное состояние, нотариальные акты (если есть).</p>
+
+  <p><strong>Сколько времени занимает подготовка?</strong><br>
+  Обычно 5–7 рабочих дней.</p>
+
+  <p><strong>Может ли цена измениться?</strong><br>
+  Да, в зависимости от количества объектов и сложности ситуации.</p>
+</div>
+
+<!-- IMU -->
+<h2><span class="icon">🏠</span> IMU</h2>
+
+<div class="servizio">
+  <h3>Расчёт IMU и подготовка F24</h3>
+  <p class="prezzo">€60 за объект</p>
+  <a class="btn" href="/ru/zapros.html?usluga=IMU">Запросить информацию</a>
+</div>
+
+<h3>FAQ — IMU</h3>
+<div class="faq">
+  <p><strong>Какие данные нужны?</strong><br>
+  Кадастровая стоимость, категория, доля собственности и количество месяцев владения.</p>
+
+  <p><strong>Когда я получу расчёт?</strong><br>
+  Обычно в течение 24 часов.</p>
+
+  <p><strong>Может ли цена измениться?</strong><br>
+  Только при нескольких объектах или особых ситуациях (например, comodato, несколько pertinenze).</p>
+</div>
