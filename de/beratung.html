@@ -1,1 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://spelmantax.com/de/beratung.html" />
+  <link rel="alternate" hreflang="it" href="https://spelmantax.com/consulenza.html" />
+  <link rel="alternate" hreflang="en" href="https://spelmantax.com/en/consultation.html" />
+  <link rel="alternate" hreflang="de" href="https://spelmantax.com/de/beratung.html" />
+  <link rel="alternate" hreflang="ru" href="https://spelmantax.com/ru/konsultaciya.html" />
+  <link rel="alternate" hreflang="x-default" href="https://spelmantax.com/de/beratung.html" />
 
+  <title>Kostenloses Erstgespräch · Galja Spelman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --primary: #0b4f8a;
+      --primary-light: #0f7ac0;
+      --accent: #25d366;
+      --text: #222;
+      --muted: #555;
+      --bg: #f7f7f9;
+      --card-bg: #ffffff;
+      --border: #e3e5ea;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .top-bar {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.88rem;
+      padding: 0.55rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+    }
+    .top-bar a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: opacity 0.2s;
+    }
+    .top-bar a:hover { opacity: 0.85; text-decoration: underline; }
+    .top-bar svg { width: 16px; height: 16px; fill: currentColor; }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
+    header p { margin: 0.2rem 0; opacity: 0.9; }
+
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    nav a {
+      margin: 0 0.7rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    nav a.active {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    main { max-width: 800px; margin: 0 auto; padding: 1.5rem; }
+    .muted { color: var(--muted); }
+
+    h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
+    h3 { margin-top: 0; margin-bottom: 0.4rem; }
+
+    a { color: var(--primary); }
+    a:hover { text-decoration: underline; }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      border: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff !important;
+      padding: 0.75rem 1.6rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+    .btn-accent {
+      background: var(--accent);
+      color: #fff !important;
+    }
+    .btn-accent:hover { background: #1ebe57; }
+    .btn-outline {
+      background: transparent;
+      color: var(--primary) !important;
+      border: 2px solid var(--primary);
+    }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: #fff !important;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
+    }
+
+    .template-box {
+      width: 100%;
+      min-height: 440px;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      background: #fafbfc;
+      resize: vertical;
+      color: var(--text);
+    }
+
+    .wa-sticky {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      z-index: 999;
+      background: var(--accent);
+      color: #fff;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+    .wa-sticky:hover { transform: scale(1.08); }
+    .wa-sticky svg { width: 28px; height: 28px; fill: #fff; }
+
+    footer {
+      text-align: center;
+      padding: 1.8rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+    footer a { color: var(--primary); }
+
+    .copy-feedback {
+      color: var(--accent);
+      font-weight: 600;
+      margin-left: 0.8rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .copy-feedback.show { opacity: 1; }
+
+    @media (max-width: 720px) {
+      .top-bar { gap: 0.8rem; font-size: 0.82rem; }
+      .btn-row { justify-content: center; }
+    }
+  </style>
+<base target="_blank">
+</head>
+<body>
+
+  <div class="top-bar">
+    <a href="mailto:info@spelmantax.com" aria-label="E-Mail">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      info@spelmantax.com
+    </a>
+    <a href="tel:+393273480543" aria-label="Telefon">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      +39 327 348 0543
+    </a>
+    <a href="https://wa.me/393273480543" target="_blank" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <header>
+    <h1>Kostenloses Erstgespräch</h1>
+    <p>Beantragen Sie Ihr kostenloses, unverbindliches Erstgespräch</p>
+  </header>
+
+  <nav style="margin-top:0;">
+    <a href="../consulenza.html">IT</a>
+    <a href="beratung.html" class="active">DE</a>
+    <a href="../en/consultation.html">EN</a>
+    <a href="../ru/konsultaciya.html">RU</a>
+  </nav>
+
+  <nav>
+    <a href="/de/">Startseite</a>
+    <a href="/de/gestione-contabilita.html">Buchhaltung</a>
+    <a href="/de/consulenza-fiscale.html">Steuerberatung</a>
+    <a href="/de/fiscalita-internazionale.html">Internationales Steuerrecht</a>
+    <a href="/de/preisliste.html">Preise</a>
+    <a href="beratung.html" class="active">Kontakt</a>
+  </nav>
+
+  <main>
+
+    <div class="card">
+      <h2 style="margin-top:0;">So beantragen Sie Ihr Erstgespräch</h2>
+      <p class="muted">
+        Kopieren Sie die Vorlage unten, füllen Sie Ihre Daten aus und senden Sie sie per E-Mail oder WhatsApp.
+        Ich antworte in der Regel innerhalb eines Werktages.
+      </p>
+
+      <div class="btn-row">
+        <button class="btn btn-outline" onclick="copyTemplate()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:6px;">
+            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+          </svg>
+          Vorlage kopieren
+        </button>
+        <a href="mailto:info@spelmantax.com?subject=Anfrage%20f%C3%BCr%20ein%20kostenloses%20Erstgespr%C3%A4ch" class="btn">Per E-Mail senden</a>
+        <a href="https://wa.me/393273480543?text=Hallo%20Galja%2C%20ich%20m%C3%B6chte%20ein%20kostenloses%20Erstgespr%C3%A4ch%20bez%C3%BCglich%20meiner%20steuerlichen%20Situation%20in%20Italien%20vereinbaren." class="btn btn-accent" target="_blank">Per WhatsApp senden</a>
+        <span class="copy-feedback" id="copyFeedback">Kopiert!</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-bottom:0.8rem;">Nachrichtenvorlage</h3>
+      <textarea class="template-box" id="templateBox" readonly>Betreff: Anfrage für ein kostenloses Erstgespräch – [Ihr Name]
+
+Sehr geehrte Frau Spelman,
+
+ich habe Ihre Website besucht und möchte ein kostenloses Erstgespräch bezüglich meiner steuerlichen Situation in Italien vereinbaren.
+
+Ich benötige Unterstützung bei:
+[ ] Eröffnung einer Partita IVA
+[ ] Pauschalregime (regime forfettario)
+[ ] Steuererklärungen und Compliance
+[ ] Internationales / grenzüberschreitendes Steuerrecht
+[ ] Sonstiges: ________________
+
+Kurze Beschreibung meiner Situation:
+- Staatsangehörigkeit / Wohnsitz: 
+- Art der Tätigkeit: 
+- Geschätztes Jahreseinkommen: 
+- Spezifische Fragen: 
+
+Bitte teilen Sie mir Ihre Verfügbarkeit für ein Telefonat oder Online-Meeting mit. Ich kann auf Deutsch / Italienisch / Englisch / Russisch kommunizieren.
+
+Vielen Dank für Ihre Zeit. Ich freue mich auf Ihre Rückmeldung.
+
+Mit freundlichen Grüßen,
+[Ihr vollständiger Name]
+[Telefonnummer]
+[E-Mail-Adresse]</textarea>
+    </div>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <div class="card">
+        <p class="muted">
+          <strong>Studio Galja Spelman</strong><br>
+          Viale Druso 2 · 39100 Bozen (BZ), Italien<br>
+          Beratung auf Deutsch, Italienisch, Englisch und Russisch.
+        </p>
+        <p class="muted" style="margin-top:0.6rem;">
+          <strong>E-Mail:</strong>
+          <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> ·
+          <a href="mailto:tax.spelman@gmail.com">tax.spelman@gmail.com</a><br>
+          <strong>WhatsApp:</strong> <a href="https://wa.me/393273480543">+39 327 348 0543</a><br>
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/galja-spelman-31472418/" target="_blank">Galja Spelman</a><br>
+          <strong>PEC:</strong> <a href="mailto:galja.spelman@pec.it">galja.spelman@pec.it</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <a href="https://wa.me/393273480543" class="wa-sticky" target="_blank" aria-label="WhatsApp Chat">
+    <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+  </a>
+
+  <footer>
+    © <span id="year-de"></span> Studio Galja Spelman ·
+    MwSt.-Nr. IT03258490212 ·
+    Eingetragen im ODCEC Bozen · Nr. 914/A ·
+    <a href="/de/privacy-policy.html">Datenschutzerklärung</a> ·
+    <a href="/de/cookie-policy.html">Cookie-Richtlinie</a>
+  </footer>
+
+  <script>
+    document.getElementById('year-de').textContent = new Date().getFullYear();
+    function copyTemplate() {
+      const box = document.getElementById('templateBox');
+      box.select();
+      box.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(box.value).then(() => {
+        const fb = document.getElementById('copyFeedback');
+        fb.classList.add('show');
+        setTimeout(() => fb.classList.remove('show'), 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
