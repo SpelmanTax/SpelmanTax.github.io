@@ -2,56 +2,94 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
- <link rel="canonical" href="https://spelmantax.com/de/" />
-<link rel="alternate" hreflang="it" href="https://spelmantax.com/" />
-<link rel="alternate" hreflang="en" href="https://spelmantax.com/en/" />
-<link rel="alternate" hreflang="de" href="https://spelmantax.com/de/" />
-<link rel="alternate" hreflang="ru" href="https://spelmantax.com/ru/" />
-<link rel="alternate" hreflang="x-default" href="https://spelmantax.com/" />
+  <link rel="canonical" href="https://spelmantax.com/de/" />
+  <link rel="alternate" hreflang="it" href="https://spelmantax.com/" />
+  <link rel="alternate" hreflang="en" href="https://spelmantax.com/en/" />
+  <link rel="alternate" hreflang="de" href="https://spelmantax.com/de/" />
+  <link rel="alternate" hreflang="ru" href="https://spelmantax.com/ru/" />
+  <link rel="alternate" hreflang="x-default" href="https://spelmantax.com/" />
 
   <meta name="msvalidate.01" content="2F98D7DE3A13FEE6695DC71A66498ACA" />
-  <title> Galja Spelman · Steuerberaterin</title>
+  <title>Galja Spelman · Steuerberaterin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    :root {
+      --primary: #0b4f8a;
+      --primary-light: #0f7ac0;
+      --accent: #25d366;
+      --text: #222;
+      --muted: #555;
+      --bg: #f7f7f9;
+      --card-bg: #ffffff;
+      --border: #e3e5ea;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f9;
-      color: #222;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
 
+    .top-bar {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.88rem;
+      padding: 0.55rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+    }
+    .top-bar a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: opacity 0.2s;
+    }
+    .top-bar a:hover { opacity: 0.85; text-decoration: underline; }
+    .top-bar svg { width: 16px; height: 16px; fill: currentColor; }
+
     header {
-      background: linear-gradient(135deg, #0b4f8a, #0f7ac0);
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
       color: white;
       padding: 2.5rem 1.5rem 2rem;
       text-align: center;
     }
-
     header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
     header p { margin: 0.2rem 0; opacity: 0.9; }
 
     nav {
-      text-align:center;
-      margin-top:1rem;
-      margin-bottom:1.5rem;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
     }
-
     nav a {
-      margin:0 0.7rem;
-      text-decoration:none;
-      color:#0b4f8a;
-      font-weight:600;
+      margin: 0 0.7rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    nav a.active {
+      color: #000;
+      text-decoration: underline;
     }
 
-    nav a.active {
-      color:#000;
-      text-decoration:underline;
+    .hero-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
-    .muted { color: #555; }
+    .muted { color: var(--muted); }
 
     .grid-2 {
       display: grid;
@@ -68,11 +106,11 @@
     }
 
     .card {
-      background: white;
+      background: var(--card-bg);
       border-radius: 14px;
       padding: 1.2rem 1.3rem;
       box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-      border: 1px solid #e3e5ea;
+      border: 1px solid var(--border);
       height: 100%;
     }
 
@@ -85,240 +123,360 @@
     h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
     h3 { margin-top: 0; margin-bottom: 0.4rem; }
 
-    a { color: #0b4f8a; }
+    a { color: var(--primary); }
     a:hover { text-decoration: underline; }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff !important;
+      padding: 0.75rem 1.6rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+    .btn-accent {
+      background: var(--accent);
+      color: #fff !important;
+    }
+    .btn-accent:hover { background: #1ebe57; }
+
+    .cta-row {
+      text-align: center;
+      margin: 1.2rem 0 0.5rem;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .contact-form label {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 1rem;
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--primary-light);
+      box-shadow: 0 0 0 3px rgba(15,122,192,0.12);
+    }
+    .contact-form textarea { resize: vertical; min-height: 120px; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 520px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    .article-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1.2rem;
+      background: #fff;
+      transition: box-shadow 0.2s, transform 0.15s;
+    }
+    .article-card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+    .article-card a { color: #0066cc; text-decoration: none; }
+    .article-card a:hover { text-decoration: underline; }
+
+    .wa-sticky {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      z-index: 999;
+      background: var(--accent);
+      color: #fff;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+    .wa-sticky:hover { transform: scale(1.08); }
+    .wa-sticky svg { width: 28px; height: 28px; fill: #fff; }
 
     footer {
       text-align: center;
-      padding: 1.5rem;
+      padding: 1.8rem 1rem;
       font-size: 0.9rem;
       color: #777;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
     }
+    footer a { color: var(--primary); }
 
     @media (max-width: 720px) {
       .grid-2 { grid-template-columns: 1fr; }
+      .top-bar { gap: 0.8rem; font-size: 0.82rem; }
     }
   </style>
+<base target="_blank">
 </head>
 <body>
- 
-<section class="hero-banner">
+
+  <div class="top-bar">
+    <a href="mailto:info@spelmantax.com" aria-label="E-Mail">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      info@spelmantax.com
+    </a>
+    <a href="tel:+393273480543" aria-label="Telefon">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      +39 327 348 0543
+    </a>
+    <a href="https://wa.me/393273480543" target="_blank" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <section class="hero-banner">
     <img src="/assets/img/galja-spelmantax-banner.png" alt="SpelmanTax Banner">
-</section>
+  </section>
 
-<nav style="margin-top:0;">
-</header>
-
-  <!-- SPRACHMENÜ -->
-  <nav>
-    <a href="../index.html"> IT</a>
-    <a href="index.html" class="active"> DE</a>
-    <a href="../en/index.html"> EN</a>
-    <a href="../ru/index.html"> RU</a>
+  <nav style="margin-top:0;">
+    <a href="../index.html">IT</a>
+    <a href="index.html" class="active">DE</a>
+    <a href="../en/index.html">EN</a>
+    <a href="../ru/index.html">RU</a>
   </nav>
-<!-- MAIN MENU -->
-<nav>
-  <a href="/de/">Startseite</a>
-  <a href="/de/gestione-contabilita.html">Buchhaltung</a>
-  <a href="/de/consulenza-fiscale.html">Steuerberatung</a>
-  <a href="/de/fiscalita-internazionale.html">Internationales Steuerrecht</a>
-  <a href="/de/preisliste.html">Preise</a>
-</nav>
+
+  <nav>
+    <a href="/de/" class="active">Startseite</a>
+    <a href="/de/gestione-contabilita.html">Buchhaltung</a>
+    <a href="/de/consulenza-fiscale.html">Steuerberatung</a>
+    <a href="/de/fiscalita-internazionale.html">Internationales Steuerrecht</a>
+    <a href="/de/preisliste.html">Preise</a>
+    <a href="/de/beratung.html">Kontakt</a>
+  </nav>
 
   <main>
 
-    <!-- HERO -->
     <div style="margin-top:1rem; text-align:center;">
-    <img src="../Foto remoto.png"
-         alt="Online-Beratung"
-         style="width:100%; max-width:480px; border-radius:14px;">
-</div>
+      <img src="../Foto remoto.png" alt="Online-Beratung" style="width:100%; max-width:480px; border-radius:14px;">
+    </div>
 
     <h2>Über mich</h2>
 
-<div class="grid-2" style="align-items:center;">
+    <div class="grid-2" style="align-items:center;">
+      <div>
+        <p class="muted">
+          Ich bin <strong>Galja Spelman</strong>, <strong>Dottore Commercialista</strong>,
+          <strong>Certified Public Accountant (CPA)</strong> und <strong>Steuerberaterin</strong>.
+          Ich biete steuerliche und buchhalterische Beratung für Selbständige, Freiberufler und Unternehmen in Italien an –
+          mit besonderem Fokus auf grenzüberschreitende Sachverhalte und internationale Besteuerung.
+        </p>
 
-  <div>
-    <p class="muted">
-      Ich bin <strong>Galja Spelman</strong>, <strong>Dottore Commercialista</strong>, 
-      <strong>Certified Public Accountant (CPA)</strong> und <strong>Steuerberaterin</strong>.
-      Ich biete steuerliche und buchhalterische Beratung für Selbständige, Freiberufler und Unternehmen in Italien an –
-      mit besonderem Fokus auf grenzüberschreitende Sachverhalte und internationale Besteuerung.
-    </p>
+        <p class="muted">
+          Ich unterstütze Freiberufler, Berater und Kleinunternehmer dabei, ihre Partita IVA, Steuern und Steuererklärungen
+          einfach, klar und lösungsorientiert zu verwalten.
+        </p>
 
-    <p class="muted">
-      Ich unterstütze Freiberufler, Berater und Kleinunternehmer dabei, ihre Partita IVA, Steuern und Steuererklärungen
-      einfach, klar und lösungsorientiert zu verwalten.
-    </p>
+        <div style="text-align:center;">
+          <p class="muted"><strong>Meine Leistungen:</strong></p>
+          <p style="margin:0;">
+            Eröffnung einer Partita IVA<br>
+            Pauschalbesteuerung (Regime forfettario)<br>
+            Steuerberatung für Freiberufler und Unternehmen<br>
+            Internationale Besteuerung und grenzüberschreitende Steuerfragen
+          </p>
+        </div>
 
-    <div style="text-align:center;">
-      <p class="muted"><strong>Meine Leistungen:</strong></p>
-      <p style="margin:0;">
-        Eröffnung einer Partita IVA<br>
-        Pauschalbesteuerung (Regime forfettario)<br>
-        Steuerberatung für Freiberufler und Unternehmen<br>
-        Internationale Besteuerung und grenzüberschreitende Steuerfragen
-      </p>
+        <p class="muted" style="margin-top:1rem;">
+          Ich biete auch Online‑Beratung an – auf Italienisch, Deutsch, Englisch und Russisch.
+          Wenn Sie steuerliche Unterstützung benötigen oder eine Partita IVA eröffnen möchten,
+          kontaktieren Sie mich gerne für eine Beratung.
+        </p>
+
+        <div class="cta-row">
+          <a href="/de/beratung.html" class="btn">Kostenloses Erstgespräch</a>
+          <a href="https://wa.me/393273480543" class="btn btn-accent" style="margin-left:0.6rem;" target="_blank">WhatsApp Chat</a>
+        </div>
+      </div>
+
+      <div class="card" style="text-align:center; padding-bottom:0; margin-top:2rem;">
+        <img src="/IMG-20260127-WA0053.jpg" alt="Galja Spelman" style="max-width:140px; width:100%; border-radius:12px; margin-bottom:0.2rem;">
+        <h3 style="margin:0.1rem 0 0.1rem 0;">Galja Spelman</h3>
+        <p class="muted" style="margin:0;">Dottore Commercialista · CPA · Steuerberaterin</p>
+      </div>
     </div>
 
-    <p class="muted" style="margin-top:1rem;">
-      Ich biete auch Online‑Beratung an – auf Italienisch, Deutsch, Englisch und Russisch.
-      Wenn Sie steuerliche Unterstützung benötigen oder eine Partita IVA eröffnen möchten,
-      kontaktieren Sie mich gerne für eine Beratung.
-    </p>
-  </div>
-
-  <div class="card" style="text-align:center; padding-bottom:0; margin-top:2rem;">
-    <img src="/IMG-20260127-WA0053.jpg" 
-         alt="Galja Spelman" 
-         style="max-width:140px; width:100%; border-radius:12px; margin-bottom:0.2rem;">
-    <h3 style="margin:0.1rem 0 0.1rem 0;">Galja Spelman</h3>
-    <p class="muted" style="margin:0;">Dottore Commercialista · CPA · Steuerberaterin</p>
-  </div>
-
-</div>
-
-
-    </section>
-
-    <!-- LEISTUNGEN -->
     <section id="leistungen">
       <h2>Leistungen</h2>
-
       <div class="cards">
-
-       <a href="gestione-contabilita.html" class="card-link">
-  <div class="card">
-    <img src="../Gestione della contabilità.png" alt="Buchhaltung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    <h3>Buchhaltung</h3>
-    <p class="muted">
-      Laufende Buchhaltung, Abstimmungen, Jahresabschlüsse, periodische Meldungen und laufende Betreuung.
-    </p>
-  </div>
-</a>
-
-<a href="consulenza-fiscale.html" class="card-link">
-  <div class="card">
-    <img src="../Consulenza fiscale.png" alt="Steuerberatung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    <h3>Steuerberatung</h3>
-    <p class="muted">
-      Steuerplanung, Steuererklärungen, Prüfungen, steuerliche Analysen und individuelle Lösungen.
-    </p>
-  </div>
-</a>
-
-<a href="fiscalita-internazionale.html" class="card-link">
-  <div class="card">
-    <img src="../Sede secondarie.png" alt="Internationale Besteuerung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    <h3>Internationale Besteuerung · EU Tax</h3>
-    <p class="muted">
-      Unterstützung bei Betriebsstätten, Zweigniederlassungen, grenzüberschreitenden Vorgängen und EU‑Regelungen.
-    </p>
-  </div>
-</a>
-
-
+        <a href="gestione-contabilita.html" class="card-link">
+          <div class="card">
+            <img src="../Gestione della contabilità.png" alt="Buchhaltung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Buchhaltung</h3>
+            <p class="muted">
+              Laufende Buchhaltung, Abstimmungen, Jahresabschlüsse, periodische Meldungen und laufende Betreuung.
+            </p>
+          </div>
+        </a>
+        <a href="consulenza-fiscale.html" class="card-link">
+          <div class="card">
+            <img src="../Consulenza fiscale.png" alt="Steuerberatung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Steuerberatung</h3>
+            <p class="muted">
+              Steuerplanung, Steuererklärungen, Prüfungen, steuerliche Analysen und individuelle Lösungen.
+            </p>
+          </div>
+        </a>
+        <a href="fiscalita-internazionale.html" class="card-link">
+          <div class="card">
+            <img src="../Sede secondarie.png" alt="Internationale Besteuerung" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Internationale Besteuerung · EU Tax</h3>
+            <p class="muted">
+              Unterstützung bei Betriebsstätten, Zweigniederlassungen, grenzüberschreitenden Vorgängen und EU‑Regelungen.
+            </p>
+          </div>
+        </a>
       </div>
     </section>
 
-<h2 style="margin-top:3rem;">Artikel</h2>
+    <h2 style="margin-top:3rem;">Artikel</h2>
+    <div style="display:flex; flex-direction:column; gap:1.5rem; margin-top:1.5rem;">
+      <div class="article-card">
+        <h3 style="margin:0 0 .3rem 0;">
+          <a href="/de/wie-man-eine-partita-iva-in-italien-eroeffnet.html">Wie man eine Partita IVA in Italien eröffnet</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Ein klarer Leitfaden für Freiberufler: Schritte, Steuerregime, INPS und praktische Hinweise.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 .3rem 0;">
+          <a href="/de/arbeiten-in-deutschland-steuerpflicht-italien.html">Arbeiten in Deutschland: Steuerpflicht in Italien</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Was Sie beachten müssen, wenn Sie in Deutschland arbeiten, aber in Italien steuerlich ansässig bleiben.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 .3rem 0;">
+          <a href="/de/steuerberater-aerzte-bozen.html">Steuerberater für Ärzte in Bozen</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Spezialisierte steuerliche Betreuung für Ärzte mit eigener Praxis in Bozen und Umgebung.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 .3rem 0;">
+          <a href="/de/imu.html">GIS – Gemeindeimmobiliensteuer (IMU)</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Berechnung von Akonto und Saldo, Kontrolle der Katasterdaten, F24‑Erstellung und jährliche Verwaltung.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 .3rem 0;">
+          <a href="/de/steuererklaerung-730-italien.html">Steuererklärung 730 — einfache Erklärung</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Wer sie einreicht, benötigte Dokumente, Fristen, Abzüge und Vorteile des Modells 730.
+        </p>
+      </div>
+    </div>
 
-<div style="display:flex; flex-direction:column; gap:1.5rem; margin-top:1.5rem;">
-
-  <!-- Artikel 1 -->
-  <div style="border:1px solid #ddd; border-radius:12px; padding:1.2rem;">
-    <h3 style="margin:0 0 .3rem 0;">
-      <a href="/de/wie-man-eine-partita-iva-in-italien-eroeffnet.html" style="color:#0066cc; text-decoration:none;">
-        Wie man eine Partita IVA in Italien eröffnet
-      </a>
-    </h3>
-    <p class="muted" style="margin:0;">
-      Ein klarer Leitfaden für Freiberufler: Schritte, Steuerregime, INPS und praktische Hinweise.
-    </p>
-  </div>
-
-  <!-- Artikel 2 -->
-  <div style="border:1px solid #ddd; border-radius:12px; padding:1.2rem;">
-    <h3 style="margin:0 0 .3rem 0;">
-      <a href="/de/arbeiten-in-deutschland-steuerpflicht-italien.html" style="color:#0066cc; text-decoration:none;">
-        Arbeiten in Deutschland: Steuerpflicht in Italien
-      </a>
-    </h3>
-    <p class="muted" style="margin:0;">
-      Was Sie beachten müssen, wenn Sie in Deutschland arbeiten, aber in Italien steuerlich ansässig bleiben.
-    </p>
-  </div>
-
-  <!-- Artikel 3: Ärzte in Bozen -->
-  <div style="border:1px solid #ddd; border-radius:12px; padding:1.2rem;">
-    <h3 style="margin:0 0 .3rem 0;">
-      <a href="/de/steuerberater-aerzte-bozen.html" style="color:#0066cc; text-decoration:none;">
-        Steuerberater für Ärzte in Bozen
-      </a>
-    </h3>
-    <p class="muted" style="margin:0;">
-      Spezialisierte steuerliche Betreuung für Ärzte mit eigener Praxis in Bozen und Umgebung.
-    </p>
-  </div>
-  <!-- Artikel: GIS / IMU -->
-<div style="border:1px solid #ddd; border-radius:12px; padding:1.2rem;">
-  <h3 style="margin:0 0 .3rem 0;">
-    <a href="/de/imu.html" style="color:#0066cc; text-decoration:none;">
-      GIS – Gemeindeimmobiliensteuer (IMU)
-    </a>
-  </h3>
-  <p class="muted" style="margin:0;">
-    Berechnung von Akonto und Saldo, Kontrolle der Katasterdaten, F24‑Erstellung und jährliche Verwaltung für Eigentümer in Italien und im Ausland.
-  </p>
-</div>
-  <!-- 730 -->
-<div class="card">
-  <h3><a href="/de/steuererklaerung-730-italien.html">Steuererklärung 730 — einfache Erklärung</a></h3>
-  <p>Wer sie einreicht, benötigte Dokumente, Fristen, Abzüge und Vorteile des Modells 730.</p>
-</div>
-
-
-
-    <!-- KONTAKT -->
     <section id="kontakt">
       <h2>Kontakt</h2>
-      <div class="card">
+
+      <div class="card" style="margin-bottom:1.5rem;">
         <p class="muted">
-          Studio Galja Spelman · Viale Druso 2 · 39100 Bozen (BZ), Italien<br>
+          <strong>Studio Galja Spelman</strong><br>
+          Viale Druso 2 · 39100 Bozen (BZ), Italien<br>
           Beratung auf Deutsch, Italienisch, Englisch und Russisch.
         </p>
-
-        <p class="muted">
-          E‑Mail: 
-          <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> · 
+        <p class="muted" style="margin-top:0.6rem;">
+          <strong>E-Mail:</strong>
+          <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> ·
           <a href="mailto:tax.spelman@gmail.com">tax.spelman@gmail.com</a><br>
-
-          WhatsApp: <a href="https://wa.me/393273480543">+39 327 348 0543</a><br>
-
-          LinkedIn: <a href="https://www.linkedin.com/in/galja-spelman-31472418/" target="_blank">Galja Spelman</a>
-
-          Website: <a href="https://spelmantax.com">spelmantax.com</a>
+          <strong>WhatsApp:</strong> <a href="https://wa.me/393273480543">+39 327 348 0543</a><br>
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/galja-spelman-31472418/" target="_blank">Galja Spelman</a><br>
+          <strong>Website:</strong> <a href="https://spelmantax.com">spelmantax.com</a>
         </p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-bottom:0.8rem;">Nachricht senden</h3>
+        <form class="contact-form" action="mailto:info@spelmantax.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            </div>
+            <div>
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" placeholder="ihr@email.de" required>
+            </div>
+          </div>
+          <div>
+            <label for="subject">Betreff</label>
+            <input type="text" id="subject" name="subject" placeholder="z.B. Eröffnung Partita IVA">
+          </div>
+          <div>
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" placeholder="Wie kann ich Ihnen helfen?" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn">Nachricht senden</button>
+          </div>
+          <p class="muted" style="font-size:0.85rem; margin:0;">
+            Oder senden Sie mir direkt eine E-Mail an <a href="mailto:info@spelmantax.com">info@spelmantax.com</a>
+          </p>
+        </form>
       </div>
     </section>
 
   </main>
 
-<footer>
-  © <span id="year-de"></span> Studio Galja Spelman · 
-  MwSt.Nummer IT03258490212 · 
-  Eingetragen im ODCEC Bozen · Nr. 914/A · 
-  PEC: galja.spelman@pec.it·
-  <a href="/de/privacy-policy.html">Datenschutzerklärung</a> · 
-  <a href="/de/cookie-policy.html">Cookie-Richtlinie</a>
-</footer>
+  <a href="https://wa.me/393273480543" class="wa-sticky" target="_blank" aria-label="WhatsApp Chat">
+    <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+  </a>
 
+  <footer>
+    © <span id="year-de"></span> Studio Galja Spelman ·
+    MwSt.-Nr. IT03258490212 ·
+    Eingetragen im ODCEC Bozen · Nr. 914/A ·
+    PEC: <a href="mailto:galja.spelman@pec.it">galja.spelman@pec.it</a> ·
+    <a href="/de/privacy-policy.html">Datenschutzerklärung</a> ·
+    <a href="/de/cookie-policy.html">Cookie-Richtlinie</a>
+  </footer>
 
-<script>
-  document.getElementById('year-de').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById('year-de').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
-
-
