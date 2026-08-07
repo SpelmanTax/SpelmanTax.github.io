@@ -3,54 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://spelmantax.com/ru/" />
-<link rel="alternate" hreflang="it" href="https://spelmantax.com/" />
-<link rel="alternate" hreflang="en" href="https://spelmantax.com/en/" />
-<link rel="alternate" hreflang="de" href="https://spelmantax.com/de/" />
-<link rel="alternate" hreflang="ru" href="https://spelmantax.com/ru/" />
-<link rel="alternate" hreflang="x-default" href="https://spelmantax.com/" />
+  <link rel="alternate" hreflang="it" href="https://spelmantax.com/" />
+  <link rel="alternate" hreflang="en" href="https://spelmantax.com/en/" />
+  <link rel="alternate" hreflang="de" href="https://spelmantax.com/de/" />
+  <link rel="alternate" hreflang="ru" href="https://spelmantax.com/ru/" />
+  <link rel="alternate" hreflang="x-default" href="https://spelmantax.com/" />
+
   <meta name="msvalidate.01" content="2F98D7DE3A13FEE6695DC71A66498ACA" />
-  <title> Galja Spelman · Налоговый консультант · CPA</title>
+  <title>Galja Spelman · Налоговый консультант · CPA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    :root {
+      --primary: #0b4f8a;
+      --primary-light: #0f7ac0;
+      --accent: #25d366;
+      --text: #222;
+      --muted: #555;
+      --bg: #f7f7f9;
+      --card-bg: #ffffff;
+      --border: #e3e5ea;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f9;
-      color: #222;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
 
+    .top-bar {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.88rem;
+      padding: 0.55rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+    }
+    .top-bar a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: opacity 0.2s;
+    }
+    .top-bar a:hover { opacity: 0.85; text-decoration: underline; }
+    .top-bar svg { width: 16px; height: 16px; fill: currentColor; }
+
     header {
-      background: linear-gradient(135deg, #0b4f8a, #0f7ac0);
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
       color: white;
       padding: 2.5rem 1.5rem 2rem;
       text-align: center;
     }
-
     header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
     header p { margin: 0.2rem 0; opacity: 0.9; }
 
     nav {
-      text-align:center;
-      margin-top:1rem;
-      margin-bottom:1.5rem;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
     }
-
     nav a {
-      margin:0 0.7rem;
-      text-decoration:none;
-      color:#0b4f8a;
-      font-weight:600;
+      margin: 0 0.7rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    nav a.active {
+      color: #000;
+      text-decoration: underline;
     }
 
-    nav a.active {
-      color:#000;
-      text-decoration:underline;
+    .hero-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
-    .muted { color: #555; }
+    .muted { color: var(--muted); }
 
     .grid-2 {
       display: grid;
@@ -67,25 +106,13 @@
     }
 
     .card {
-      background: white;
+      background: var(--card-bg);
       border-radius: 14px;
       padding: 1.2rem 1.3rem;
       box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-      border: 1px solid #e3e5ea;
+      border: 1px solid var(--border);
       height: 100%;
-    } #facebook-group {
-    position: absolute;
-    top: 10rem;
-    right: 1.5rem;
-    width: 280px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    text-align: center;
-    background-color: #fff;
-}
-
+    }
 
     .card-link {
       text-decoration: none;
@@ -96,267 +123,410 @@
     h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
     h3 { margin-top: 0; margin-bottom: 0.4rem; }
 
-    a { color: #0b4f8a; }
+    a { color: var(--primary); }
     a:hover { text-decoration: underline; }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff !important;
+      padding: 0.75rem 1.6rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+    .btn-accent {
+      background: var(--accent);
+      color: #fff !important;
+    }
+    .btn-accent:hover { background: #1ebe57; }
+
+    .cta-row {
+      text-align: center;
+      margin: 1.2rem 0 0.5rem;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .contact-form label {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 1rem;
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--primary-light);
+      box-shadow: 0 0 0 3px rgba(15,122,192,0.12);
+    }
+    .contact-form textarea { resize: vertical; min-height: 120px; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 520px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    .article-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1.2rem;
+      background: #fff;
+      transition: box-shadow 0.2s, transform 0.15s;
+    }
+    .article-card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+    .article-card a { color: #0066cc; text-decoration: none; }
+    .article-card a:hover { text-decoration: underline; }
+
+    .wa-sticky {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      z-index: 999;
+      background: var(--accent);
+      color: #fff;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+    .wa-sticky:hover { transform: scale(1.08); }
+    .wa-sticky svg { width: 28px; height: 28px; fill: #fff; }
 
     footer {
       text-align: center;
-      padding: 1.5rem;
+      padding: 1.8rem 1rem;
       font-size: 0.9rem;
       color: #777;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+    footer a { color: var(--primary); }
+
+    /* Facebook block specific */
+    #facebook-group {
+      margin: 0;
+    }
+    #facebook-group h2 {
+      color: #8666cc;
+      font-size: 1.05rem;
+      margin-bottom: 0.6em;
+      line-height: 1.3;
+      margin-top: 0;
     }
 
     @media (max-width: 720px) {
       .grid-2 { grid-template-columns: 1fr; }
+      .top-bar { gap: 0.8rem; font-size: 0.82rem; }
     }
   </style>
+<base target="_blank">
 </head>
 <body>
-<section class="hero-banner">
+
+  <div class="top-bar">
+    <a href="mailto:info@spelmantax.com" aria-label="Email">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      info@spelmantax.com
+    </a>
+    <a href="tel:+393273480543" aria-label="Телефон">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      +39 327 348 0543
+    </a>
+    <a href="https://wa.me/393273480543" target="_blank" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <section class="hero-banner">
     <img src="/assets/img/galja-spelmantax-banner.png" alt="SpelmanTax Banner">
-</section>
+  </section>
 
-<nav style="margin-top:0;">
-
- 
-  <!-- ЯЗЫКОВОЕ МЕНЮ -->
-  <nav>
-    <a href="../index.html"> IT</a>
-    <a href="../de/index.html"> DE</a>
-    <a href="../en/index.html"> EN</a>
-    <a href="index.html" class="active"> RU</a>
+  <nav style="margin-top:0;">
+    <a href="../index.html">IT</a>
+    <a href="../de/index.html">DE</a>
+    <a href="../en/index.html">EN</a>
+    <a href="index.html" class="active">RU</a>
   </nav>
-<!-- MAIN MENU -->
-<nav>
-  <a href="/ru/">Главная</a>
-  <a href="/ru/gestione-contabilita.html">Бухгалтерский учет</a>
-  <a href="/ru/consulenza-fiscale.html">Налоговая консультация</a>
-  <a href="/ru/fiscalita-internazionale.html">Международное налогообложение</a>
-  <a href="/ru/prajs-list.html">Цены</a>
-</nav>
+
+  <nav>
+    <a href="/ru/" class="active">Главная</a>
+    <a href="/ru/gestione-contabilita.html">Бухгалтерский учет</a>
+    <a href="/ru/consulenza-fiscale.html">Налоговая консультация</a>
+    <a href="/ru/fiscalita-internazionale.html">Международное налогообложение</a>
+    <a href="/ru/prajs-list.html">Цены</a>
+    <a href="/ru/konsultaciya.html">Контакты</a>
+  </nav>
 
   <main>
-          
-  
-  <!-- HERO -->
-<div class="grid-2" style="align-items:flex-start; gap:2rem; margin-top:1rem;">
 
-    <!-- FOTO REMOTO -->
-    <div style="text-align:center;">
-        <img src="../Foto remoto.png"
-             alt="Онлайн‑консультация"
-             style="width:100%; max-width:480px; border-radius:14px;">
-    </div>
+    <div class="grid-2" style="align-items:flex-start; gap:2rem; margin-top:1rem;">
+      <div style="text-align:center;">
+        <img src="../Foto remoto.png" alt="Онлайн‑консультация" style="width:100%; max-width:480px; border-radius:14px;">
+      </div>
 
-    <!-- BLOCCO FACEBOOK -->
-    <section id="facebook-group" style="margin:0;">
-        <h2 style="color:#8666cc; font-size:1.05rem; margin-bottom:0.6em; line-height:1.3;">
-            Присоединяйтесь к нашему русскоязычному сообществу о налогах в Италии
-        </h2>
-
-        <div style="
-            margin-top: 1rem;
-            padding: 1.2rem;
-            background: #f7f5ff;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        ">
-            <p style="margin:0 0 0.8em; color:#444;">
-                В группе Facebook я публикую разъяснения, советы и ответы на частые вопросы.
-            </p>
-
-            <a href="https://www.facebook.com/groups/2698532653839703"
-               target="_blank"
-               rel="noopener noreferrer"
-               style="
-                   color: #8066cc;
-                   font-weight: 600;
-                   font-size: 1.1rem;
-                   text-decoration: none;
-               ">
-               Facebook группа
-            </a>
+      <section id="facebook-group">
+        <h2>Присоединяйтесь к нашему русскоязычному сообществу о налогах в Италии</h2>
+        <div style="margin-top:1rem; padding:1.2rem; background:#f7f5ff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <p style="margin:0 0 0.8em; color:#444;">
+            В группе Facebook я публикую разъяснения, советы и ответы на частые вопросы.
+          </p>
+          <a href="https://www.facebook.com/groups/2698532653839703" target="_blank" rel="noopener noreferrer" style="color:#8066cc; font-weight:600; font-size:1.1rem; text-decoration:none;">
+            Facebook группа
+          </a>
         </div>
-    </section>
-
-</div>
-
-
-   <h2>Обо мне</h2>
-
-<div class="grid-2" style="align-items:center;">
-
-  <div>
-    <p class="muted">
-      Я — <strong>Галя Спельман</strong>, <strong>Dottore Commercialista</strong>, 
-      <strong>Certified Public Accountant (CPA)</strong> и <strong>Steuerberaterin</strong>.
-      Я оказываю налоговое и бухгалтерское сопровождение для фрилансеров, консультантов и компаний в Италии,
-      с особым вниманием к трансграничным ситуациям и международному налогообложению.
-    </p>
-
-    <p class="muted">
-      Я помогаю фрилансерам, консультантам и владельцам малого бизнеса управлять их Partita IVA, налогами
-      и декларациями — просто, понятно и ориентируясь на решение.
-    </p>
-
-    <div style="text-align:center;">
-      <p class="muted"><strong>Мои услуги:</strong></p>
-      <p style="margin:0;">
-        Открытие Partita IVA<br>
-        Льготный режим налогообложения (Regime forfettario)<br>
-        Налоговое сопровождение фрилансеров и компаний<br>
-        Международное налогообложение и трансграничные налоговые вопросы
-      </p>
+      </section>
     </div>
 
-    <p class="muted" style="margin-top:1rem;">
-      Я также провожу консультации онлайн — на итальянском, немецком, английском и русском языках.
-      Если вам нужна налоговая поддержка или вы хотите открыть Partita IVA, свяжитесь со мной для консультации.
-    </p>
-  </div>
+    <h2>Обо мне</h2>
 
-  <div class="card" style="text-align:center; padding-bottom:0; margin-top:2rem;">
-    <img src="/IMG-20260127-WA0053.jpg" 
-         alt="Galja Spelman" 
-         style="max-width:140px; width:100%; border-radius:12px; margin-bottom:0.2rem;">
-    <h3 style="margin:0.1rem 0 0.1rem 0;">Galja Spelman</h3>
-    <p class="muted" style="margin:0;">Dottore Commercialista · CPA · Steuerberaterin</p>
-  </div>
+    <div class="grid-2" style="align-items:center;">
+      <div>
+        <p class="muted">
+          Я — <strong>Галя Спельман</strong>, <strong>Dottore Commercialista</strong>,
+          <strong>Certified Public Accountant (CPA)</strong> и <strong>Steuerberaterin</strong>.
+          Я оказываю налоговое и бухгалтерское сопровождение для фрилансеров, консультантов и компаний в Италии,
+          с особым вниманием к трансграничным ситуациям и международному налогообложению.
+        </p>
 
-</div>
-</section>
+        <p class="muted">
+          Я помогаю фрилансерам, консультантам и владельцам малого бизнеса управлять их Partita IVA, налогами
+          и декларациями — просто, понятно и ориентируясь на решение.
+        </p>
 
-    <!-- УСЛУГИ -->
+        <div style="text-align:center;">
+          <p class="muted"><strong>Мои услуги:</strong></p>
+          <p style="margin:0;">
+            Открытие Partita IVA<br>
+            Льготный режим налогообложения (Regime forfettario)<br>
+            Налоговое сопровождение фрилансеров и компаний<br>
+            Международное налогообложение и трансграничные налоговые вопросы
+          </p>
+        </div>
+
+        <p class="muted" style="margin-top:1rem;">
+          Я также провожу консультации онлайн — на итальянском, немецком, английском и русском языках.
+          Если вам нужна налоговая поддержка или вы хотите открыть Partita IVA, свяжитесь со мной для консультации.
+        </p>
+
+        <div class="cta-row">
+          <a href="/ru/konsultaciya.html" class="btn">Бесплатная консультация</a>
+          <a href="https://wa.me/393273480543" class="btn btn-accent" style="margin-left:0.6rem;" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card" style="text-align:center; padding-bottom:0; margin-top:2rem;">
+        <img src="/IMG-20260127-WA0053.jpg" alt="Galja Spelman" style="max-width:140px; width:100%; border-radius:12px; margin-bottom:0.2rem;">
+        <h3 style="margin:0.1rem 0 0.1rem 0;">Galja Spelman</h3>
+        <p class="muted" style="margin:0;">Dottore Commercialista · CPA · Steuerberaterin</p>
+      </div>
+    </div>
+
     <section id="services">
       <h2>Услуги</h2>
-
       <div class="cards">
-
         <a href="gestione-contabilita.html" class="card-link">
-  <div class="card">
-    <img src="../Gestione della contabilità.png" alt="Бухгалтерский учет" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    <h3>Бухгалтерский учет</h3>
-    <p class="muted">
-      Ведение бухгалтерии, сверки, годовая отчетность, периодические обязательства и постоянное сопровождение.
-    </p>
-  </div>
-</a>
-
-<a href="consulenza-fiscale.html" class="card-link">
-  <div class="card">
-    <img src="../Consulenza fiscale.png" alt="Налоговое консультирование" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    <h3>Налоговое консультирование</h3>
-    <p class="muted">
-      Налоговое планирование, декларации, проверки, анализ налоговых последствий и индивидуальные решения.
-    </p>
-  </div>
-</a>
-
-<a href="fiscalita-internazionale.html" class="card-link">
-  <div class="card">
-    <img src="../Sede secondarie.png" alt="Международное налогообложение" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    <h3>Международное налогообложение · EU Tax</h3>
-    <p class="muted">
-      Сопровождение по вопросам постоянных представительств, филиалов, трансграничных операций и норм ЕС.
-    </p>
-  </div>
-</a>
-
-
+          <div class="card">
+            <img src="../Gestione della contabilità.png" alt="Бухгалтерский учет" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Бухгалтерский учет</h3>
+            <p class="muted">
+              Ведение бухгалтерии, сверки, годовая отчетность, периодические обязательства и постоянное сопровождение.
+            </p>
+          </div>
+        </a>
+        <a href="consulenza-fiscale.html" class="card-link">
+          <div class="card">
+            <img src="../Consulenza fiscale.png" alt="Налоговое консультирование" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Налоговое консультирование</h3>
+            <p class="muted">
+              Налоговое планирование, декларации, проверки, анализ налоговых последствий и индивидуальные решения.
+            </p>
+          </div>
+        </a>
+        <a href="fiscalita-internazionale.html" class="card-link">
+          <div class="card">
+            <img src="../Sede secondarie.png" alt="Международное налогообложение" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+            <h3>Международное налогообложение · EU Tax</h3>
+            <p class="muted">
+              Сопровождение по вопросам постоянных представительств, филиалов, трансграничных операций и норм ЕС.
+            </p>
+          </div>
+        </a>
       </div>
     </section>
-<h1>Статьи</h1>
 
-<!-- Partita IVA -->
-<div class="card">
-  <h3><a href="/ru/kak-otkryt-partita-iva-v-italii.html">Как открыть Partita IVA в Италии</a></h3>
-  <p>Пошаговое руководство для фрилансеров: выбор режима, регистрация, INPS и ключевые ошибки.</p>
-</div>
+    <h1 style="margin-top:3rem; font-size:1.5rem;">Статьи</h1>
 
-<!-- Medici -->
-<div class="card">
-  <h3><a href="/ru/commercialista-medici.html">Налоговый консультант для врачей — специалисты по всей Италии</a></h3>
-  <p>Счета, STS, налоговые режимы, INPS, декларации и годовые обязательства для медицинских специалистов.</p>
-</div>
+    <div style="display:flex; flex-direction:column; gap:1.5rem; margin-top:1.5rem;">
+      <div class="article-card">
+        <h3 style="margin:0 0 0.3rem 0;">
+          <a href="/ru/kak-otkryt-partita-iva-v-italii.html">Как открыть Partita IVA в Италии</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Пошаговое руководство для фрилансеров: выбор режима, регистрация, INPS и ключевые ошибки.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 0.3rem 0;">
+          <a href="/ru/commercialista-medici.html">Налоговый консультант для врачей — специалисты по всей Италии</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Счета, STS, налоговые режимы, INPS, декларации и годовые обязательства для медицинских специалистов.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 0.3rem 0;">
+          <a href="/ru/commercialista-artigiani.html">Налоговый консультант для ремесленников — специалисты по всей Италии</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Счета, налоговые режимы, INPS Artigiani, F24 и административная поддержка.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 0.3rem 0;">
+          <a href="/ru/commercialista-geometri.html">Налоговый консультант для геометров — специалисты по всей Италии</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Счета, Cassa Geometri, налоговые режимы, F24 и техническая документация.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 0.3rem 0;">
+          <a href="/ru/imu.html">IMU — налог на недвижимость в Италии</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Расчёт аванса и баланса, кадастровые данные, F24 и ежегодные обязанности.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 0.3rem 0;">
+          <a href="/ru/perevod-deneg-za-granitsu.html">Легальный перевод денег за границу: методы, пороги и трассируемость</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Полное руководство: банковские переводы, наличные, money transfer, RW, CRS и FATCA.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 0.3rem 0;">
+          <a href="/ru/deklaratsiya-730-italiya.html">Декларация 730 — простое объяснение</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Кто подаёт, какие документы нужны, сроки, вычеты и преимущества модели 730.
+        </p>
+      </div>
+      <div class="article-card">
+        <h3 style="margin:0 0 0.3rem 0;">
+          <a href="/ru/rabota-v-italii-nalogi.html">Работа в Италии — налоговое руководство</a>
+        </h3>
+        <p class="muted" style="margin:0;">
+          Резидентство, категории доходов, INPS, обязательства и практические советы.
+        </p>
+      </div>
+    </div>
 
-<!-- Artigiani -->
-<div class="card">
-  <h3><a href="/ru/commercialista-artigiani.html">Налоговый консультант для ремесленников — специалисты по всей Италии</a></h3>
-  <p>Счета, налоговые режимы, INPS Artigiani, F24 и административная поддержка.</p>
-</div>
-
-<!-- Geometri -->
-<div class="card">
-  <h3><a href="/ru/commercialista-geometri.html">Налоговый консультант для геометров — специалисты по всей Италии</a></h3>
-  <p>Счета, Cassa Geometri, налоговые режимы, F24 и техническая документация.</p>
-</div>
-
-<!-- IMU -->
-<div class="card">
-  <h3><a href="/ru/imu.html">IMU — налог на недвижимость в Италии</a></h3>
-  <p>Расчёт аванса и баланса, кадастровые данные, F24 и ежегодные обязанности.</p>
-</div>
-
-<!-- Money abroad -->
-<div class="card">
-  <h3><a href="/ru/perevod-deneg-za-granitsu.html">Легальный перевод денег за границу: методы, пороги и трассируемость</a></h3>
-  <p>Полное руководство: банковские переводы, наличные, money transfer, RW, CRS и FATCA.</p>
-</div>
-
-<!-- 730 -->
-<div class="card">
-  <h3><a href="/ru/deklaratsiya-730-italiya.html">Декларация 730 — простое объяснение</a></h3>
-  <p>Кто подаёт, какие документы нужны, сроки, вычеты и преимущества модели 730.</p>
-</div>
-
-<!-- Работа в Италии -->
-<div class="card">
-  <h3><a href="/ru/rabota-v-italii-nalogi.html">Работа в Италии — налоговое руководство</a></h3>
-  <p>Резидентство, категории доходов, INPS, обязательства и практические советы.</p>
-</div>
-   
-           
-    <!-- КОНТАКТЫ -->
     <section id="contact">
       <h2>Контакты</h2>
-      <div class="card">
+
+      <div class="card" style="margin-bottom:1.5rem;">
         <p class="muted">
-          Studio Galja Spelman · Viale Druso 2 · 39100 Bolzano (BZ), Италия<br>
+          <strong>Studio Galja Spelman</strong><br>
+          Viale Druso 2 · 39100 Bolzano (BZ), Италия<br>
           Консультации на русском, итальянском, немецком и английском языках.
         </p>
-
-        <p class="muted">
-          E‑mail: 
-          <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> · 
+        <p class="muted" style="margin-top:0.6rem;">
+          <strong>Email:</strong>
+          <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> ·
           <a href="mailto:tax.spelman@gmail.com">tax.spelman@gmail.com</a><br>
-
-          WhatsApp: <a href="https://wa.me/393273480543">+39 327 348 0543</a><br>
-
-          LinkedIn: <a href="https://www.linkedin.com/in/galja-spelman-31472418/" target="_blank">Galja Spelman</a>
-
-          Website: <a href="https://spelmantax.com">spelmantax.com</a>
+          <strong>WhatsApp:</strong> <a href="https://wa.me/393273480543">+39 327 348 0543</a><br>
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/galja-spelman-31472418/" target="_blank">Galja Spelman</a><br>
+          <strong>Website:</strong> <a href="https://spelmantax.com">spelmantax.com</a>
         </p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-bottom:0.8rem;">Отправить сообщение</h3>
+        <form class="contact-form" action="mailto:info@spelmantax.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div>
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="vash@email.ru" required>
+            </div>
+          </div>
+          <div>
+            <label for="subject">Тема</label>
+            <input type="text" id="subject" name="subject" placeholder="например, Открытие Partita IVA">
+          </div>
+          <div>
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" placeholder="Чем я могу вам помочь?" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn">Отправить сообщение</button>
+          </div>
+          <p class="muted" style="font-size:0.85rem; margin:0;">
+            Или напишите мне напрямую на <a href="mailto:info@spelmantax.com">info@spelmantax.com</a>
+          </p>
+        </form>
       </div>
     </section>
 
   </main>
 
-
+  <a href="https://wa.me/393273480543" class="wa-sticky" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+  </a>
 
   <footer>
-  © <span id="year-ru"></span> Studio Galja Spelman · 
-  P.IVA IT03258490212 · 
-  Член ODCEC Bolzano · № 914/A · 
-  PEC: galja.spelman@pec.it·
-    <a href="/ru/privacy-policy.html">Политика конфиденциальности</a> · 
-  <a href="/ru/cookie-policy.html">Политика использования cookie</a>
-</footer>
+    © <span id="year-ru"></span> Studio Galja Spelman ·
+    P.IVA IT03258490212 ·
+    Член ODCEC Bolzano · № 914/A ·
+    PEC: <a href="mailto:galja.spelman@pec.it">galja.spelman@pec.it</a> ·
+    <a href="/ru/privacy-policy.html">Политика конфиденциальности</a> ·
+    <a href="/ru/cookie-policy.html">Политика использования cookie</a>
+  </footer>
 
+  <script>
+    document.getElementById('year-ru').textContent = new Date().getFullYear();
+  </script>
 
-<script>
-  document.getElementById('year-ru').textContent = new Date().getFullYear();
-</script>
- 
 </body>
 </html>
-
