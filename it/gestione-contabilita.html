@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://spelmantax.com/gestione-contabilita.html" />
+  <title>Gestione Contabilità — Prezzi trasparenti | Studio Galja Spelman</title>
+  <meta name="description" content="Gestione contabilità per professionisti forfettari, ditte individuali, SNC, SAS e SRL. Prezzi chiari da €50/mese. Consulenza fiscale inclusa." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Gestione Contabilità",
+    "provider": {
+      "@type": "AccountingService",
+      "name": "Studio Galja Spelman",
+      "url": "https://spelmantax.com"
+    },
+    "areaServed": "Italia",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Pacchetti contabilità",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Forfettario"}, "price": "600.00", "priceCurrency": "EUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ditta individuale ordinaria"}, "price": "1200.00", "priceCurrency": "EUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SNC / SAS"}, "price": "2400.00", "priceCurrency": "EUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SRL semplificata"}, "price": "2400.00", "priceCurrency": "EUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SRL ordinaria"}, "price": "3600.00", "priceCurrency": "EUR"}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #0b4f8a;
+      --primary-light: #0f7ac0;
+      --accent: #25d366;
+      --text: #222;
+      --muted: #555;
+      --bg: #f7f7f9;
+      --card-bg: #ffffff;
+      --border: #e3e5ea;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0; padding: 0; background: var(--bg); color: var(--text); line-height: 1.6;
+    }
+    .top-bar {
+      background: var(--primary); color: #fff; font-size: 0.88rem;
+      padding: 0.55rem 1.5rem; display: flex; justify-content: center; align-items: center;
+      gap: 1.8rem; flex-wrap: wrap;
+    }
+    .top-bar a { color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem; }
+    .top-bar a:hover { opacity: 0.85; text-decoration: underline; }
+    .top-bar svg { width: 16px; height: 16px; fill: currentColor; }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white; padding: 2.5rem 1.5rem 2rem; text-align: center;
+    }
+    header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
+    header p { margin: 0.2rem 0; opacity: 0.9; }
+    nav { text-align: center; margin-top: 1rem; margin-bottom: 1.5rem; }
+    nav a { margin: 0 0.7rem; text-decoration: none; color: var(--primary); font-weight: 600; }
+    nav a.active { color: #000; text-decoration: underline; }
+    main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+    .muted { color: var(--muted); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+    .card {
+      background: var(--card-bg); border-radius: 14px; padding: 1.2rem 1.3rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04); border: 1px solid var(--border); height: 100%;
+    }
+    .card.popular { border: 2px solid var(--primary); position: relative; }
+    .badge-popular {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--primary); color: #fff; font-size: 0.7rem; font-weight: 700;
+      padding: 0.3rem 0.9rem; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
+    h3 { margin-top: 0; margin-bottom: 0.4rem; }
+    a { color: var(--primary); }
+    a:hover { text-decoration: underline; }
+    .btn {
+      display: inline-block; background: var(--primary); color: #fff !important;
+      padding: 0.75rem 1.6rem; border-radius: 8px; text-decoration: none;
+      font-weight: 600; transition: background 0.2s, transform 0.15s;
+      border: none; cursor: pointer; font-size: 1rem;
+    }
+    .btn:hover { background: var(--primary-light); transform: translateY(-1px); text-decoration: none; }
+    .btn-accent { background: var(--accent); color: #fff !important; }
+    .btn-accent:hover { background: #1ebe57; }
+    .cta-row { text-align: center; margin: 1.2rem 0 0.5rem; }
+    .price-tag { font-size: 2.2rem; font-weight: 800; color: var(--primary); margin: 0.3rem 0; }
+    .price-tag small { font-size: 1rem; font-weight: 400; color: var(--muted); }
+    .price-note { font-size: 0.95rem; color: var(--muted); margin: 0.2rem 0; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+    .step { background: var(--card-bg); border-radius: 12px; padding: 1.2rem; text-align: center; border: 1px solid var(--border); }
+    .step-number { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: var(--primary); color: #fff; border-radius: 50%; font-weight: 700; margin-bottom: 0.6rem; }
+    .check-list { list-style: none; padding: 0; margin: 0.8rem 0; }
+    .check-list li { padding: 0.35rem 0 0.35rem 1.6rem; position: relative; }
+    .check-list li::before { content: "✓"; position: absolute; left: 0; color: #4caf50; font-weight: 700; }
+    .contact-form { display: grid; gap: 1rem; margin-top: 1rem; }
+    .contact-form label { font-weight: 600; font-size: 0.92rem; color: var(--muted); }
+    .contact-form input, .contact-form textarea, .contact-form select {
+      width: 100%; padding: 0.7rem 0.9rem; border: 1px solid var(--border);
+      border-radius: 10px; font-family: inherit; font-size: 1rem; background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+      outline: none; border-color: var(--primary-light); box-shadow: 0 0 0 3px rgba(15,122,192,0.12);
+    }
+    .contact-form textarea { resize: vertical; min-height: 120px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 520px) { .form-row { grid-template-columns: 1fr; } }
+    .info-box { background: #fff8e1; border-left: 4px solid #ffc107; padding: 1rem 1.2rem; border-radius: 0 10px 10px 0; margin: 1rem 0; }
+    .wa-sticky { position: fixed; bottom: 22px; right: 22px; z-index: 999; background: var(--accent); color: #fff; width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.25); transition: transform 0.2s; text-decoration: none; }
+    .wa-sticky:hover { transform: scale(1.08); }
+    .wa-sticky svg { width: 28px; height: 28px; fill: #fff; }
+    footer { text-align: center; padding: 1.8rem 1rem; font-size: 0.9rem; color: #777; background: #fff; border-top: 1px solid var(--border); margin-top: 2rem; }
+    footer a { color: var(--primary); }
+    @media (max-width: 720px) { .top-bar { gap: 0.8rem; font-size: 0.82rem; } .price-tag { font-size: 1.8rem; } }
+  </style>
+<base target="_blank">
+<base target="_blank">
+</head>
+<body>
+
+  <div class="top-bar">
+    <a href="mailto:info@spelmantax.com" aria-label="Email">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      info@spelmantax.com
+    </a>
+    <a href="tel:+393273480543" aria-label="Telefono">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      +39 327 348 0543
+    </a>
+    <a href="https://wa.me/393273480543" target="_blank" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+      WhatsApp
+    </a>
+    <a href="https://t.me/+393273480543" target="_blank" aria-label="Telegram">
+      <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.99c-.23.23-.42.42-.83.42z"/></svg>
+      Telegram
+    </a>
+  </div>
+
+  <header>
+    <h1>Gestione Contabilità</h1>
+    <p>Prezzi chiari per professionisti, ditte e società · Tutta Italia</p>
+    <p style="margin-top:0.8rem;">
+      <a href="/index.html" style="color:#fff; text-decoration:underline; opacity:0.85;">← Torna alla Home</a>
+    </p>
+  </header>
+
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/gestione-contabilita.html" class="active">Contabilità</a>
+    <a href="/consulenza-fiscale.html">Consulenza fiscale</a>
+    <a href="/fiscalita-internazionale.html">Fiscalità internazionale</a>
+    <a href="/listino-prezzi.html">Prezzi</a>
+    <a href="/it/consulenza.html">Contatti</a>
+  </nav>
+
+  <main>
+
+    <div class="card" style="text-align:center; padding:2rem 1.5rem; margin-bottom:1.5rem;">
+      <h2 style="margin:0.3rem 0; font-size:1.6rem;">Gestione Contabilità Completa</h2>
+      <p class="muted" style="max-width:600px; margin:0.5rem auto;">
+        Dalla tenuta dei registri alle dichiarazioni fiscali, passando per consulenza e adempimenti periodici.
+        <strong>Nessun abbonamento nascosto, prezzi chiari da subito.</strong>
+      </p>
+      <div class="cta-row" style="margin-top:1.2rem;">
+        <a href="#prezzi" class="btn">Vedi i prezzi</a>
+        <a href="https://wa.me/393273480543" class="btn btn-accent" style="margin-left:0.6rem;">Scrivi su WhatsApp</a>
+      </div>
+    </div>
+
+    <section id="prezzi">
+      <h2 style="text-align:center;">Scegli il tuo pacchetto</h2>
+      <div class="cards">
+
+        <div class="card popular">
+          <div class="badge-popular">Più richiesto</div>
+          <h3>Forfettario</h3>
+          <div class="price-tag">€600<small>/anno</small></div>
+          <p class="price-note">€50/mese · nessun vincolo</p>
+          <ul class="check-list">
+            <li>Tenuta registri IVA</li>
+            <li>Dichiarazione redditi (PF)</li>
+            <li>LIPE / Comunicazione liquidazioni</li>
+            <li>Gestione INPS Gestione Separata</li>
+            <li>Consulenza fiscale base</li>
+            <li>1 videochiamata/trimestre</li>
+          </ul>
+          <div class="cta-row">
+            <a href="#richiesta" class="btn" style="width:100%;">Richiedi</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Ditta Individuale Ordinaria</h3>
+          <div class="price-tag">€1.200<small>/anno</small></div>
+          <p class="price-note">€100/mese</p>
+          <ul class="check-list">
+            <li>Tenuta contabilità ordinaria</li>
+            <li>Dichiarazione redditi (PF)</li>
+            <li>LIPE / IVA annuale</li>
+            <li>Gestione INPS Artigiani/Commercianti</li>
+            <li>Bilancio semplificato</li>
+            <li>Consulenza fiscale</li>
+          </ul>
+          <div class="cta-row">
+            <a href="#richiesta" class="btn" style="width:100%;">Richiedi</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>SNC / SAS</h3>
+          <div class="price-tag">€2.400<small>/anno</small></div>
+          <p class="price-note">€200/mese</p>
+          <ul class="check-list">
+            <li>Tenuta contabilità societaria</li>
+            <li>Dichiarazione redditi società</li>
+            <li>Dichiarazione redditi soci</li>
+            <li>LIPE / IVA annuale</li>
+            <li>Bilancio ordinario/semplificato</li>
+            <li>Consulenza societaria e fiscale</li>
+          </ul>
+          <div class="cta-row">
+            <a href="#richiesta" class="btn" style="width:100%;">Richiedi</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>SRL Semplificata / Startup</h3>
+          <div class="price-tag">€2.400<small>/anno</small></div>
+          <p class="price-note">€200/mese</p>
+          <ul class="check-list">
+            <li>Tenuta contabilità SRL</li>
+            <li>Dichiarazione redditi (IRES + IRAP)</li>
+            <li>LIPE / IVA annuale</li>
+            <li>Bilancio semplificato</li>
+            <li>Gestione soci e assemblee</li>
+            <li>Consulenza startup e agevolazioni</li>
+          </ul>
+          <div class="cta-row">
+            <a href="#richiesta" class="btn" style="width:100%;">Richiedi</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>SRL Ordinaria</h3>
+          <div class="price-tag">€3.600<small>/anno</small></div>
+          <p class="price-note">€300/mese</p>
+          <ul class="check-list">
+            <li>Tenuta contabilità completa</li>
+            <li>Dichiarazione redditi (IRES + IRAP)</li>
+            <li>LIPE / IVA annuale</li>
+            <li>Bilancio ordinario</li>
+            <li>Gestione soci e ADE</li>
+            <li>Consulenza fiscale e societaria avanzata</li>
+          </ul>
+          <div class="cta-row">
+            <a href="#richiesta" class="btn" style="width:100%;">Richiedi</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="info-box" style="margin-top:1.5rem;">
+      <strong>ℹ️ Nota sui prezzi</strong><br>
+      I prezzi indicati sono riferiti a una gestione standard. Per attività con volume elevato di fatture, dipendenti, o situazioni particolari (operazioni transfrontaliere, cespiti, leasing) è necessario un <a href="/it/consulenza.html">preventivo dedicato</a>.<br>
+      Tutti i pacchetti prevedono <strong>pagamento trimestrale o semestrale</strong> con fattura. Nessun pagamento anticipato annuale richiesto.
+    </div>
+
+    <h2 style="text-align:center; margin-top:2.5rem;">Cosa include ogni pacchetto</h2>
+    <div class="cards" style="grid-template-columns: 1fr;">
+      <div class="card">
+        <h3>📊 Tenuta contabilità</h3>
+        <p class="muted">Registrazione fatture attive e passive, riconciliazioni bancarie, gestione prima nota, registri IVA e tutti gli adempimenti periodici obbligatori.</p>
+      </div>
+      <div class="card">
+        <h3>📋 Dichiarazioni fiscali</h3>
+        <p class="muted">Preparazione e invio della dichiarazione dei redditi (PF, società o entrambe), LIPE, IVA annuale, e tutti i modelli correlati.</p>
+      </div>
+      <div class="card">
+        <h3>🏛️ Gestione INPS e previdenza</h3>
+        <p class="muted">Calcolo contributi, gestione Gestione Separata / Artigiani / Commercianti, F24 previdenziali e assistenza per domande INPS.</p>
+      </div>
+      <div class="card">
+        <h3>💬 Consulenza inclusa</h3>
+        <p class="muted">Consulenza fiscale via email/WhatsApp e videochiamate periodiche per pianificare e ottimizzare la tua situazione fiscale.</p>
+      </div>
+    </div>
+
+    <h2 style="text-align:center; margin-top:2.5rem;">Come funziona</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3 style="margin:0.3rem 0; font-size:1rem;">Contatto</h3>
+        <p class="muted" style="font-size:0.9rem; margin:0;">Mi scrivi indicando il tipo di attività e il pacchetto che ti interessa.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3 style="margin:0.3rem 0; font-size:1rem;">Verifica</h3>
+        <p class="muted" style="font-size:0.9rem; margin:0;">Valutiamo insieme la tua situazione per confermare il pacchetto più adatto.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3 style="margin:0.3rem 0; font-size:1rem;">Attivazione</h3>
+        <p class="muted" style="font-size:0.9rem; margin:0;">Firma del mandato professionale e inizio della gestione contabile.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3 style="margin:0.3rem 0; font-size:1rem;">Gestione</h3>
+        <p class="muted" style="font-size:0.9rem; margin:0;">Ti occupi della tua attività, io mi occupo della contabilità. Fattura a fine trimestre.</p>
+      </div>
+    </div>
+
+    <section id="richiesta">
+      <h2 style="text-align:center; margin-top:2.5rem;">Richiedi un preventivo</h2>
+      <div class="card" style="max-width:640px; margin:0 auto;">
+        <p class="muted" style="text-align:center; margin-bottom:1rem;">
+          Compila il modulo. Ti rispondo entro <strong>24 ore lavorative</strong> con un preventivo personalizzato.
+        </p>
+        <form class="contact-form" action="mailto:info@spelmantax.com" method="post" enctype="text/plain">
+          <input type="hidden" name="subject" value="RICHIESTA: Gestione Contabilità">
+          <div class="form-row">
+            <div>
+              <label for="nome">Nome e Cognome *</label>
+              <input type="text" id="nome" name="Nome" placeholder="Mario Rossi" required>
+            </div>
+            <div>
+              <label for="tel">Telefono</label>
+              <input type="tel" id="tel" name="Telefono" placeholder="+39 3xx xxx xxxx">
+            </div>
+          </div>
+          <div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="Email" placeholder="mario.rossi@email.it" required>
+          </div>
+          <div>
+            <label for="forma">Forma giuridica / Tipo attività *</label>
+            <select id="forma" name="Forma_giuridica" required>
+              <option value="" disabled selected>Seleziona...</option>
+              <option value="forfettario">Libero professionista forfettario</option>
+              <option value="ditta_individuale">Ditta individuale ordinaria</option>
+              <option value="snc_sas">SNC / SAS</option>
+              <option value="srl_semplificata">SRL semplificata / Startup</option>
+              <option value="srl_ordinaria">SRL ordinaria</option>
+              <option value="altro">Altro / Non sono sicuro</option>
+            </select>
+          </div>
+          <div>
+            <label for="fatture">Fatture previste all'anno (circa)</label>
+            <select id="fatture" name="Fatture_annue">
+              <option value="" disabled selected>Seleziona...</option>
+              <option value="0-50">Fino a 50</option>
+              <option value="51-150">Da 51 a 150</option>
+              <option value="151-300">Da 151 a 300</option>
+              <option value="300+">Più di 300</option>
+            </select>
+          </div>
+          <div>
+            <label for="note">Descrivi la tua attività e le tue esigenze *</label>
+            <textarea id="note" name="Note" placeholder="Es. Consulente IT, negozio al dettaglio, società di servizi... Hai dipendenti? Operi all'estero?" required></textarea>
+          </div>
+          <div style="text-align:center;">
+            <button type="submit" class="btn" style="width:100%; max-width:320px;">Invia richiesta</button>
+          </div>
+          <p class="muted" style="font-size:0.85rem; text-align:center; margin:0.5rem 0 0;">
+            Oppure scrivimi direttamente a <a href="mailto:info@spelmantax.com">info@spelmantax.com</a>
+            o su <a href="https://wa.me/393273480543">WhatsApp</a>.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <h2 style="text-align:center; margin-top:2.5rem;">Domande frequenti</h2>
+    <div class="cards" style="grid-template-columns: 1fr;">
+      <div class="card">
+        <h3>Posso pagare mensilmente?</h3>
+        <p class="muted">Sì, il pagamento può avvenire <strong>trimestralmente o semestralmente</strong> con fattura. Non è richiesto il pagamento annuale anticipato.</p>
+      </div>
+      <div class="card">
+        <h3>Cosa non è incluso nel prezzo?</h3>
+        <p class="muted">Non sono inclusi: consulenza straordinaria fuori scope, ricorsi tributari, operazioni societarie straordinarie (fusioni, scissioni), gestione dipendenti (cedolini, CUD), e pratiche extra (es. apertura P.IVA, iscrizione CCIAA).</p>
+      </div>
+      <div class="card">
+        <h3>E se ho più società?</h3>
+        <p class="muted">Gestisco anche gruppi e partecipazioni. Ogni società aggiuntiva ha uno sconto del <strong>20%</strong> sul pacchetto base.</p>
+      </div>
+      <div class="card">
+        <h3>Lavori solo online?</h3>
+        <p class="muted">No, sono a <strong>Bolzano</strong> e posso ricevere su appuntamento. Per il resto d'Italia lavoro comodamente via email, WhatsApp e videochiamata.</p>
+      </div>
+    </div>
+
+    <div class="card" style="text-align:center; margin-top:2rem; padding:2rem 1.5rem;">
+      <h3 style="margin-bottom:0.5rem;">Pronto a delegare la contabilità?</h3>
+      <p class="muted" style="margin-bottom:1.2rem;">Da <strong>€50/mese</strong> per professionisti forfettari. Prezzi chiari, nessun abbonamento nascosto.</p>
+      <a href="#richiesta" class="btn" style="margin-right:0.5rem;">Richiedi preventivo</a>
+      <a href="https://wa.me/393273480543" class="btn btn-accent">Scrivi su WhatsApp</a>
+    </div>
+
+  </main>
+
+  <a href="https://wa.me/393273480543" class="wa-sticky" target="_blank" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+  </a>
+
+  <footer>
+    © <span id="year-cont"></span> Studio Galja Spelman ·
+    P.IVA IT03258490212 ·
+    Iscritta all'ODCEC di Bolzano · N. 914/A ·
+    PEC: <a href="mailto:galja.spelman@pec.it">galja.spelman@pec.it</a> ·
+    <a href="/it/privacy-policy.html">Informativa Privacy</a> ·
+    <a href="/it/cookie-policy.html">Cookie Policy</a>
+  </footer>
+
+  <script>
+    document.getElementById('year-cont').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
