@@ -1,526 +1,440 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="canonical" href="https://spelmantax.com/en/" />
-  <link rel="alternate" hreflang="it" href="https://spelmantax.com/" />
-  <link rel="alternate" hreflang="en" href="https://spelmantax.com/en/" />
-  <link rel="alternate" hreflang="de" href="https://spelmantax.com/de/" />
-  <link rel="alternate" hreflang="ru" href="https://spelmantax.com/ru/" />
-  <link rel="alternate" hreflang="x-default" href="https://spelmantax.com/" />
-
-  <meta name="msvalidate.01" content="2F98D7DE3A13FEE6695DC71A66498ACA" />
-  <title>Italian Accountant &amp; Tax Advisor Online – Bolzano | SpelmanTax</title>
-  <meta name="description" content="Galja Spelman, Italian chartered accountant (Dottore Commercialista) in Bolzano: bookkeeping, Italian tax returns, VAT and property taxes, fully online." />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Italian Accountant &amp; Tax Advisor Online – Bolzano | SpelmanTax" />
-  <meta property="og:description" content="Galja Spelman, Italian chartered accountant (Dottore Commercialista) in Bolzano: bookkeeping, Italian tax returns, VAT and property taxes, fully online." />
-  <meta property="og:url" content="https://spelmantax.com/en/" />
-  <meta property="og:image" content="https://spelmantax.com/assets/img/galja-spelmantax-banner.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    :root {
-      --primary: #0b4f8a;
-      --primary-light: #0f7ac0;
-      --accent: #25d366;
-      --text: #222;
-      --muted: #555;
-      --bg: #f7f7f9;
-      --card-bg: #ffffff;
-      --border: #e3e5ea;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Italian Accountant &amp; Tax Advisor Online – Bolzano | SpelmanTax</title>
+<meta name="description" content="Galja Spelman, Italian chartered accountant (Dottore Commercialista) in Bolzano: bookkeeping, Italian tax returns, VAT and property taxes, fully online.">
+<link rel="canonical" href="https://spelmantax.com/en/">
+<link rel="alternate" hreflang="it" href="https://spelmantax.com/">
+<link rel="alternate" hreflang="de" href="https://spelmantax.com/de/">
+<link rel="alternate" hreflang="en" href="https://spelmantax.com/en/">
+<link rel="alternate" hreflang="ru" href="https://spelmantax.com/ru/">
+<link rel="alternate" hreflang="x-default" href="https://spelmantax.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Italian Accountant &amp; Tax Advisor Online – Bolzano | SpelmanTax">
+<meta property="og:description" content="Galja Spelman, Italian chartered accountant (Dottore Commercialista) in Bolzano: bookkeeping, Italian tax returns, VAT and property taxes, fully online.">
+<meta property="og:url" content="https://spelmantax.com/en/">
+<meta property="og:image" content="https://spelmantax.com/assets/img/spelmantax-banner.jpg">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Galja Spelman",
+    "image": "https://spelmantax.com/assets/img/galja-spelman-commercialista.jpg",
+    "url": "https://spelmantax.com",
+    "logo": "https://spelmantax.com/assets/img/spelmantax-banner.jpg",
+    "description": "Dottore Commercialista a Bolzano. Servizi di contabilità esterna, IVA, F24, LIPE, dichiarazioni.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Viale Druso 2",
+      "addressLocality": "Bolzano",
+      "addressRegion": "BZ",
+      "postalCode": "39100",
+      "addressCountry": "IT"
+    },
+        "email": "info@spelmantax.com",
+    "areaServed": ["Bolzano", "Sudtirol", "Italia"],
+    "availableLanguage": ["Italiano", "Deutsch", "English", "Русский"],
+    "sameAs": [
+      "https://www.linkedin.com/in/galja-spelman-31472418/",
+      "https://spelmantax.com"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Galja Spelman",
+      "jobTitle": "Dottore Commercialista"
     }
-
-    * { box-sizing: border-box; }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    /* TOP BAR */
-    .top-bar {
-      background: var(--primary);
-      color: #fff;
-      font-size: 0.88rem;
-      padding: 0.55rem 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1.8rem;
-      flex-wrap: wrap;
-    }
-    .top-bar a {
-      color: #fff;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      transition: opacity 0.2s;
-    }
-    .top-bar a:hover { opacity: 0.85; text-decoration: underline; }
-    .top-bar svg { width: 16px; height: 16px; fill: currentColor; }
-
-    /* HEADER */
-    header {
-      background: linear-gradient(135deg, var(--primary), var(--primary-light));
-      color: white;
-      padding: 2.5rem 1.5rem 2rem;
-      text-align: center;
-    }
-    header h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
-    header p { margin: 0.2rem 0; opacity: 0.9; }
-
-    /* NAV */
-    nav {
-      text-align: center;
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    nav a {
-      margin: 0 0.7rem;
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: 600;
-    }
-    nav a.active {
-      color: #000;
-      text-decoration: underline;
-    }
-
-    /* HERO BANNER */
-    .hero-banner img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
-    .muted { color: var(--muted); }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
-      gap: 1.5rem;
-      align-items: start;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border-radius: 14px;
-      padding: 1.2rem 1.3rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-      border: 1px solid var(--border);
-      height: 100%;
-    }
-
-    .card-link {
-      text-decoration: none;
-      color: inherit;
-      display: block;
-    }
-
-    h2 { margin-top: 2.2rem; margin-bottom: 0.6rem; }
-    h3 { margin-top: 0; margin-bottom: 0.4rem; }
-
-    a { color: var(--primary); }
-    a:hover { text-decoration: underline; }
-
-    /* BUTTONS */
-    .btn {
-      display: inline-block;
-      background: var(--primary);
-      color: #fff !important;
-      padding: 0.75rem 1.6rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.2s, transform 0.15s;
-      border: none;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    .btn:hover {
-      background: var(--primary-light);
-      transform: translateY(-1px);
-      text-decoration: none;
-    }
-    .btn-accent {
-      background: var(--accent);
-      color: #fff !important;
-    }
-    .btn-accent:hover { background: #1ebe57; }
-
-    .cta-row {
-      text-align: center;
-      margin: 1.2rem 0 0.5rem;
-    }
-
-    /* CONTACT FORM */
-    .contact-form {
-      display: grid;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .contact-form label {
-      font-weight: 600;
-      font-size: 0.92rem;
-      color: var(--muted);
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.7rem 0.9rem;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      font-family: inherit;
-      font-size: 1rem;
-      background: #fff;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      outline: none;
-      border-color: var(--primary-light);
-      box-shadow: 0 0 0 3px rgba(15,122,192,0.12);
-    }
-    .contact-form textarea { resize: vertical; min-height: 120px; }
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-    @media (max-width: 520px) {
-      .form-row { grid-template-columns: 1fr; }
-    }
-
-    /* ARTICLES */
-    .article-card {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 1.2rem;
-      background: #fff;
-      transition: box-shadow 0.2s, transform 0.15s;
-    }
-    .article-card:hover {
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      transform: translateY(-2px);
-    }
-    .article-card a { color: #0066cc; text-decoration: none; }
-    .article-card a:hover { text-decoration: underline; }
-
-    /* STICKY WHATSAPP */
-    .wa-sticky {
-      position: fixed;
-      bottom: 22px;
-      right: 22px;
-      z-index: 999;
-      background: var(--accent);
-      color: #fff;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
-      transition: transform 0.2s;
-      text-decoration: none;
-    }
-    .wa-sticky:hover { transform: scale(1.08); }
-    .wa-sticky svg { width: 28px; height: 28px; fill: #fff; }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 1.8rem 1rem;
-      font-size: 0.9rem;
-      color: #777;
-      background: #fff;
-      border-top: 1px solid var(--border);
-      margin-top: 2rem;
-    }
-    footer a { color: var(--primary); }
-
-    @media (max-width: 720px) {
-      .grid-2 { grid-template-columns: 1fr; }
-      .top-bar { gap: 0.8rem; font-size: 0.82rem; }
-    }
-  </style>
-<base target="_blank">
+  }
+  </script>
+<style>
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/source-serif-4-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/source-serif-4-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/source-serif-4-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/source-serif-4-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/ibm-plex-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/ibm-plex-sans-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/ibm-plex-sans-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/ibm-plex-sans-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/ibm-plex-sans-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/ibm-plex-sans-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+body{margin:0;background:#FFFFFF}
+a{color:#0E3B3E}a:hover{color:#12625A}
+input,select,textarea{font:inherit}
+@media (max-width:820px){.nav-links{display:none !important}}
+</style>
 </head>
 <body>
+<div style="font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; background: #FFFFFF; font-size: 17px; line-height: 1.6">
 
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <a href="mailto:info@spelmantax.com" aria-label="Email">
-      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      info@spelmantax.com
-    </a>
-    <a href="tel:+393273480543" aria-label="Phone">
-      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-      +39 327 348 0543
-    </a>
-    <a href="https://wa.me/393273480543" target="_blank" aria-label="WhatsApp">
-      <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
-      WhatsApp
-    </a>
-  </div>
+<!-- BANNER -->
+<img src="/assets/img/spelmantax-banner.jpg" alt="SpelmanTax – Tax, Accounting, Cross-border Clients" style="display: block; width: 100%; height: clamp(110px, 12.5vw, 200px); object-fit: cover; object-position: center; background: #0E4A4C">
 
-  <!-- HERO BANNER -->
-  <section class="hero-banner">
-    <img src="/assets/img/galja-spelmantax-banner.png" alt="SpelmanTax Banner">
-  </section>
+<!-- OFFER OF THE MONTH -->
+<div style="background: #8A6A2E; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 16px; font-size: 15px; text-align: center">
+<span style="font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 13px">Offer of the month</span>
+<span>Bookkeeping −15% for new engagements signed by 31.12.2026</span>
+<a href="#bookkeeping" style="color: #FFFFFF; font-weight: 600">Learn more</a>
+</div>
+</div>
 
-  <!-- LANGUAGE MENU -->
-  <nav style="margin-top:0;">
-    <a href="../index.html">IT</a>
-    <a href="../de/index.html">DE</a>
-    <a href="index.html" class="active">EN</a>
-    <a href="../ru/index.html">RU</a>
-  </nav>
+<!-- HEADER -->
+<header style="border-bottom: 1px solid #DED9CC; background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="text-decoration: none; display: flex; align-items: baseline; gap: 10px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 26px; font-weight: 600; letter-spacing: -0.01em; color: #0E3B3E">SpelmanTax</span>
+<span style="font-size: 13px; color: #4B5552">Galja Spelman's practice</span>
+</a>
+<nav class="nav-links" aria-label="Main" style="display: flex; gap: 28px; font-size: 15px">
+<a href="#services" style="text-decoration: none">Services</a>
+<a href="#how-i-work" style="text-decoration: none">How I work</a>
+<a href="#prices" style="text-decoration: none">Prices</a>
+<a href="#about" style="text-decoration: none">About</a>
+<a href="#articles" style="text-decoration: none">Articles</a>
+<a href="/it/lavora-con-me.html" style="text-decoration: none">Careers</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 16px">
+<nav aria-label="Language" style="display: flex; gap: 4px; font-size: 13px; font-weight: 500">
+<a href="/" style="text-decoration: none; padding: 6px 8px">IT</a>
+<a href="/de/index.html" style="text-decoration: none; padding: 6px 8px">DE</a>
+<a href="/ru/index.html" style="text-decoration: none; padding: 6px 8px">RU</a>
+<a href="#" aria-current="page" style="text-decoration: none; padding: 6px 8px; border-radius: 4px; background: #0E3B3E; color: #FFFFFF">EN</a>
+</nav>
+<a href="#enquiry" style="text-decoration: none; background: #0E3B3E; color: #FFFFFF; padding: 11px 18px; border-radius: 6px; font-size: 15px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Send an enquiry</a>
+</div>
+</div>
+</header>
 
-  <!-- MAIN MENU -->
-  <nav>
-    <a href="/en/" class="active">Home</a>
-    <a href="/en/gestione-contabilita.html">Accounting</a>
-    <a href="/en/consulenza-fiscale.html">Tax Consulting</a>
-    <a href="/en/fiscalita-internazionale.html">International Tax</a>
-    <a href="/en/pricing.html">Pricing</a>
-    <a href="/en/consultation.html">Contact</a>
-  </nav>
+<!-- HERO -->
+<section id="top" style="background: #F6F4EE; border-bottom: 1px solid #DED9CC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 40px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0">
+<p style="margin: 32px 0 20px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A2E">Italian Chartered Accountant &amp; Tax Advisor (Dottore Commercialista)</p>
+<h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(38px, 5vw, 60px); line-height: 1.08; letter-spacing: -0.015em">Your accountant in Italy, wherever you live.</h1>
+<p style="margin: 28px 0 0; font-size: 20px; line-height: 1.55; color: #3A4644; max-width: 620px">Bookkeeping, tax returns, VAT, property and foreign income: I handle all your Italian obligations, entirely online.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#enquiry" style="text-decoration: none; background: #0E3B3E; color: #FFFFFF; padding: 15px 26px; border-radius: 6px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Describe your case in writing</a>
+<a href="#prices" style="text-decoration: none; border: 1px solid #0E3B3E; color: #0E3B3E; padding: 15px 26px; border-radius: 6px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">See indicative prices</a>
+</div>
+<ul style="margin: 40px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: 15px; color: #3A4644">
+<li style="display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E3B3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Registered with ODCEC Bolzano, no. 914/A</li>
+<li style="display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E3B3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Quotes always in writing</li>
+</ul>
+</div>
+<aside style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px">
+<div style="display: flex; align-items: center; gap: 14px; padding-bottom: 18px; margin-bottom: 18px; border-bottom: 1px solid #E9E5DA">
+<img src="/assets/img/galja-spelman-commercialista.jpg" alt="" style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; object-position: center 20%; flex: none">
+<div style="display: flex; flex-direction: column; line-height: 1.35"><span style="font-weight: 600">Galja Spelman</span><span style="font-size: 14px; color: #4B5552">Your single point of contact</span></div>
+</div>
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #4B5552; margin-bottom: 12px">Clients with ties to</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+<div style="display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 6px; border: 1px solid #E9E5DA; border-radius: 6px; font-size: 15px"><span style="width: 34px; height: 26px; border-radius: 4px; flex: none; background: #0E3B3E; color: #FFFFFF; font-size: 13px; font-weight: 600; display: flex; align-items: center; justify-content: center">IT</span><span>Italy</span></div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 6px; border: 1px solid #E9E5DA; border-radius: 6px; font-size: 15px"><span style="width: 34px; height: 26px; border-radius: 4px; flex: none; background: #E9E5DA; color: #0E3B3E; font-size: 13px; font-weight: 600; display: flex; align-items: center; justify-content: center">DE</span><span>Germany</span></div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 6px; border: 1px solid #E9E5DA; border-radius: 6px; font-size: 15px"><span style="width: 34px; height: 26px; border-radius: 4px; flex: none; background: #E9E5DA; color: #0E3B3E; font-size: 13px; font-weight: 600; display: flex; align-items: center; justify-content: center">AT</span><span>Austria</span></div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 6px; border: 1px solid #E9E5DA; border-radius: 6px; font-size: 15px"><span style="width: 34px; height: 26px; border-radius: 4px; flex: none; background: #E9E5DA; color: #0E3B3E; font-size: 13px; font-weight: 600; display: flex; align-items: center; justify-content: center">CH</span><span>Switzerland</span></div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 6px; border: 1px solid #E9E5DA; border-radius: 6px; font-size: 15px"><span style="width: 34px; height: 26px; border-radius: 4px; flex: none; background: #E9E5DA; color: #0E3B3E; font-size: 13px; font-weight: 600; display: flex; align-items: center; justify-content: center">NL</span><span>Netherlands</span></div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 6px; border: 1px solid #E9E5DA; border-radius: 6px; font-size: 15px"><span style="width: 34px; height: 26px; border-radius: 4px; flex: none; background: #E9E5DA; color: #0E3B3E; font-size: 13px; font-weight: 600; display: flex; align-items: center; justify-content: center">EE</span><span>Estonia</span></div>
+</div>
+<div style="margin-top: 12px; padding: 12px 14px; background: #F6F4EE; border-radius: 8px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-weight: 600">Former Soviet Union countries</span>
+<span style="font-size: 14px; color: #3A4644">Russia, Ukraine, Belarus, Kazakhstan, Armenia, Georgia, Moldova and others: income, accounts and property to be declared in Italy.</span>
+</div>
+<p style="margin: 12px 0 0; font-size: 13px; color: #4B5552">Also France, the United Kingdom, Denmark, the USA and other countries, assessed case by case.</p>
+</aside>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1440 120" preserveAspectRatio="none" style="display: block; width: 100%; height: 96px"><path d="M0 120 L0 86 L90 64 L170 78 L260 38 L320 58 L390 20 L450 52 L520 44 L600 70 L690 30 L740 48 L800 12 L860 46 L930 40 L1010 66 L1100 34 L1170 56 L1240 26 L1310 60 L1380 50 L1440 68 L1440 120 Z" fill="#ECE8DD"></path><path d="M0 120 L0 100 L120 82 L210 94 L300 70 L380 88 L470 66 L560 92 L650 74 L760 96 L850 72 L960 90 L1060 70 L1150 92 L1250 76 L1350 94 L1440 84 L1440 120 Z" fill="#E2DDCF"></path></svg>
+</section>
 
-  <main>
-    <h1 style="text-align:center; font-size:1.7rem; line-height:1.25; margin:1.5rem 0 0.5rem;">Your accountant in Italy: bookkeeping, VAT and Italian tax returns</h1>
+<!-- SERVICES -->
+<section id="services">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A2E">Services</p>
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15; max-width: 760px">Do any of these sound familiar?</h2>
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 24px">
+<article style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A6A2E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin-bottom: 18px"><path d="M7 7h13"></path><path d="m16 3 4 4-4 4"></path><path d="M17 17H4"></path><path d="m8 13-4 4 4 4"></path></svg>
+<h3 style="margin: 0 0 10px; font-size: 19px; font-weight: 600">You are moving to or from Italy</h3>
+<p style="margin: 0; color: #3A4644; font-size: 16px">Tax residence, the year of the move, AIRE registration, the impatriati regime and your first tax return.</p>
+</article>
+<article style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A6A2E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin-bottom: 18px"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18"></path><path d="M12 3a14 14 0 0 0 0 18"></path></svg>
+<h3 style="margin: 0 0 10px; font-size: 19px; font-weight: 600">You have income or accounts abroad</h3>
+<p style="margin: 0; color: #3A4644; font-size: 16px">RW schedule, IVAFE and IVIE, credit for taxes paid abroad, double tax treaties.</p>
+</article>
+<article style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A6A2E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin-bottom: 18px"><path d="M3 11 12 4l9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></svg>
+<h3 style="margin: 0 0 10px; font-size: 19px; font-weight: 600">You own property in Italy</h3>
+<p style="margin: 0; color: #3A4644; font-size: 16px">IMU and TARI anywhere in Italy, GIS in South Tyrol: yearly calculation, F24 payments and deadlines, even if you live abroad.</p>
+</article>
+<article style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A6A2E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin-bottom: 18px"><rect x="4" y="3" width="16" height="18" rx="1"></rect><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1"></path><path d="M10 21v-3h4v3"></path></svg>
+<h3 style="margin: 0 0 10px; font-size: 19px; font-weight: 600">Your foreign company sells in Italy</h3>
+<p style="margin: 0; color: #3A4644; font-size: 16px">Direct VAT identification (art. 35-ter), periodic returns and Intrastat lists.</p>
+</article>
+<article style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A6A2E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin-bottom: 18px"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M3 13h18"></path></svg>
+<h3 style="margin: 0 0 10px; font-size: 19px; font-weight: 600">You open or run a Partita IVA</h3>
+<p style="margin: 0; color: #3A4644; font-size: 16px">Registration, the flat-rate regime (forfettario), bookkeeping and returns for freelancers and small businesses.</p>
+</article>
+<article style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A6A2E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin-bottom: 18px"><ellipse cx="12" cy="6" rx="7" ry="3"></ellipse><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path></svg>
+<h3 style="margin: 0 0 10px; font-size: 19px; font-weight: 600">You hold crypto-assets</h3>
+<p style="margin: 0; color: #3A4644; font-size: 16px">Reporting and tax: RW schedule, capital gains and the wealth tax on crypto.</p>
+</article>
+<article id="bookkeeping" style="grid-column: 1 / -1; background: #F6F4EE; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px">
+<div style="flex: 1 1 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 14px 18px; background: #FFFFFF; border: 1px solid #8A6A2E; border-radius: 8px">
+<span style="background: #8A6A2E; color: #FFFFFF; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 4px">Offer of the month −15%</span>
+<span style="font-size: 15px; color: #0E3B3E">On all bookkeeping packages for new engagements signed by <strong>31.12.2026</strong>.</span>
+</div>
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8A6A2E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3Z"></path><path d="M4 17a3 3 0 0 1 3-3h12"></path><path d="M9 8h6"></path></svg>
+<div style="flex: 999 1 420px; min-width: 0">
+<h3 style="margin: 0 0 8px; font-size: 21px; font-weight: 600">Ongoing bookkeeping for freelancers and companies</h3>
+<p style="margin: 0; color: #3A4644; font-size: 16px">Bookkeeping and VAT registers, periodic VAT settlements and LIPE, F24, Intrastat lists, annual VAT and income tax returns. Under the flat-rate regime, the ordinary regime and for foreign companies registered for VAT in Italy.</p>
+</div>
+<div style="flex: 1 1 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; padding-top: 20px; border-top: 1px solid #DED9CC">
+<div style="background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 600">Freelancers and sole traders</span>
+<span style="font-size: 14px; color: #4B5552">Simplified or ordinary bookkeeping</span>
+<span style="margin-top: auto; font-size: 14px; color: #4B5552">from <span style="text-decoration: line-through">€ 75</span> <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 30px; color: #0E3B3E">€ 64</span> per month</span>
+<span style="font-size: 13px; color: #4B5552">Annual VAT return € 150</span>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 600">Companies: SNC, SAS, SRL</span>
+<span style="font-size: 14px; color: #4B5552">Ordinary bookkeeping and periodic filings</span>
+<span style="margin-top: auto; font-size: 14px; color: #4B5552">from <span style="text-decoration: line-through">€ 135</span> <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 30px; color: #0E3B3E">€ 115</span> per month</span>
+<span style="font-size: 13px; color: #4B5552">Annual financial statements € 300</span>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 600">Foreign companies in Italy</span>
+<span style="font-size: 14px; color: #4B5552">Direct VAT identification (art. 35-ter)</span>
+<span style="margin-top: auto; font-size: 14px; color: #4B5552">from <span style="text-decoration: line-through">€ 150</span> <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 30px; color: #0E3B3E">€ 128</span> per month</span>
+<span style="font-size: 13px; color: #4B5552">VAT registration € 790</span>
+</div>
+<div style="grid-column: 1 / -1; background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 8px; padding: 20px">
+<span style="display: block; font-weight: 600; margin-bottom: 4px">Individual filings</span>
+<span style="display: block; font-size: 14px; color: #4B5552; margin-bottom: 12px">For those who keep their own books and only need the filing.</span>
+<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); column-gap: 32px; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #E9E5DA"><dt>Intrastat list</dt><dd style="margin: 0; font-weight: 600">€ 70 per list</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #E9E5DA"><dt>LIPE</dt><dd style="margin: 0; font-weight: 600">€ 65 per quarter</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #E9E5DA"><dt>Periodic VAT settlement</dt><dd style="margin: 0; font-weight: 600">€ 60</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #E9E5DA"><dt>F24 payment form</dt><dd style="margin: 0; font-weight: 600">€ 15 per deadline</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #E9E5DA"><dt>Annual VAT return</dt><dd style="margin: 0; font-weight: 600">€ 150</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #E9E5DA"><dt>ISA form</dt><dd style="margin: 0; font-weight: 600">€ 100</dd></div>
+</dl>
+</div>
+<p style="grid-column: 1 / -1; margin: 0; font-size: 13px; color: #4B5552">Final prices: no pension contribution or VAT is added. The final quote depends on the number of entries and complexity.</p>
+</div>
+</article>
+<article style="grid-column: 1 / -1; background: #F6F4EE; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px">
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8A6A2E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6"></path><circle cx="9" cy="20" r="1.2"></circle><circle cx="17" cy="20" r="1.2"></circle></svg>
+<div style="flex: 999 1 420px; min-width: 0">
+<h3 style="margin: 0 0 8px; font-size: 21px; font-weight: 600">E-commerce and online sales</h3>
+<p style="margin: 0; color: #3A4644; font-size: 16px">For anyone selling through their own shop or marketplaces in Italy and the EU: registration, sales records and invoices, the OSS scheme for distance sales, Intrastat lists, settlements and returns.</p>
+</div>
+<div style="flex: 1 1 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; padding-top: 20px; border-top: 1px solid #DED9CC">
+<div style="background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 600">E-commerce, flat-rate regime</span>
+<span style="font-size: 14px; color: #4B5552">Annual management and income tax return</span>
+<span style="margin-top: auto; font-size: 14px; color: #4B5552">from <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 30px; color: #0E3B3E">€ 390</span> per year</span>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 600">E-commerce with EU sales (OSS)</span>
+<span style="font-size: 14px; color: #4B5552">Bookkeeping, VAT settlements and quarterly OSS returns</span>
+<span style="margin-top: auto; font-size: 14px; color: #4B5552">from <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 30px; color: #0E3B3E">€ 160</span> per month</span>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 600">E-commerce set-up</span>
+<span style="font-size: 14px; color: #4B5552">Partita IVA, ATECO code and required registrations</span>
+<span style="margin-top: auto; font-size: 14px; color: #4B5552">from <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 30px; color: #0E3B3E">€ 220</span> one-off</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
 
+<!-- HOW I WORK -->
+<section id="how-i-work" style="background: #0E3B3E; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #E2C27A">How I work</p>
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15; max-width: 760px">Everything online, everything in writing. Every step on record.</h2>
+<ol style="margin: 56px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 32px">
+<li style="border-top: 2px solid #FFFFFF; padding-top: 20px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #E2C27A">01</span>
+<h3 style="margin: 8px 0 8px; font-size: 19px; font-weight: 600">Describe your case</h3>
+<p style="margin: 0; color: #D5E4DF; font-size: 16px">Fill in the enquiry form: countries involved, type of matter and deadlines.</p>
+</li>
+<li style="border-top: 2px solid #FFFFFF; padding-top: 20px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #E2C27A">02</span>
+<h3 style="margin: 8px 0 8px; font-size: 19px; font-weight: 600">Receive a quote</h3>
+<p style="margin: 0; color: #D5E4DF; font-size: 16px">I reply by email with a first assessment and a written quote.</p>
+</li>
+<li style="border-top: 2px solid #FFFFFF; padding-top: 20px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #E2C27A">03</span>
+<h3 style="margin: 8px 0 8px; font-size: 19px; font-weight: 600">Sign the engagement</h3>
+<p style="margin: 0; color: #D5E4DF; font-size: 16px">Signed engagement letter, documents shared through a secure channel.</p>
+</li>
+<li style="border-top: 2px solid #FFFFFF; padding-top: 20px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #E2C27A">04</span>
+<h3 style="margin: 8px 0 8px; font-size: 19px; font-weight: 600">Done</h3>
+<p style="margin: 0; color: #D5E4DF; font-size: 16px">Electronic filing and a copy of everything for you. Communication by email and PEC.</p>
+</li>
+</ol>
+</div>
+</section>
 
-    <!-- HERO / ABOUT -->
-    <div style="margin-top:1rem; text-align:center;">
-      <img src="../Foto remoto.png" alt="Online Consulting" style="width:100%; max-width:480px; border-radius:14px;">
-    </div>
+<!-- PRICES -->
+<section id="prices">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A2E">Prices</p>
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15; max-width: 760px">Indicative prices, final quote always in writing.</h2>
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 24px">
+<div style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 600">Tax return with foreign income</h3>
+<p style="margin: 0; font-size: 15px; color: #4B5552">Redditi PF, RW schedule, foreign tax credit</p>
+<p style="margin: auto 0 0; font-size: 15px; color: #4B5552">from <span style="display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #0E3B3E">€ 350</span></p>
+</div>
+<div style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 600">Direct VAT identification</h3>
+<p style="margin: 0; font-size: 15px; color: #4B5552">Art. 35-ter for EU companies without an Italian establishment: registration</p>
+<p style="margin: auto 0 0; font-size: 15px; color: #4B5552">one-off <span style="display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #0E3B3E">€ 790</span>ongoing management from € 150 per month</p>
+</div>
+<div style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 600">IMU / GIS per year</h3>
+<p style="margin: 0; font-size: 15px; color: #4B5552">Calculation, F24 and deadlines per property</p>
+<p style="margin: auto 0 0; font-size: 15px; color: #4B5552">from <span style="display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #0E3B3E">€ 150</span>per year</p>
+</div>
+<div style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 600">Flat-rate Partita IVA</h3>
+<p style="margin: 0; font-size: 15px; color: #4B5552">Annual management, F24 for taxes and INPS, income tax return</p>
+<p style="margin: auto 0 0; font-size: 15px; color: #4B5552">from <span style="display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #0E3B3E">€ 590</span>per year</p>
+</div>
+<div style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 600">Bookkeeping for freelancers and sole traders</h3>
+<p style="margin: 0; font-size: 15px; color: #4B5552">Bookkeeping and periodic filings; VAT return billed separately</p>
+<p style="margin: auto 0 0; font-size: 15px; color: #4B5552">from <span style="display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #0E3B3E">€ 75</span>per month</p>
+</div>
+<div style="border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 600">Opening a Partita IVA</h3>
+<p style="margin: 0; font-size: 15px; color: #4B5552">Sole trader; Chamber of Commerce registration billed separately</p>
+<p style="margin: auto 0 0; font-size: 15px; color: #4B5552">from <span style="display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #0E3B3E">€ 220</span>one-off</p>
+</div>
+</div>
+</div>
+</section>
 
-    <h2>About me</h2>
+<!-- ABOUT -->
+<section id="about" style="background: #F6F4EE; border-top: 1px solid #DED9CC; border-bottom: 1px solid #DED9CC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<img src="/assets/img/galja-spelman-commercialista.jpg" alt="Galja Spelman, Italian chartered accountant" style="flex: 1 1 300px; max-width: 380px; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border-radius: 10px; display: block; box-shadow: 0 1px 2px rgba(14,59,62,0.08), 0 12px 32px rgba(14,59,62,0.10)">
+<div style="flex: 999 1 480px; min-width: 0">
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A2E">About</p>
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15">Galja Spelman</h2>
+<p style="margin: 20px 0 0; font-size: 18px; color: #3A4644; max-width: 640px">I am an Italian chartered accountant based in Bolzano, working online with individuals, freelancers and companies all over Italy: clients who live and work only in Italy, as well as those with ties abroad, such as foreigners and expats living in Italy, Italians resident abroad, non-residents who own property or earn income in Italy, and foreign companies doing business in Italy. I handle bookkeeping, Italian tax returns, VAT and local taxes, so your tax position in Italy stays in order wherever you live.</p>
+<dl style="margin: 36px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 24px">
+<div style="border-top: 1px solid #CFC8B6; padding-top: 16px">
+<dt style="font-weight: 600">Everything for Italy, in one practice</dt>
+<dd style="margin: 6px 0 0; font-size: 15px; color: #4B5552">Bookkeeping, tax returns, VAT and local taxes. Obligations in other countries remain with your local advisor.</dd>
+</div>
+<div style="border-top: 1px solid #CFC8B6; padding-top: 16px">
+<dt style="font-weight: 600">Dottore Commercialista</dt>
+<dd style="margin: 6px 0 0; font-size: 15px; color: #4B5552">Italian professional qualification, registered with ODCEC Bolzano, no. 914/A.</dd>
+</div>
+<div style="border-top: 1px solid #CFC8B6; padding-top: 16px">
+<dt style="font-weight: 600">A fully online practice</dt>
+<dd style="margin: 6px 0 0; font-size: 15px; color: #4B5552">Clients across Europe and in former Soviet Union countries, served by email and PEC.</dd>
+</div>
+</dl>
+</div>
+</div>
+</section>
 
-    <div class="grid-2" style="align-items:center;">
-      <div>
-        <p class="muted">
-          I am <strong>Galja Spelman</strong>, <strong>Dottore Commercialista</strong>,
-          <strong>Certified Public Accountant (CPA)</strong> and <strong>Steuerberaterin</strong>.
-          I provide tax and accounting consultancy for freelancers, sole traders and businesses in Italy,
-          with a particular focus on cross‑border situations and international taxation.
-        </p>
+<!-- ARTICLES -->
+<section id="articles">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<div>
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A2E">Articles</p>
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15">Practical guides</h2>
+</div>
+</div>
+<div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 20px">
+<a href="https://spelmantax.com/en/opening-a-vat-number-italy.html" style="text-decoration: none; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4B5552">Partita IVA</span>
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; line-height: 1.3; color: #0E3B3E">How to open a VAT number (Partita IVA) in Italy</span>
+</a>
+<a href="https://spelmantax.com/en/direct-vat-registration.html" style="text-decoration: none; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4B5552">VAT</span>
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; line-height: 1.3; color: #0E3B3E">Direct VAT registration for foreign businesses</span>
+</a>
+<a href="https://spelmantax.com/en/imu.html" style="text-decoration: none; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4B5552">Property</span>
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; line-height: 1.3; color: #0E3B3E">IMU: municipal property tax in Italy</span>
+</a>
+<a href="https://spelmantax.com/en/italian-tax-return-730.html" style="text-decoration: none; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4B5552">Tax returns</span>
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; line-height: 1.3; color: #0E3B3E">730 tax return in Italy: a simple guide</span>
+</a>
+<a href="https://spelmantax.com/en/accountant-for-doctors-italy.html" style="text-decoration: none; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4B5552">Doctors</span>
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; line-height: 1.3; color: #0E3B3E">Accountant for doctors and healthcare professionals</span>
+</a>
+<a href="https://spelmantax.com/en/accountant-for-artisans-italy.html" style="text-decoration: none; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4B5552">Artisans</span>
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; line-height: 1.3; color: #0E3B3E">Accountant for artisans and craftsmen</span>
+</a>
+<a href="https://spelmantax.com/en/accountant-for-surveyors-italy.html" style="text-decoration: none; border: 1px solid #DED9CC; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4B5552">Surveyors</span>
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; line-height: 1.3; color: #0E3B3E">Accountant for surveyors (geometri)</span>
+</a>
+</div>
+</div>
+</section>
 
-        <p class="muted">
-          I help freelancers, consultants and small business owners manage their VAT position, taxes and tax returns
-          in a simple, clear and solution‑oriented way.
-        </p>
+<!-- ENQUIRY -->
+<section id="enquiry" style="background: #F6F4EE; border-top: 1px solid #DED9CC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 320px; min-width: 0">
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A2E">Enquiry</p>
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15">Describe your case</h2>
+<p style="margin: 20px 0 0; font-size: 17px; color: #3A4644">I reply in writing, in the language you prefer, with a first assessment and a quote.</p>
+<p style="margin: 24px 0 0; padding: 16px 20px; background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 8px; font-size: 15px; color: #3A4644">Please do not send ID documents, tax codes or other personal data at this stage: I will ask for them only once the engagement is signed.</p>
+<div style="margin-top: 32px; font-size: 15px; display: flex; flex-direction: column; gap: 6px">
+<span style="color: #4B5552">Or write to</span>
+<a href="mailto:info@spelmantax.com" style="font-weight: 500">info@spelmantax.com</a>
+<a href="mailto:galja.spelman@pec.it" style="font-weight: 500">galja.spelman@pec.it (PEC)</a>
+</div>
+</div>
+<form action="mailto:info@spelmantax.com" method="post" enctype="text/plain" style="flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 10px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 20px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Name<input name="nome" required type="text" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; box-sizing: border-box"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Email<input name="email" required type="email" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; box-sizing: border-box"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Country of residence<select name="paese" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; background: #FFFFFF"><option>Italy</option><option>Germany</option><option>Austria</option><option>Switzerland</option><option>Netherlands</option><option>Estonia</option><option>United Kingdom</option><option>France</option><option>Former Soviet Union country</option><option>Other</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Type of matter<select name="pratica" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; background: #FFFFFF"><option>Tax return / RW schedule</option><option>Residence and relocation</option><option>Property: IMU, GIS, TARI</option><option>VAT for a foreign company</option><option>Partita IVA / flat-rate regime</option><option>Ongoing bookkeeping</option><option>E-commerce / OSS</option><option>Other</option></select></label>
+<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Briefly describe your situation and deadlines<textarea name="messaggio" required rows="5" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; resize: vertical"></textarea></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Reply language<select name="lingua" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; background: #FFFFFF"><option>English</option><option>Italiano</option><option>Deutsch</option><option>Русский</option></select></label>
+<label style="grid-column: 1 / -1; display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: #3A4644"><input name="consenso" required type="checkbox" style="width: 20px; height: 20px; margin: 2px 0 0; flex: none">I have read the privacy notice and consent to the processing of my data to answer this enquiry.</label>
+<button type="submit" style="grid-column: 1 / -1; justify-self: start; background: #0E3B3E; color: #FFFFFF; border: none; padding: 15px 28px; border-radius: 6px; font-size: 16px; font-weight: 500; min-height: 44px; cursor: pointer">Send enquiry</button>
+</form>
+</div>
+</section>
 
-        <div style="text-align:center;">
-          <p class="muted"><strong>My services include:</strong></p>
-          <p style="margin:0;">
-            Opening a Partita IVA<br>
-            Flat‑rate tax regime (Regime forfettario)<br>
-            Tax consultancy for freelancers and businesses<br>
-            International taxation and cross‑border tax matters
-          </p>
-        </div>
+<!-- FOOTER -->
+<footer style="background: #0B2B33; color: #D5E4DF; font-size: 14px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; color: #E2C27A">SpelmanTax</span>
+<span>Dott.ssa Galja Spelman · Viale Druso 2, 39100 Bolzano, Italy</span>
+<span>VAT no. IT03258490212 · ODCEC Bolzano no. 914/A</span>
+</div>
+<nav aria-label="Legal" style="display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: flex-end">
+<a href="/en/privacy-policy.html" style="color: #E2C27A">Privacy</a>
+<a href="/en/cookie-policy.html" style="color: #E2C27A">Cookies</a>
+<a href="/it/note-legali.html" style="color: #E2C27A">Legal notice</a>
+<a href="https://www.linkedin.com/in/galja-spelman-31472418/" style="color: #E2C27A">LinkedIn</a></nav>
+</div>
+</footer>
 
-        <p class="muted" style="margin-top:1rem;">
-          I also offer online consultancy in Italian, German, English and Russian.
-          If you need tax support or want to open a Partita IVA, feel free to contact me for a consultation.
-        </p>
-
-        <!-- CTA BUTTONS -->
-        <div class="cta-row">
-          <a href="/en/consultation.html" class="btn">Book a free consultation</a>
-          <a href="https://wa.me/393273480543" class="btn btn-accent" style="margin-left:0.6rem;" target="_blank">Chat on WhatsApp</a>
-        </div>
-      </div>
-
-      <div class="card" style="text-align:center; padding-bottom:0; margin-top:2rem;">
-        <img src="/IMG-20260127-WA0053.jpg" alt="Galja Spelman" style="max-width:140px; width:100%; border-radius:12px; margin-bottom:0.2rem;">
-        <h3 style="margin:0.1rem 0 0.1rem 0;">Galja Spelman</h3>
-        <p class="muted" style="margin:0;">Dottore Commercialista · CPA · Steuerberaterin</p>
-      </div>
-    </div>
-
-    <!-- SERVICES -->
-    <section id="services">
-      <h2>Services</h2>
-      <div class="cards">
-        <a href="gestione-contabilita.html" class="card-link">
-          <div class="card">
-            <img src="../Gestione della contabilità.png" alt="Bookkeeping" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-            <h3>Bookkeeping</h3>
-            <p class="muted">
-              Ongoing bookkeeping, reconciliations, financial statements, periodic filings and continuous support.
-            </p>
-          </div>
-        </a>
-        <a href="consulenza-fiscale.html" class="card-link">
-          <div class="card">
-            <img src="../Consulenza fiscale.png" alt="Tax consultancy" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-            <h3>Tax consultancy</h3>
-            <p class="muted">
-              Tax planning, tax returns, audits, fiscal analysis and tailored solutions for individuals and businesses.
-            </p>
-          </div>
-        </a>
-        <a href="fiscalita-internazionale.html" class="card-link">
-          <div class="card">
-            <img src="../Sede secondarie.png" alt="International taxation" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-            <h3>International taxation · EU Tax</h3>
-            <p class="muted">
-              Assistance with permanent establishments, branches, cross‑border operations and EU regulations.
-            </p>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- ARTICLES -->
-    <h2 style="margin-top:3rem;">Articles</h2>
-    <div style="display:flex; flex-direction:column; gap:1.5rem; margin-top:1.5rem;">
-      <div class="article-card">
-        <h3 style="margin:0 0 0.3rem 0;">
-          <a href="/en/opening-a-vat-number-italy.html">How to open a VAT number (Partita IVA) in Italy</a>
-        </h3>
-        <p class="muted" style="margin:0;">
-          A clear guide for freelancers on opening a VAT number in Italy: requirements, tax regimes, INPS and practical steps.
-        </p>
-      </div>
-      <div class="article-card">
-        <h3 style="margin:0 0 0.3rem 0;">
-          <a href="/en/direct-vat-registration.html">Direct VAT Registration in Italy for Foreign Businesses</a>
-        </h3>
-        <p class="muted" style="margin:0;">
-          VAT registration, invoicing, tax payments and refunds for EU and non-EU companies.
-        </p>
-      </div>
-      <div class="article-card">
-        <h3 style="margin:0 0 .3rem 0;">
-          <a href="/en/imu.html">IMU – Municipal Property Tax (Italy)</a>
-        </h3>
-        <p class="muted" style="margin:0;">
-          Full IMU service: advance and balance calculation, cadastral data check, F24 preparation and annual management for residents and non‑residents.
-        </p>
-      </div>
-      <div class="article-card">
-        <h3 style="margin:0 0 .3rem 0;">
-          <a href="/en/italian-tax-return-730.html">730 Tax Return in Italy – simple guide</a>
-        </h3>
-        <p class="muted" style="margin:0;">
-          Help for employees and pensioners: documents, deductions and electronic filing of the 730 return.
-        </p>
-      </div>
-      <div class="article-card">
-        <h3 style="margin:0 0 .3rem 0;">
-          <a href="/en/accountant-for-doctors-italy.html">Accountant for Doctors with a VAT Number in Italy</a>
-        </h3>
-        <p class="muted" style="margin:0;">
-          Healthcare invoicing, tax regime, INPS contributions and Sistema Tessera Sanitaria reporting.
-        </p>
-      </div>
-      <div class="article-card">
-        <h3 style="margin:0 0 .3rem 0;">
-          <a href="/en/accountant-for-artisans-italy.html">Accountant for Artisans in Italy</a>
-        </h3>
-        <p class="muted" style="margin:0;">
-          Invoicing, flat-rate or ordinary regime, INPS Artigiani contributions and annual filings.
-        </p>
-      </div>
-      <div class="article-card">
-        <h3 style="margin:0 0 .3rem 0;">
-          <a href="/en/accountant-for-surveyors-italy.html">Accountant for Surveyors (Geometri) in Italy</a>
-        </h3>
-        <p class="muted" style="margin:0;">
-          Invoicing, tax regime, Cassa Geometri contributions and annual filings for technical professionals.
-        </p>
-      </div>
-    </div>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <div class="card" style="margin-bottom:1.5rem;">
-        <p class="muted">
-          <strong>Studio Galja Spelman</strong><br>
-          Viale Druso 2 · 39100 Bolzano (BZ), Italy<br>
-          Consultancy in English, Italian, German and Russian.
-        </p>
-        <p class="muted" style="margin-top:0.6rem;">
-          <strong>Email:</strong>
-          <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> ·
-          <a href="mailto:tax.spelman@gmail.com">tax.spelman@gmail.com</a><br>
-          <strong>WhatsApp:</strong> <a href="https://wa.me/393273480543">+39 327 348 0543</a><br>
-          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/galja-spelman-31472418/" target="_blank">Galja Spelman</a><br>
-          <strong>Website:</strong> <a href="https://spelmantax.com">spelmantax.com</a>
-        </p>
-      </div>
-
-      <!-- CONTACT FORM -->
-      <div class="card">
-        <h3 style="margin-bottom:0.8rem;">Send me a message</h3>
-        <form class="contact-form" action="mailto:info@spelmantax.com" method="post" enctype="text/plain">
-          <div class="form-row">
-            <div>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required>
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required>
-            </div>
-          </div>
-          <div>
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="e.g. Partita IVA opening">
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
-          </div>
-          <div>
-            <button type="submit" class="btn">Send message</button>
-          </div>
-          <p class="muted" style="font-size:0.85rem; margin:0;">
-            Or email me directly at <a href="mailto:info@spelmantax.com">info@spelmantax.com</a>
-          </p>
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- STICKY WHATSAPP -->
-  <a href="https://wa.me/393273480543" class="wa-sticky" target="_blank" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.1.2-.6.8-.8 1-.2.2-.3.2-.6.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.3.1-.1.1-.2 0-.3-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.5-.3h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.3-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
-  </a>
-
-  <!-- FOOTER -->
-  <footer>
-    © <span id="year-en"></span> Studio Galja Spelman ·
-    VAT number IT03258490212 ·
-    Registered with ODCEC Bolzano · No. 914/A ·
-    PEC: <a href="mailto:galja.spelman@pec.it">galja.spelman@pec.it</a> ·
-    <a href="/en/privacy-policy.html">Privacy Policy</a> ·
-    <a href="/en/cookie-policy.html">Cookie Policy</a>
-  </footer>
-
-  <script>
-    document.getElementById('year-en').textContent = new Date().getFullYear();
-  </script>
-
+</div>
 </body>
 </html>
