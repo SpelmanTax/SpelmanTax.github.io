@@ -1,246 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    :root {
-      --primary: #1a3a5c;
-      --accent: #c9a227;
-      --text: #333;
-      --light: #f8f9fa;
-      --border: #e0e0e0;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.7;
-      color: var(--text);
-      background: #fff;
-    }
-    header {
-      background: var(--primary);
-      color: #fff;
-      padding: 1.2rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-    header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #fff;
-      text-decoration: none;
-      letter-spacing: -0.5px;
-    }
-    .logo span { color: var(--accent); }
-    nav a {
-      color: rgba(255,255,255,0.9);
-      text-decoration: none;
-      margin-left: 1.8rem;
-      font-size: 0.95rem;
-      transition: color 0.2s;
-    }
-    nav a:hover { color: var(--accent); }
-    main { padding: 3.5rem 0; }
-    h1 {
-      font-size: 2.2rem;
-      color: var(--primary);
-      margin-bottom: 1.2rem;
-      line-height: 1.25;
-    }
-    h2 {
-      font-size: 1.35rem;
-      color: var(--primary);
-      margin: 2.5rem 0 1rem;
-      padding-bottom: 0.4rem;
-      border-bottom: 2px solid var(--accent);
-      display: inline-block;
-    }
-    p { margin-bottom: 1.1rem; }
-    .lead {
-      font-size: 1.15rem;
-      color: #555;
-      margin-bottom: 2rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .contact-card {
-      background: var(--light);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-    .contact-card h3 {
-      color: var(--primary);
-      margin-bottom: 0.8rem;
-      font-size: 1.1rem;
-    }
-    .contact-card p, .contact-card a {
-      margin-bottom: 0.5rem;
-      display: block;
-      color: var(--text);
-      text-decoration: none;
-    }
-    .contact-card a:hover { color: var(--primary); text-decoration: underline; }
-    .whatsapp { color: #25D366; font-weight: 600; }
-    form {
-      margin-top: 2rem;
-      background: var(--light);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-    label {
-      display: block;
-      margin-bottom: 0.4rem;
-      font-weight: 600;
-      color: var(--primary);
-      font-size: 0.95rem;
-    }
-    input, textarea, select {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1.2rem;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      font-family: inherit;
-      font-size: 1rem;
-    }
-    input:focus, textarea:focus, select:focus {
-      outline: none;
-      border-color: var(--accent);
-    }
-    textarea { min-height: 120px; resize: vertical; }
-    .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--primary);
-      padding: 0.85rem 1.8rem;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: transform 0.15s, box-shadow 0.15s;
-    }
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(201,162,39,0.3);
-    }
-    footer {
-      background: var(--primary);
-      color: rgba(255,255,255,0.85);
-      padding: 2.5rem 0;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
-    .footer-col h4 { color: #fff; margin-bottom: 0.6rem; font-size: 1rem; }
-    .footer-col p, .footer-col a { margin-bottom: 0.3rem; display: block; }
-    @media (max-width: 640px) {
-      h1 { font-size: 1.7rem; }
-      .contact-grid { grid-template-columns: 1fr; }
-      nav a { margin-left: 1rem; font-size: 0.85rem; }
-      footer .container { flex-direction: column; }
-    }
-  </style>
-<base target="_blank">
-
-  <title>Cookie Policy | SpelmanTax</title>
-  <meta name="description" content="Questo sito utilizza esclusivamente cookie tecnici, necessari al suo funzionamento. Non vengono utilizzati cookie di profilazione, marketing o analitici.">
-  <link rel="canonical" href="https://spelmantax.com/it/cookie-policy.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cookie policy | SpelmanTax</title>
+<meta name="description" content="Cookie policy di spelmantax.com: il sito usa solo cookie tecnici, senza statistiche, profilazione o pubblicità.">
+<link rel="canonical" href="https://spelmantax.com/it/cookie-policy.html">
+<style>
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/source-serif-4-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/source-serif-4-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/source-serif-4-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/source-serif-4-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/ibm-plex-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/ibm-plex-sans-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/ibm-plex-sans-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/ibm-plex-sans-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/ibm-plex-sans-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/ibm-plex-sans-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+body{margin:0;background:#FFFFFF}
+a{color:#0E3B3E}a:hover{color:#12625A}
+</style>
 </head>
 <body>
+<div style="font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; background: #FFFFFF; font-size: 17px; line-height: 1.7">
 
-<header>
-  <div class="container">
-    <a href="/it/" class="logo">Spelman<span>Tax</span></a>
-    <nav>
-      <a href="/it/consulenza.html">Consulenza</a>
-      <a href="/it/richiesta.html">Contatti</a>
-    </nav>
-  </div>
+<header style="border-bottom: 1px solid #DED9CC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="/" style="text-decoration: none; display: flex; align-items: baseline; gap: 10px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 26px; font-weight: 600; color: #0E3B3E">SpelmanTax</span>
+<span style="font-size: 13px; color: #4B5552">Studio Galja Spelman</span>
+</a>
+<a href="/" style="font-size: 15px; font-weight: 500">← Torna alla home</a>
+</div>
 </header>
 
-<main>
-<div class="container" style="padding-top:2rem; padding-bottom:3rem;">
-<section>
-  <h1>Cookie Policy</h1>
-  <p>
-    Questo sito utilizza esclusivamente <strong>cookie tecnici</strong>, necessari al suo funzionamento.
-    Non vengono utilizzati cookie di profilazione, marketing o analitici.
-  </p>
+<main style="max-width: 760px; margin: 0 auto; padding: 72px 24px 96px">
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A2E">Cookie</p>
+<h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.12">Cookie policy</h1>
+<p style="margin: 20px 0 0; color: #3A4644">Ai sensi dell'art. 122 del D.Lgs. 196/2003 e delle Linee guida del Garante privacy del 10 giugno 2021. Ultimo aggiornamento: 10.07.2026.</p>
 
-  <h2>1. Cosa sono i cookie tecnici</h2>
-  <p>
-    I cookie tecnici permettono il corretto funzionamento del sito, come la gestione della sicurezza,
-    del traffico e delle funzioni di base del server.
-  </p>
+<h2 style="margin: 48px 0 12px; font-size: 22px; font-weight: 600">1. Cosa sono i cookie</h2>
+<p style="margin: 0; color: #3A4644">I cookie sono piccoli file di testo che il sito salva sul tuo dispositivo durante la navigazione. Alcuni sono necessari al funzionamento del sito, altri servono a misurarne l'uso o a mostrare contenuti personalizzati.</p>
 
-  <h2>2. Cookie utilizzati da questo sito</h2>
-  <ul>
-    <li><strong>Cookie di sessione</strong> — necessari per il funzionamento del sito.</li>
-    <li><strong>Cookie generati da GitHub Pages</strong> — utilizzati esclusivamente per la sicurezza e la gestione tecnica.</li>
-  </ul>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">2. Cookie usati da questo sito</h2>
+<p style="margin: 0 0 12px; color: #3A4644">Questo sito usa esclusivamente cookie tecnici, necessari al suo funzionamento, alla sicurezza e alla gestione tecnica del server (GitHub Pages).</p>
+<p style="margin: 0; color: #3A4644">Non utilizza Google Analytics né altri strumenti di statistica, e non usa cookie di profilazione o pubblicitari. Per i cookie tecnici non serve il tuo consenso (art. 122, comma 1, D.Lgs. 196/2003), per questo il sito non mostra un banner.</p>
 
-  <div class="highlight-box">
-    <p><strong>Non viene utilizzato Google Analytics.</strong></p>
-  </div>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">3. Servizi di terze parti</h2>
+<p style="margin: 0; color: #3A4644">Il sito contiene un link a LinkedIn. Questo servizio installa i propri cookie solo se apri il link, secondo la sua informativa.</p>
 
-  <h2>3. Gestione dei cookie</h2>
-  <p>
-    Puoi gestire o disattivare i cookie tramite le impostazioni del tuo browser.
-  </p>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">4. Come gestire i cookie</h2>
+<p style="margin: 0; color: #3A4644">Puoi cancellare o bloccare i cookie dalle impostazioni del tuo browser. Bloccando i cookie tecnici, alcune funzioni del sito potrebbero non funzionare correttamente.</p>
 
-  <h2>4. Aggiornamenti</h2>
-  <p>
-    Questa Cookie Policy può essere aggiornata. La versione più recente è sempre disponibile su questa pagina.
-  </p>
-</section>
-</div>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">5. Titolare e contatti</h2>
+<p style="margin: 0; color: #3A4644">Dott.ssa Galja Spelman, Viale Druso 2, 39100 Bolzano. E-mail: <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> · PEC: <a href="mailto:galja.spelman@pec.it">galja.spelman@pec.it</a>. Per tutti gli altri aspetti consulta l'<a href="/it/privacy-policy.html">Informativa privacy</a>.</p>
 </main>
 
-<footer>
-  <div class="container">
-    <div class="footer-col">
-      <h4>Studio Galja Spelman</h4>
-      <p>Viale Druso 2 · 39100 Bolzano (BZ)</p>
-      <p>Italia</p>
-    </div>
-    <div class="footer-col">
-      <h4>Contatti</h4>
-      <a href="mailto:info@spelmantax.com">info@spelmantax.com</a>
-      <a href="mailto:tax.spelman@gmail.com">tax.spelman@gmail.com</a>
-      <a href="https://wa.me/393273480543">WhatsApp: +39 327 348 0543</a>
-    </div>
-    <div class="footer-col">
-      <h4>Link utili</h4>
-      <a href="/it/consulenza.html">Consulenza</a>
-      <a href="/it/privacy-policy.html">Privacy Policy</a>
-      <a href="/it/cookie-policy.html">Cookie Policy</a>
-    </div>
-  </div>
+<footer style="background: #0B2B33; color: #D5E4DF; font-size: 14px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; color: #E2C27A">SpelmanTax</span>
+<span>Dott.ssa Galja Spelman · Viale Druso 2, 39100 Bolzano</span>
+<span>P.IVA IT03258490212 · ODCEC Bolzano n. 914/A</span>
+</div>
+<nav aria-label="Note legali" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end">
+<a href="/it/privacy-policy.html" style="color: #E2C27A">Privacy</a>
+<a href="/it/cookie-policy.html" aria-current="page" style="color: #FFFFFF">Cookie</a>
+<a href="/it/note-legali.html" style="color: #E2C27A">Note legali</a>
+<a href="https://www.linkedin.com/in/galja-spelman-31472418/" style="color: #E2C27A">LinkedIn</a></nav>
+</div>
 </footer>
 
+</div>
 </body>
 </html>

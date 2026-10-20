@@ -1,241 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<title>Privacy Policy — SpelmanTax</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Informativa sul trattamento dei dati personali per il sito SpelmanTax, conforme al GDPR.">
-
+<title>Informativa privacy | SpelmanTax</title>
+<meta name="description" content="Informativa sul trattamento dei dati personali dello studio SpelmanTax – Dott.ssa Galja Spelman, Dottore Commercialista a Bolzano (GDPR).">
+<link rel="canonical" href="https://spelmantax.com/it/privacy-policy.html">
 <style>
-:root {
-  --bg: #f7f7f9;
-  --card-bg: #ffffff;
-  --accent: #2b4c7e;
-  --accent-soft: #e3e8f5;
-  --text: #222;
-  --muted: #666;
-  --border: #ddd;
-}
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
-.page {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 32px 16px 48px;
-}
-section {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 22px 20px;
-  margin-bottom: 28px;
-}
-h1, h2 {
-  color: var(--accent);
-}
-.highlight-box {
-  border-left: 3px solid var(--accent);
-  background: var(--accent-soft);
-  padding: 14px;
-  border-radius: 10px;
-  margin-top: 12px;
-}
-footer {
-  margin-top: 2rem;
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/source-serif-4-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/source-serif-4-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/source-serif-4-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/source-serif-4-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/ibm-plex-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/ibm-plex-sans-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/ibm-plex-sans-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/ibm-plex-sans-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/ibm-plex-sans-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/ibm-plex-sans-cyrillic-600-normal.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+body{margin:0;background:#FFFFFF}
+a{color:#0E3B3E}a:hover{color:#12625A}
 </style>
 </head>
-
 <body>
-<div class="page">
+<div style="font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; background: #FFFFFF; font-size: 17px; line-height: 1.7">
 
-<section>
-  <h1>Privacy Policy — SpelmanTax</h1>
-  <p>
-    La presente informativa descrive come SpelmanTax tratta i dati personali degli utenti
-    in conformità al Regolamento (UE) 2016/679 (“GDPR”) e alla normativa italiana vigente.
-  </p>
+<header style="border-bottom: 1px solid #DED9CC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="/" style="text-decoration: none; display: flex; align-items: baseline; gap: 10px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 26px; font-weight: 600; color: #0E3B3E">SpelmanTax</span>
+<span style="font-size: 13px; color: #4B5552">Studio Galja Spelman</span>
+</a>
+<a href="/" style="font-size: 15px; font-weight: 500">← Torna alla home</a>
+</div>
+</header>
 
-  <div class="highlight-box">
-    <p><strong>Titolare del trattamento:</strong> SpelmanTax — Dott.ssa Galja Spelman, Viale Druso 2, 39100 Bolzano. E‑mail: info@spelmantax.com</p>
-  </div>
-</section>
+<main style="max-width: 760px; margin: 0 auto; padding: 72px 24px 96px">
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A2E">Privacy</p>
+<h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.12">Informativa sul trattamento dei dati personali</h1>
+<p style="margin: 20px 0 0; color: #3A4644">Ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (GDPR) e del D.Lgs. 196/2003. Ultimo aggiornamento: 10.07.2026.</p>
 
-<section>
-  <h2>1. Tipologie di dati trattati</h2>
-  <p>SpelmanTax tratta esclusivamente i dati necessari al funzionamento del sito e alla gestione delle comunicazioni con gli utenti.</p>
+<h2 style="margin: 48px 0 12px; font-size: 22px; font-weight: 600">1. Titolare del trattamento</h2>
+<p style="margin: 0; color: #3A4644">Dott.ssa Galja Spelman, Dottore Commercialista iscritta all'ODCEC di Bolzano al n. 914/A, Viale Druso 2, 39100 Bolzano, P.IVA IT03258490212.<br>E-mail: <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> · PEC: <a href="mailto:galja.spelman@pec.it">galja.spelman@pec.it</a></p>
 
-  <div class="highlight-box">
-    <p><strong>Dati forniti volontariamente:</strong> nome, indirizzo e‑mail, numero di telefono, contenuto del messaggio inviato tramite e‑mail o WhatsApp.</p>
-  </div>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">2. Dati trattati</h2>
+<p style="margin: 0 0 12px; color: #3A4644"><strong style="color: #0E3B3E">Dati di navigazione.</strong> I sistemi che fanno funzionare il sito raccolgono automaticamente alcuni dati tecnici, come indirizzo IP, tipo di browser, data e ora di accesso. Servono solo a garantire il funzionamento e la sicurezza del sito.</p>
+<p style="margin: 0 0 12px; color: #3A4644"><strong style="color: #0E3B3E">Dati forniti da te.</strong> Quando compili il modulo di richiesta o scrivi via e-mail o PEC, tratto i dati che mi invii: nome, indirizzo e-mail, paese di residenza, tipo di pratica e descrizione della situazione.</p>
+<p style="margin: 0; color: #3A4644">Nella fase di richiesta ti chiedo di non inviare documenti d'identità, codici fiscali o dati relativi alla salute e altre categorie particolari di dati. Li richiederò, se necessari, solo dopo il conferimento dell'incarico.</p>
 
-  <p><strong>Dati tecnici raccolti automaticamente:</strong></p>
-  <ul>
-    <li>indirizzo IP</li>
-    <li>informazioni sul browser e sul sistema operativo</li>
-    <li>log tecnici generati da GitHub Pages</li>
-  </ul>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">3. Finalità e basi giuridiche</h2>
+<ul style="margin: 0; padding-left: 22px; color: #3A4644; display: flex; flex-direction: column; gap: 8px">
+<li>Rispondere alla tua richiesta e preparare un preventivo: misure precontrattuali adottate su tua richiesta (art. 6, par. 1, lett. b GDPR).</li>
+<li>Svolgere l'incarico professionale, se conferito: esecuzione del contratto (art. 6, par. 1, lett. b GDPR).</li>
+<li>Adempiere agli obblighi di legge, inclusi quelli fiscali, contabili e antiriciclaggio (D.Lgs. 231/2007): obbligo legale (art. 6, par. 1, lett. c GDPR).</li>
+<li>Garantire la sicurezza del sito e tutelare i diritti dello studio: legittimo interesse (art. 6, par. 1, lett. f GDPR).</li>
+</ul>
 
-  <div class="highlight-box">
-    <p>I dati tecnici vengono utilizzati esclusivamente per sicurezza, funzionamento del sito e monitoraggio tecnico.</p>
-  </div>
-</section>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">4. Natura del conferimento</h2>
+<p style="margin: 0; color: #3A4644">Il conferimento dei dati è facoltativo, ma senza nome, e-mail e descrizione della richiesta non posso risponderti. Dopo il conferimento dell'incarico, i dati richiesti dalla legge sono obbligatori.</p>
 
-<section>
-  <h2>2. Finalità del trattamento</h2>
-  <p>I dati vengono trattati per le seguenti finalità:</p>
-  <ul>
-    <li>rispondere alle richieste inviate tramite sito, e‑mail o WhatsApp</li>
-    <li>gestire le comunicazioni con clienti e interessati</li>
-    <li>adempiere obblighi di legge connessi all’attività professionale</li>
-    <li>garantire sicurezza informatica e corretto funzionamento del sito</li>
-    <li>monitorare in modo tecnico e non profilante l’utilizzo del sito</li>
-  </ul>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">5. Modalità del trattamento</h2>
+<p style="margin: 0; color: #3A4644">I dati sono trattati con strumenti elettronici e, ove necessario, cartacei, con misure tecniche e organizzative adeguate a proteggerli da accessi non autorizzati, perdita o divulgazione. Non effettuo processi decisionali automatizzati né profilazione.</p>
 
-  <div class="highlight-box">
-    <p><strong>Non viene effettuato marketing aggressivo né profilazione.</strong></p>
-  </div>
-</section>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">6. Destinatari</h2>
+<p style="margin: 0 0 12px; color: #3A4644">I dati non sono diffusi. Possono essere comunicati, nei limiti necessari, a:</p>
+<ul style="margin: 0; padding-left: 22px; color: #3A4644; display: flex; flex-direction: column; gap: 8px">
+<li>fornitori di servizi tecnici che agiscono come responsabili del trattamento: hosting e dominio del sito (GitHub, Inc. e Namecheap, Inc.), posta elettronica (Google – Gmail), posta elettronica certificata (Aruba PEC S.p.A.), software gestionale e contabile (DATEV);</li>
+<li>Amministrazione finanziaria, enti previdenziali e altre autorità pubbliche, quando richiesto dalla legge o dall'incarico;</li>
+<li>CAF TFDC – Tutela Fiscale del Contribuente, per l'assistenza e la trasmissione telematica dei modelli 730, se previsto dall'incarico.</li>
+</ul>
 
-<section>
-  <h2>3. Base giuridica</h2>
-  <p>Il trattamento si basa su:</p>
-  <ul>
-    <li><strong>art. 6, par. 1, lett. b GDPR</strong> — esecuzione di misure precontrattuali e gestione delle richieste dell’utente</li>
-    <li><strong>art. 6, par. 1, lett. c GDPR</strong> — adempimento di obblighi di legge</li>
-    <li><strong>art. 6, par. 1, lett. f GDPR</strong> — legittimo interesse (sicurezza, prevenzione abusi, gestione tecnica del sito)</li>
-  </ul>
-</section>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">7. Trasferimento fuori dall'UE</h2>
+<p style="margin: 0; color: #3A4644">I fornitori di hosting e dominio del sito, GitHub, Inc. e Namecheap, Inc., e il gruppo Google, che fornisce il servizio di posta elettronica, hanno sede o server negli Stati Uniti. I dati tecnici di navigazione e il contenuto delle e-mail possono quindi essere trasferiti negli USA. Il trasferimento avviene sulla base della decisione di adeguatezza della Commissione europea relativa all'EU-U.S. Data Privacy Framework, per i fornitori che vi aderiscono, oppure delle clausole contrattuali tipo approvate dalla Commissione europea (art. 46 GDPR).</p>
 
-<section>
-  <h2>4. Destinatari dei dati</h2>
-  <p>I dati personali possono essere comunicati esclusivamente a fornitori che supportano SpelmanTax nelle attività tecniche e operative.</p>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">8. Conservazione</h2>
+<ul style="margin: 0; padding-left: 22px; color: #3A4644; display: flex; flex-direction: column; gap: 8px">
+<li>Richieste non seguite da incarico: 12 mesi dall'ultimo contatto.</li>
+<li>Dati relativi all'incarico: 10 anni dalla sua conclusione, come previsto dalla normativa civilistica, fiscale e antiriciclaggio.</li>
+<li>Dati di navigazione: per il tempo strettamente necessario alla sicurezza del sito.</li>
+</ul>
 
-  <ul>
-    <li><strong>Google LLC</strong> — gestione della posta elettronica (Gmail).</li>
-    <li><strong>GitHub, Inc. / Microsoft Corporation</strong> — hosting del sito tramite GitHub Pages.</li>
-  </ul>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">9. I tuoi diritti</h2>
+<p style="margin: 0 0 12px; color: #3A4644">Puoi chiedere in qualsiasi momento l'accesso ai tuoi dati, la rettifica, la cancellazione, la limitazione del trattamento, la portabilità e opporti al trattamento basato sul legittimo interesse (artt. 15–22 GDPR), nei limiti previsti dalla legge.</p>
+<p style="margin: 0; color: #3A4644">Per esercitarli scrivi a <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> o alla PEC <a href="mailto:galja.spelman@pec.it">galja.spelman@pec.it</a>. Hai inoltre il diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>).</p>
 
-  <div class="highlight-box">
-    <p>I fornitori trattano i dati solo per finalità tecniche e sono vincolati da obblighi di riservatezza.</p>
-  </div>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">10. Cookie</h2>
+<p style="margin: 0; color: #3A4644">Per l'uso dei cookie consulta la <a href="/it/cookie-policy.html">Cookie policy</a>.</p>
 
-  <div class="highlight-box">
-    <p>
-      Il dominio spelmantax.com è gestito tramite Namecheap, che fornisce esclusivamente servizi di registrazione e DNS,
-      senza effettuare alcun trattamento di dati personali degli utenti.
-    </p>
-  </div>
-</section>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">11. Link ad altri siti</h2>
+<p style="margin: 0; color: #3A4644">Il sito contiene link a siti di terzi, che trattano i dati secondo le proprie informative. Non sono responsabile del trattamento effettuato da tali siti.</p>
 
-<section>
-  <h2>5. Trasferimenti extra UE</h2>
-  <p>
-    Alcuni fornitori (Google e GitHub/Microsoft) possono trasferire dati personali negli Stati Uniti.
-    Il trasferimento avviene sulla base delle <strong>Clausole Contrattuali Standard (SCC)</strong>
-    approvate dalla Commissione Europea.
-  </p>
+<h2 style="margin: 40px 0 12px; font-size: 22px; font-weight: 600">12. Modifiche all'informativa</h2>
+<p style="margin: 0; color: #3A4644">Questa informativa può essere aggiornata, ad esempio per modifiche normative o dei servizi. La versione in vigore è sempre pubblicata su questa pagina, con la data dell'ultimo aggiornamento.</p>
+</main>
 
-  <div class="highlight-box">
-    <p>SpelmanTax utilizza esclusivamente fornitori conformi al GDPR.</p>
-  </div>
-</section>
-
-<section>
-  <h2>6. Periodo di conservazione</h2>
-  <ul>
-    <li><strong>Email e comunicazioni:</strong> conservate per 12 mesi.</li>
-    <li><strong>Log tecnici:</strong> gestiti secondo le policy di GitHub/Microsoft.</li>
-  </ul>
-
-  <div class="highlight-box">
-    <p>I dati vengono conservati solo per il tempo necessario alle finalità indicate.</p>
-  </div>
-</section>
-
-<section>
-  <h2>7. Diritti dell’interessato</h2>
-  <p>L’utente può esercitare i seguenti diritti previsti dal GDPR:</p>
-
-  <ul>
-    <li>accesso ai dati</li>
-    <li>rettifica</li>
-    <li>cancellazione</li>
-    <li>limitazione del trattamento</li>
-    <li>opposizione</li>
-    <li>reclamo al Garante per la Protezione dei Dati Personali</li>
-  </ul>
-
-  <div class="highlight-box">
-    <p>Le richieste possono essere inviate a: <strong>info@spelmantax.com</strong></p>
-  </div>
-</section>
-
-<section>
-  <h2>8. Cookie</h2>
-  <p>
-    Il sito utilizza esclusivamente <strong>cookie tecnici</strong> necessari al funzionamento della piattaforma.
-    Non vengono utilizzati cookie di profilazione, marketing o analytics.
-  </p>
-
-  <div class="highlight-box">
-    <p><strong>Nessun tracciamento tramite Google Analytics.</strong></p>
-  </div>
-
-  <p>L’utente può gestire i cookie tramite le impostazioni del proprio browser.</p>
-</section>
-
-<section>
-  <h2>9. Sicurezza</h2>
-  <p>
-    SpelmanTax adotta misure tecniche e organizzative per proteggere i dati personali:
-    sistemi di sicurezza, controlli di accesso e monitoraggio continuo.
-  </p>
-
-  <div class="highlight-box">
-    <p>
-      Le piattaforme tecniche utilizzate da SpelmanTax (Google Workspace, Gmail, GitHub Pages)
-      adottano standard internazionali di sicurezza, tra cui la certificazione ISO/IEC 27001.
-      Questo garantisce un’infrastruttura protetta e un trattamento sicuro dei dati.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>10. Link esterni</h2>
-  <p>
-    Il sito può contenere link a pagine esterne. SpelmanTax non è responsabile del trattamento dei dati
-    effettuato da siti terzi, per i quali si rimanda alle rispettive informative privacy.
-  </p>
-</section>
-
-<section>
-  <h2>11. Aggiornamenti</h2>
-  <p>
-    La presente informativa può essere aggiornata. La versione più recente è sempre disponibile su questa pagina.
-  </p>
-</section>
-
-<footer>
- © 2026 SpelmanTax — Tutti i diritti riservati  
-Dott.ssa Galja Spelman  
-Viale Druso 2, 39100 Bolzano (Italia)  
-P.IVA 03258490212  
-Codice Destinatario SDI: T9K4ZHO  
-PEC: galja.spelman@pec.it  
-E‑mail: info@spelmantax.com
-
+<footer style="background: #0B2B33; color: #D5E4DF; font-size: 14px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; color: #E2C27A">SpelmanTax</span>
+<span>Dott.ssa Galja Spelman · Viale Druso 2, 39100 Bolzano</span>
+<span>P.IVA IT03258490212 · ODCEC Bolzano n. 914/A</span>
+</div>
+<nav aria-label="Note legali" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end">
+<a href="/it/privacy-policy.html" aria-current="page" style="color: #FFFFFF">Privacy</a>
+<a href="/it/cookie-policy.html" style="color: #E2C27A">Cookie</a>
+<a href="/it/note-legali.html" style="color: #E2C27A">Note legali</a>
+<a href="https://www.linkedin.com/in/galja-spelman-31472418/" style="color: #E2C27A">LinkedIn</a></nav>
+</div>
 </footer>
 
 </div>
 </body>
 </html>
-
