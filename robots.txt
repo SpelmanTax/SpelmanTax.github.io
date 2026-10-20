@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /it/thank-you.html
+
+Sitemap: https://spelmantax.com/sitemap.xml
