@@ -407,7 +407,7 @@ input,select,textarea{font:inherit}
 <a href="mailto:galja.spelman@pec.it" style="font-weight: 500">galja.spelman@pec.it (PEC)</a>
 </div>
 </div>
-<form action="mailto:info@spelmantax.com" method="post" enctype="text/plain" style="flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 10px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 20px">
+<form id="sp-form" data-subject="Request from the website" style="flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 10px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 20px">
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Name<input name="nome" required type="text" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; box-sizing: border-box"></label>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Email<input name="email" required type="email" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; box-sizing: border-box"></label>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Country of residence<select name="paese" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; background: #FFFFFF"><option>Italy</option><option>Germany</option><option>Austria</option><option>Switzerland</option><option>Netherlands</option><option>Estonia</option><option>United Kingdom</option><option>France</option><option>Former Soviet Union country</option><option>Other</option></select></label>
@@ -416,6 +416,7 @@ input,select,textarea{font:inherit}
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Reply language<select name="lingua" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; background: #FFFFFF"><option>English</option><option>Italiano</option><option>Deutsch</option><option>Русский</option></select></label>
 <label style="grid-column: 1 / -1; display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: #3A4644"><input name="consenso" required type="checkbox" style="width: 20px; height: 20px; margin: 2px 0 0; flex: none">I have read the privacy notice and consent to the processing of my data to answer this enquiry.</label>
 <button type="submit" style="grid-column: 1 / -1; justify-self: start; background: #0E3B3E; color: #FFFFFF; border: none; padding: 15px 28px; border-radius: 6px; font-size: 16px; font-weight: 500; min-height: 44px; cursor: pointer">Send enquiry</button>
+<p id="sp-form-note" hidden style="grid-column: 1 / -1; margin: 0; font-size: 14px; color: #3A4644">Your email app opens with the message ready – just press Send. If nothing opens, write to <a href="mailto:info@spelmantax.com">info@spelmantax.com</a>.</p>
 </form>
 </div>
 </section>
@@ -437,5 +438,23 @@ input,select,textarea{font:inherit}
 </footer>
 
 </div>
+<script>
+(function(){
+var f=document.getElementById('sp-form'); if(!f) return;
+f.addEventListener('submit',function(ev){
+ ev.preventDefault();
+ var lines=[], pr='';
+ Array.prototype.forEach.call(f.elements,function(el){
+  if(!el.name||el.type==='checkbox'||el.type==='submit') return;
+  var lab=el.closest('label'); var t=lab?lab.firstChild.textContent.trim():el.name;
+  if(el.name==='pratica') pr=el.value;
+  lines.push(t+': '+(el.tagName==='TEXTAREA'?'\n':'')+el.value);
+ });
+ var subj=f.getAttribute('data-subject')+(pr?' – '+pr:'');
+ window.location.href='mailto:info@spelmantax.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(lines.join('\n\n'));
+ var n=document.getElementById('sp-form-note'); if(n) n.hidden=false;
+});
+})();
+</script>
 </body>
 </html>
