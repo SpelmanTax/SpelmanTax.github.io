@@ -279,7 +279,7 @@ input,select,textarea{font:inherit}
 <li style="border-top: 2px solid #FFFFFF; padding-top: 20px">
 <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; color: #E2C27A">04</span>
 <h3 style="margin: 8px 0 8px; font-size: 19px; font-weight: 600">Done</h3>
-<p style="margin: 0; color: #D5E4DF; font-size: 16px">Electronic filing and a copy of everything for you. Communication by email and PEC.</p>
+<p style="margin: 0; color: #D5E4DF; font-size: 16px">Electronic filing and a copy of everything for you. Communication by email.</p>
 </li>
 </ol>
 </div>
@@ -344,7 +344,7 @@ input,select,textarea{font:inherit}
 </div>
 <div style="border-top: 1px solid #CFC8B6; padding-top: 16px">
 <dt style="font-weight: 600">A fully online practice</dt>
-<dd style="margin: 6px 0 0; font-size: 15px; color: #4B5552">Clients across Europe and in former Soviet Union countries, served by email and PEC.</dd>
+<dd style="margin: 6px 0 0; font-size: 15px; color: #4B5552">Clients across Europe and in former Soviet Union countries, served by email.</dd>
 </div>
 </dl>
 </div>
@@ -404,20 +404,42 @@ input,select,textarea{font:inherit}
 <div style="margin-top: 32px; font-size: 15px; display: flex; flex-direction: column; gap: 6px">
 <span style="color: #4B5552">Or write to</span>
 <a href="mailto:info@spelmantax.com" style="font-weight: 500">info@spelmantax.com</a>
-<a href="mailto:galja.spelman@pec.it" style="font-weight: 500">galja.spelman@pec.it (PEC)</a>
+<a href="mailto:tax.spelman@gmail.com" style="font-weight: 500">tax.spelman@gmail.com</a>
+<a href="https://wa.me/393273480543" target="_blank" rel="noopener" style="font-weight: 500">WhatsApp +39 327 348 0543</a>
 </div>
 </div>
-<form id="sp-form" data-subject="Request from the website" style="flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 10px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 20px">
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Name<input name="nome" required type="text" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; box-sizing: border-box"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Email<input name="email" required type="email" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; box-sizing: border-box"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Country of residence<select name="paese" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; background: #FFFFFF"><option>Italy</option><option>Germany</option><option>Austria</option><option>Switzerland</option><option>Netherlands</option><option>Estonia</option><option>United Kingdom</option><option>France</option><option>Former Soviet Union country</option><option>Other</option></select></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Type of matter<select name="pratica" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; background: #FFFFFF"><option>Tax return / RW schedule</option><option>Residence and relocation</option><option>Property: IMU, GIS, TARI</option><option>VAT for a foreign company</option><option>Partita IVA / flat-rate regime</option><option>Ongoing bookkeeping</option><option>E-commerce / OSS</option><option>Other</option></select></label>
-<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Briefly describe your situation and deadlines<textarea name="messaggio" required rows="5" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; resize: vertical"></textarea></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Reply language<select name="lingua" style="padding: 12px; border: 1px solid #A8A08C; border-radius: 6px; min-height: 44px; background: #FFFFFF"><option>English</option><option>Italiano</option><option>Deutsch</option><option>Русский</option></select></label>
-<label style="grid-column: 1 / -1; display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: #3A4644"><input name="consenso" required type="checkbox" style="width: 20px; height: 20px; margin: 2px 0 0; flex: none">I have read the privacy notice and consent to the processing of my data to answer this enquiry.</label>
-<button type="submit" style="grid-column: 1 / -1; justify-self: start; background: #0E3B3E; color: #FFFFFF; border: none; padding: 15px 28px; border-radius: 6px; font-size: 16px; font-weight: 500; min-height: 44px; cursor: pointer">Send enquiry</button>
-<p id="sp-form-note" hidden style="grid-column: 1 / -1; margin: 0; font-size: 14px; color: #3A4644">Your email app opens with the message ready – just press Send. If nothing opens, write to <a href="mailto:info@spelmantax.com">info@spelmantax.com</a>.</p>
-</form>
+<div id="sp-tpl" data-to="info@spelmantax.com" data-wa="393273480543" data-subject="Free consultation request" data-copied="Copied!" style="flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 600">Request template</h3>
+<p style="margin: 0; font-size: 15px; color: #3A4644">Complete the text below and send it by email or WhatsApp. I usually reply within one business day.</p>
+<label style="display: block"><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Request template</span><textarea id="sp-tpl-text" rows="23" style="width: 100%; box-sizing: border-box; padding: 14px; border: 1px solid #A8A08C; border-radius: 6px; font: 15px/1.5 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; resize: vertical">Dear Galja,
+
+I came across your website and would like to request a free consultation regarding my tax situation in Italy.
+
+I am looking for assistance with:
+[ ] Opening a Partita IVA
+[ ] Flat-rate regime (regime forfettario)
+[ ] Tax returns and compliance
+[ ] International / cross-border tax matters
+[ ] Other: ________________
+
+A brief overview of my situation:
+- Nationality / Residency:
+- Type of activity:
+- Estimated annual income:
+- Specific questions:
+
+I am comfortable communicating in English / Italian / German / Russian.
+
+Thank you for your time. I look forward to hearing from you.
+Best regards,
+[Your full name]</textarea></label>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+<a id="sp-tpl-mail" href="mailto:info@spelmantax.com?subject=Free%20consultation%20request" style="border-radius: 6px; font-size: 16px; font-weight: 500; min-height: 44px; padding: 12px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; box-sizing: border-box; background: #0E3B3E; color: #FFFFFF; border: 1px solid #0E3B3E"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>Send by email</a>
+<a id="sp-tpl-wa" href="https://wa.me/393273480543" target="_blank" rel="noopener" style="border-radius: 6px; font-size: 16px; font-weight: 500; min-height: 44px; padding: 12px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; box-sizing: border-box; background: #FFFFFF; color: #0E3B3E; border: 1px solid #0E3B3E"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"></path><path d="M9 9.5c.3 1.8 1.7 3.6 3.6 4.4l1.2-1.1 2 .9-.4 1.6c-3.3.2-6.9-3.3-7-6.6L10 8.3l.9 2-1.1 1.1"></path></svg>Send via WhatsApp</a>
+<button id="sp-tpl-copy" type="button" style="border-radius: 6px; font-size: 16px; font-weight: 500; min-height: 44px; padding: 12px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; box-sizing: border-box; background: transparent; color: #0E3B3E; border: 1px solid transparent; text-decoration: underline">Copy text</button>
+</div>
+<p style="margin: 0; font-size: 13px; color: #4B5552">If no email opens, copy the text and send it to info@spelmantax.com.</p>
+</div>
 </div>
 </section>
 
@@ -440,19 +462,20 @@ input,select,textarea{font:inherit}
 </div>
 <script>
 (function(){
-var f=document.getElementById('sp-form'); if(!f) return;
-f.addEventListener('submit',function(ev){
- ev.preventDefault();
- var lines=[], pr='';
- Array.prototype.forEach.call(f.elements,function(el){
-  if(!el.name||el.type==='checkbox'||el.type==='submit') return;
-  var lab=el.closest('label'); var t=lab?lab.firstChild.textContent.trim():el.name;
-  if(el.name==='pratica') pr=el.value;
-  lines.push(t+': '+(el.tagName==='TEXTAREA'?'\n':'')+el.value);
- });
- var subj=f.getAttribute('data-subject')+(pr?' – '+pr:'');
- window.location.href='mailto:info@spelmantax.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(lines.join('\n\n'));
- var n=document.getElementById('sp-form-note'); if(n) n.hidden=false;
+var c=document.getElementById('sp-tpl'); if(!c) return;
+var ta=document.getElementById('sp-tpl-text');
+function txt(){return ta.value;}
+document.getElementById('sp-tpl-mail').addEventListener('click',function(e){
+ this.href='mailto:'+c.getAttribute('data-to')+'?subject='+encodeURIComponent(c.getAttribute('data-subject'))+'&body='+encodeURIComponent(txt());
+});
+document.getElementById('sp-tpl-wa').addEventListener('click',function(e){
+ this.href='https://wa.me/'+c.getAttribute('data-wa')+'?text='+encodeURIComponent(txt());
+});
+var b=document.getElementById('sp-tpl-copy');
+b.addEventListener('click',function(){
+ var done=function(){var o=b.textContent;b.textContent=c.getAttribute('data-copied');setTimeout(function(){b.textContent=o;},2000);};
+ if(navigator.clipboard){navigator.clipboard.writeText(txt()).then(done,function(){ta.select();document.execCommand('copy');done();});}
+ else{ta.select();document.execCommand('copy');done();}
 });
 })();
 </script>
