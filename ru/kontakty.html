@@ -206,7 +206,7 @@
     </div>
 
     <h2>Отправить запрос</h2>
-    <form action="mailto:info@spelmantax.com" method="post" enctype="text/plain">
+    <form data-mailto data-subject="Заявка с сайта">
       <label for="name">Ваше имя</label>
       <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
 
@@ -256,5 +256,24 @@
   </div>
 </footer>
 
+<script>
+(function(){
+Array.prototype.forEach.call(document.querySelectorAll('form[data-mailto]'),function(f){
+f.addEventListener('submit',function(ev){
+ ev.preventDefault();
+ var lines=[], subj=f.getAttribute('data-subject');
+ Array.prototype.forEach.call(f.elements,function(el){
+  if(!el.name||el.type==='checkbox'||el.type==='submit'||el.type==='button') return;
+  if(el.name==='subject'){ if(el.value) subj=el.value; return; }
+  if(el.type==='hidden') return;
+  var lab=(el.id&&document.querySelector('label[for="'+el.id+'"]'))||el.closest('label');
+  var t=lab?lab.textContent.replace(/\s*\*\s*$/,'').trim():el.name;
+  if(el.value) lines.push(t+': '+el.value);
+ });
+ window.location.href='mailto:info@spelmantax.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(lines.join('\n\n'));
+});
+});
+})();
+</script>
 </body>
 </html>
