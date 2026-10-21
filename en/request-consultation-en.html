@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Consultation – SpelmanTax</title>
+<meta name="description" content="Request a free written consultation with Galja Spelman, tax advisor in Bolzano. Partita IVA, flat-rate regime, tax returns, cross-border taxation.">
+<style>
+  :root{
+    --teal:#0e4a45;
+    --teal-dark:#0a3834;
+    --teal-light:#13655e;
+    --gold:#d9bc8c;
+    --gold-dark:#b99a63;
+    --bg:#f6f4ef;
+    --text:#2b2b2b;
+    --muted:#6b6b6b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:820px;margin:0 auto;padding:40px 20px 80px;}
+
+  header{background:var(--teal);color:#fff;padding:34px 20px;text-align:center;}
+  header .logo{font-size:1.9rem;letter-spacing:1px;color:var(--gold);}
+  header .tag{font-family:Arial,sans-serif;font-size:.85rem;letter-spacing:3px;text-transform:uppercase;opacity:.85;margin-top:6px;}
+
+  h1{font-size:1.7rem;color:var(--teal);margin:36px 0 10px;}
+  h2{font-size:1.2rem;color:var(--teal);margin:30px 0 12px;}
+  p.intro{color:var(--muted);margin-bottom:8px;}
+
+  .note{background:#fff;border-left:4px solid var(--gold);padding:14px 18px;margin:22px 0;font-size:.95rem;color:var(--muted);}
+
+  form{background:#fff;border:1px solid #e4ded2;border-radius:10px;padding:28px;margin-top:24px;}
+  fieldset{border:none;margin-bottom:22px;}
+  legend{font-weight:bold;color:var(--teal);margin-bottom:10px;font-size:1.05rem;}
+  label.check{display:flex;align-items:flex-start;gap:10px;margin:8px 0;cursor:pointer;font-size:.98rem;}
+  label.check input{width:18px;height:18px;margin-top:4px;accent-color:var(--teal-light);flex-shrink:0;}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-weight:bold;color:var(--teal);margin-bottom:5px;font-size:.95rem;}
+  .field input,.field textarea{width:100%;padding:10px 12px;border:1px solid #cfc8ba;border-radius:6px;font-family:Arial,sans-serif;font-size:.95rem;background:#fdfcf9;}
+  .field textarea{min-height:90px;resize:vertical;}
+  .field input:focus,.field textarea:focus{outline:2px solid var(--gold);border-color:var(--gold-dark);}
+
+  .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+  button,.btn{border:none;border-radius:8px;padding:14px 22px;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;text-align:center;font-family:Arial,sans-serif;}
+  .btn-gold{background:var(--gold);color:var(--teal-dark);font-weight:bold;}
+  .btn-gold:hover{background:var(--gold-dark);color:#fff;}
+  .btn-teal{background:var(--teal);color:#fff;}
+  .btn-teal:hover{background:var(--teal-light);}
+  .btn-ghost{background:transparent;border:2px solid var(--teal);color:var(--teal);}
+  .btn-ghost:hover{background:var(--teal);color:#fff;}
+
+  #preview{background:var(--teal-dark);color:#f0ead9;border-radius:10px;padding:22px;margin-top:28px;white-space:pre-wrap;font-family:Georgia,serif;font-size:.92rem;display:none;}
+
+  footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:50px;font-family:Arial,sans-serif;}
+  footer a{color:var(--teal-light);}
+  .copied-msg{display:none;color:var(--teal);font-family:Arial,sans-serif;font-size:.9rem;margin-top:10px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SpelmanTax</div>
+  <div class="tag">Tax | Accounting | Cross-border Clients</div>
+</header>
+
+<div class="wrap">
+
+  <h1>Request a consultation</h1>
+  <p class="intro">Describe your situation below and send it to me by e-mail or WhatsApp. I normally reply within one working day, with a first assessment and a written quote — free of charge and without obligation.</p>
+
+  <div class="note">
+    At this stage, please do <strong>not</strong> attach identity documents, tax codes or other personal data — I will only request them after the engagement has been confirmed.
+  </div>
+
+  <form id="reqForm" onsubmit="return false;">
+    <fieldset>
+      <legend>I am interested in:</legend>
+      <label class="check"><input type="checkbox" name="topic" value="Opening a Partita IVA"> Opening a Partita IVA (Italian VAT number)</label>
+      <label class="check"><input type="checkbox" name="topic" value="Flat-rate regime (regime forfettario)"> Flat-rate regime (<i>regime forfettario</i>)</label>
+      <label class="check"><input type="checkbox" name="topic" value="Tax returns and compliance"> Tax returns and compliance</label>
+      <label class="check"><input type="checkbox" name="topic" value="International / cross-border taxation"> International / cross-border taxation</label>
+      <label class="check"><input type="checkbox" name="topic" value="Change of accountant"> Change of accountant</label>
+      <label class="check"><input type="checkbox" name="topic" value="Other"> Other: <input type="text" id="topicOther" placeholder="please specify" style="border:none;border-bottom:1px solid #999;background:transparent;font-size:.95rem;width:55%;"></label>
+    </fieldset>
+
+    <div class="field">
+      <label for="residence">Nationality / Residence</label>
+      <input type="text" id="residence" placeholder="e.g. Dutch, resident in Tires (BZ)">
+    </div>
+    <div class="field">
+      <label for="activity">Type of activity</label>
+      <input type="text" id="activity" placeholder="e.g. consultancy for hotels – recruitment, sales & marketing">
+    </div>
+    <div class="field">
+      <label for="income">Estimated annual income / turnover</label>
+      <input type="text" id="income" placeholder="e.g. approx. €30,000">
+    </div>
+    <div class="field">
+      <label for="situation">Current situation (optional)</label>
+      <textarea id="situation" placeholder="e.g. no Partita IVA yet; first year of activity…"></textarea>
+    </div>
+    <div class="field">
+      <label for="questions">Specific questions</label>
+      <textarea id="questions" placeholder="e.g. Which tax regime and ATECO code are best for me? Do I need to register with INPS?"></textarea>
+    </div>
+
+    <div class="btns">
+      <button class="btn-gold" onclick="sendEmail()">&#9993; Send by e-mail</button>
+      <button class="btn-teal" onclick="sendWhatsApp()">&#128172; Send via WhatsApp</button>
+      <button class="btn-ghost" onclick="copyText()">&#128203; Copy text</button>
+    </div>
+    <p class="copied-msg" id="copiedMsg">&#10003; Text copied — paste it into your e-mail or chat.</p>
+  </form>
+
+  <h2>Message preview</h2>
+  <div id="preview"></div>
+
+  <footer>
+    Galja Spelman — Dottore Commercialista, Bolzano<br>
+    <a href="mailto:info@spelmantax.com">info@spelmantax.com</a> &nbsp;|&nbsp; <a href="https://www.spelmantax.com">www.spelmantax.com</a>
+  </footer>
+</div>
+
+<script>
+  // >>> REPLACE with your WhatsApp number in international format, no "+" or spaces (e.g. 393331234567) <<<
+  var WHATSAPP_NUMBER = "393XXXXXXXXX";
+
+  function buildMessage(){
+    var topics = [];
+    var boxes = document.querySelectorAll('input[name="topic"]:checked');
+    for (var i=0;i<boxes.length;i++){
+      if (boxes[i].value === "Other"){
+        var other = document.getElementById('topicOther').value.trim();
+        topics.push("Other: " + (other ? other : "…"));
+      } else {
+        topics.push(boxes[i].value);
+      }
+    }
+    var lines = [];
+    lines.push("Dear Ms. Spelman,");
+    lines.push("");
+    lines.push("I came across your website and would like to request a free consultation regarding my tax situation in Italy.");
+    lines.push("");
+    lines.push("I am interested in:");
+    if (topics.length){ for (var t=0;t<topics.length;t++) lines.push("[x] " + topics[t]); }
+    else { lines.push("[ ] Opening a Partita IVA\n[ ] Flat-rate regime (regime forfettario)\n[ ] Tax returns and compliance\n[ ] International / cross-border taxation\n[ ] Other"); }
+    lines.push("");
+    lines.push("A brief overview of my situation:");
+    lines.push("- Nationality / Residence: " + (document.getElementById('residence').value || "…"));
+    lines.push("- Type of activity: " + (document.getElementById('activity').value || "…"));
+    lines.push("- Estimated annual income: " + (document.getElementById('income').value || "…"));
+    var sit = document.getElementById('situation').value.trim();
+    if (sit) lines.push("- Current situation: " + sit);
+    lines.push("- Specific questions: " + (document.getElementById('questions').value || "…"));
+    lines.push("");
+    lines.push("Please let me know your availability for a call or online meeting.");
+    lines.push("");
+    lines.push("Thank you for your time. I look forward to hearing from you.");
+    lines.push("");
+    lines.push("Kind regards,");
+    lines.push("[Name and surname]");
+    return lines.join("\n");
+  }
+
+  function updatePreview(){
+    document.getElementById('preview').textContent = buildMessage();
+    document.getElementById('preview').style.display = 'block';
+  }
+  document.getElementById('reqForm').addEventListener('input', updatePreview);
+  updatePreview();
+
+  function sendEmail(){
+    var subject = "Consultation request – SpelmanTax";
+    window.location.href = "mailto:info@spelmantax.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(buildMessage());
+  }
+  function sendWhatsApp(){
+    window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(buildMessage()), "_blank");
+  }
+  function copyText(){
+    var msg = buildMessage();
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(msg).then(function(){
+        document.getElementById('copiedMsg').style.display = 'block';
+        setTimeout(function(){document.getElementById('copiedMsg').style.display='none';}, 4000);
+      });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = msg; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta);
+      document.getElementById('copiedMsg').style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>
