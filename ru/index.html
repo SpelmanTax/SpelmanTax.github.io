@@ -412,37 +412,35 @@ input,select,textarea{font:inherit}
 <a href="https://wa.me/393273480543" target="_blank" rel="noopener" style="font-weight: 500">WhatsApp +39 327 348 0543</a>
 </div>
 </div>
-<div id="sp-tpl" data-to="info@spelmantax.com" data-wa="393273480543" data-subject="Запрос на бесплатную консультацию" data-copied="Скопировано!" style="flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
-<h3 style="margin: 0; font-size: 20px; font-weight: 600">Шаблон заявки</h3>
-<p style="margin: 0; font-size: 15px; color: #3A4644">Дополните текст ниже и отправьте его по e-mail или в WhatsApp. Обычно отвечаю в течение одного рабочего дня.</p>
-<label style="display: block"><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Шаблон заявки</span><textarea id="sp-tpl-text" rows="23" style="width: 100%; box-sizing: border-box; padding: 14px; border: 1px solid #A8A08C; border-radius: 6px; font: 15px/1.5 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; resize: vertical">Уважаемая Галя,
-
-я посетил(а) ваш сайт и хотел(а) бы получить бесплатную консультацию по моей налоговой ситуации в Италии.
-
-Мне нужна помощь с:
-[ ] Открытие Partita IVA
-[ ] Режим forfettario
-[ ] Налоговые декларации и обязательства
-[ ] Международное / трансграничное налогообложение
-[ ] Другое: ________________
-
-Кратко о моей ситуации:
-- Гражданство / резидентство:
-- Вид деятельности:
-- Предполагаемый годовой доход:
-- Конкретные вопросы:
-
-Могу общаться на русском / итальянском / немецком / английском.
-
-Спасибо за ваше время.
-С уважением,
-[Ваше имя и фамилия]</textarea></label>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
-<a id="sp-tpl-mail" href="mailto:info@spelmantax.com?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" style="border-radius: 6px; font-size: 16px; font-weight: 500; min-height: 44px; padding: 12px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; box-sizing: border-box; background: #0E3B3E; color: #FFFFFF; border: 1px solid #0E3B3E"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>Отправить по e-mail</a>
-<a id="sp-tpl-wa" href="https://wa.me/393273480543" target="_blank" rel="noopener" style="border-radius: 6px; font-size: 16px; font-weight: 500; min-height: 44px; padding: 12px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; box-sizing: border-box; background: #FFFFFF; color: #0E3B3E; border: 1px solid #0E3B3E"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"></path><path d="M9 9.5c.3 1.8 1.7 3.6 3.6 4.4l1.2-1.1 2 .9-.4 1.6c-3.3.2-6.9-3.3-7-6.6L10 8.3l.9 2-1.1 1.1"></path></svg>Отправить в WhatsApp</a>
-<button id="sp-tpl-copy" type="button" style="border-radius: 6px; font-size: 16px; font-weight: 500; min-height: 44px; padding: 12px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; box-sizing: border-box; background: transparent; color: #0E3B3E; border: 1px solid transparent; text-decoration: underline">Скопировать текст</button>
+<div id="sp-req" data-wa="393273480543" data-msg="{&quot;m_hello&quot;: &quot;Уважаемая Галя,&quot;, &quot;m_intro&quot;: &quot;я посетил(а) ваш сайт и хотел(а) бы получить бесплатную консультацию по моей налоговой ситуации в Италии.&quot;, &quot;m_int&quot;: &quot;Меня интересует:&quot;, &quot;m_over&quot;: &quot;Кратко о моей ситуации:&quot;, &quot;m_res&quot;: &quot;Гражданство / резидентство&quot;, &quot;m_act&quot;: &quot;Вид деятельности&quot;, &quot;m_inc&quot;: &quot;Предполагаемый годовой доход&quot;, &quot;m_sit&quot;: &quot;Текущая ситуация&quot;, &quot;m_q&quot;: &quot;Конкретные вопросы&quot;, &quot;m_call&quot;: &quot;Сообщите, пожалуйста, когда вам удобно созвониться или провести онлайн-встречу.&quot;, &quot;m_thanks&quot;: &quot;Спасибо за ваше время. Жду вашего ответа.&quot;, &quot;m_bye&quot;: &quot;С уважением,&quot;, &quot;m_name&quot;: &quot;[Имя и фамилия]&quot;, &quot;subject&quot;: &quot;Запрос на консультацию – SpelmanTax&quot;}" style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<form id="rq-form" onsubmit="return false;" style="background: #FFFFFF; border: 1px solid #DED9CC; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<fieldset style="border: none; margin: 0; padding: 0">
+<legend style="font-size: 17px; font-weight: 600; margin-bottom: 6px; padding: 0">Меня интересует:</legend>
+<label style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; margin: 8px 0; cursor: pointer; font-size: 16px"><input type="checkbox" name="rq-topic" data-key="piva" value="Открытие Partita IVA" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #12625A; flex: none"><span>Открытие Partita IVA (итальянский номер НДС)</span></label>
+<label style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; margin: 8px 0; cursor: pointer; font-size: 16px"><input type="checkbox" name="rq-topic" data-key="forf" value="Режим forfettario" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #12625A; flex: none"><span>Режим <i>forfettario</i></span></label>
+<label style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; margin: 8px 0; cursor: pointer; font-size: 16px"><input type="checkbox" name="rq-topic" data-key="decl" value="Налоговые декларации и обязательства" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #12625A; flex: none"><span>Налоговые декларации и обязательства</span></label>
+<label style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; margin: 8px 0; cursor: pointer; font-size: 16px"><input type="checkbox" name="rq-topic" data-key="intl" value="Международное / трансграничное налогообложение" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #12625A; flex: none"><span>Международное / трансграничное налогообложение</span></label>
+<label style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; margin: 8px 0; cursor: pointer; font-size: 16px"><input type="checkbox" name="rq-topic" data-key="chg" value="Смена бухгалтера" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #12625A; flex: none"><span>Смена бухгалтера (commercialista)</span></label>
+<label style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; margin: 8px 0; cursor: pointer; font-size: 16px"><input type="checkbox" name="rq-topic" data-key="other" value="Другое" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #12625A; flex: none"><span>Другое:</span> <input type="text" id="rq-other" aria-label="уточните" placeholder="уточните" style="flex: 1 1 140px; min-width: 0; border: none; border-bottom: 1px solid #A8A08C; background: transparent; font: 15px 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; padding: 2px 0"></label>
+</fieldset>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 16px">
+<div><label for="rq-res" style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px">Гражданство / резидентство</label><input type="text" id="rq-res" placeholder="напр. гражданка Германии, живу в Мерано (BZ)" style="width: 100%; box-sizing: border-box; padding: 11px 12px; border: 1px solid #A8A08C; border-radius: 6px; font: 15px/1.5 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; background: #FDFCF9; min-height: 44px"></div>
+<div><label for="rq-act" style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px">Вид деятельности</label><input type="text" id="rq-act" placeholder="напр. IT-консалтинг для иностранных клиентов" style="width: 100%; box-sizing: border-box; padding: 11px 12px; border: 1px solid #A8A08C; border-radius: 6px; font: 15px/1.5 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; background: #FDFCF9; min-height: 44px"></div>
 </div>
-<p style="margin: 0; font-size: 13px; color: #4B5552">Если почта не открылась, скопируйте текст и отправьте его на info@spelmantax.com.</p>
+<div><label for="rq-inc" style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px">Предполагаемый годовой доход / оборот</label><input type="text" id="rq-inc" placeholder="напр. около 40 000 €" style="width: 100%; box-sizing: border-box; padding: 11px 12px; border: 1px solid #A8A08C; border-radius: 6px; font: 15px/1.5 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; background: #FDFCF9; min-height: 44px"></div>
+<div><label for="rq-sit" style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px">Текущая ситуация (необязательно)</label><textarea id="rq-sit" rows="3" placeholder="напр. Partita IVA ещё нет; первый год деятельности…" style="width: 100%; box-sizing: border-box; padding: 11px 12px; border: 1px solid #A8A08C; border-radius: 6px; font: 15px/1.5 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; background: #FDFCF9; resize: vertical; min-height: 88px"></textarea></div>
+<div><label for="rq-q" style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px">Конкретные вопросы</label><textarea id="rq-q" rows="3" placeholder="напр. Какой режим и код ATECO мне подходят? Нужно ли регистрироваться в INPS?" style="width: 100%; box-sizing: border-box; padding: 11px 12px; border: 1px solid #A8A08C; border-radius: 6px; font: 15px/1.5 'IBM Plex Sans', system-ui, sans-serif; color: #0E3B3E; background: #FDFCF9; resize: vertical; min-height: 88px"></textarea></div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px">
+<button type="button" id="rq-mail" style="border-radius: 6px; font: 600 16px/1 'IBM Plex Sans', system-ui, sans-serif; min-height: 48px; padding: 14px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-sizing: border-box; background: #E2C27A; color: #0B2B33; border: 1px solid #E2C27A"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>Отправить по e-mail</button>
+<button type="button" id="rq-wa" style="border-radius: 6px; font: 600 16px/1 'IBM Plex Sans', system-ui, sans-serif; min-height: 48px; padding: 14px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-sizing: border-box; background: #0E3B3E; color: #FFFFFF; border: 1px solid #0E3B3E"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"></path><path d="M9 9.5c.3 1.8 1.7 3.6 3.6 4.4l1.2-1.1 2 .9-.4 1.6c-3.3.2-6.9-3.3-7-6.6L10 8.3l.9 2-1.1 1.1"></path></svg>Отправить в WhatsApp</button>
+<button type="button" id="rq-copy" style="border-radius: 6px; font: 600 16px/1 'IBM Plex Sans', system-ui, sans-serif; min-height: 48px; padding: 14px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-sizing: border-box; background: transparent; color: #0E3B3E; border: 2px solid #0E3B3E"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"></path></svg>Скопировать текст</button>
+</div>
+<p id="rq-copied" role="status" hidden style="margin: 0; font-size: 14px; color: #12625A">✓ Текст скопирован – вставьте его в письмо или чат.</p>
+</form>
+<div>
+<h3 style="margin: 0 0 10px; font-size: 18px; font-weight: 600">Предпросмотр сообщения</h3>
+<div id="rq-preview" style="background: #0B2B33; color: #F0EAD9; border-radius: 10px; padding: 22px; white-space: pre-wrap; font: 15px/1.6 'IBM Plex Sans', system-ui, sans-serif; overflow-wrap: anywhere"></div>
+</div>
 </div>
 </div>
 </section>
@@ -466,20 +464,39 @@ input,select,textarea{font:inherit}
 </div>
 <script>
 (function(){
-var c=document.getElementById('sp-tpl'); if(!c) return;
-var ta=document.getElementById('sp-tpl-text');
-function txt(){return ta.value;}
-document.getElementById('sp-tpl-mail').addEventListener('click',function(e){
- this.href='mailto:'+c.getAttribute('data-to')+'?subject='+encodeURIComponent(c.getAttribute('data-subject'))+'&body='+encodeURIComponent(txt());
+var c=document.getElementById('sp-req'); if(!c) return;
+var M=JSON.parse(c.getAttribute('data-msg')), WA=c.getAttribute('data-wa');
+function v(id){var el=document.getElementById(id);return el?el.value.trim():'';}
+try{ if(/[?&]tema=piva\b/.test(location.search)){var p=c.querySelector('input[data-key="piva"]'); if(p) p.checked=true;} }catch(e){}
+function build(){
+ var tp=[], bx=c.querySelectorAll('input[name="rq-topic"]');
+ for(var i=0;i<bx.length;i++){ if(!bx[i].checked) continue;
+  if(bx[i].getAttribute('data-key')==='other'){var o=v('rq-other'); tp.push(bx[i].value+': '+(o||'…'));} else tp.push(bx[i].value); }
+ var L=[M.m_hello,'',M.m_intro,'',M.m_int];
+ if(tp.length){ for(var t=0;t<tp.length;t++) L.push('[x] '+tp[t]); }
+ else { for(var j=0;j<bx.length;j++) L.push('[ ] '+bx[j].value); }
+ L.push('',M.m_over);
+ L.push('- '+M.m_res+': '+(v('rq-res')||'…'));
+ L.push('- '+M.m_act+': '+(v('rq-act')||'…'));
+ L.push('- '+M.m_inc+': '+(v('rq-inc')||'…'));
+ if(v('rq-sit')) L.push('- '+M.m_sit+': '+v('rq-sit'));
+ L.push('- '+M.m_q+': '+(v('rq-q')||'…'));
+ L.push('',M.m_call,'',M.m_thanks,'',M.m_bye,M.m_name);
+ return L.join('\n');
+}
+function upd(){document.getElementById('rq-preview').textContent=build();}
+var f=document.getElementById('rq-form');
+f.addEventListener('input',upd); f.addEventListener('change',upd); upd();
+document.getElementById('rq-mail').addEventListener('click',function(){
+ window.location.href='mailto:info@spelmantax.com?subject='+encodeURIComponent(M.subject)+'&body='+encodeURIComponent(build());
 });
-document.getElementById('sp-tpl-wa').addEventListener('click',function(e){
- this.href='https://wa.me/'+c.getAttribute('data-wa')+'?text='+encodeURIComponent(txt());
+document.getElementById('rq-wa').addEventListener('click',function(){
+ window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(build()),'_blank','noopener');
 });
-var b=document.getElementById('sp-tpl-copy');
-b.addEventListener('click',function(){
- var done=function(){var o=b.textContent;b.textContent=c.getAttribute('data-copied');setTimeout(function(){b.textContent=o;},2000);};
- if(navigator.clipboard){navigator.clipboard.writeText(txt()).then(done,function(){ta.select();document.execCommand('copy');done();});}
- else{ta.select();document.execCommand('copy');done();}
+document.getElementById('rq-copy').addEventListener('click',function(){
+ var msg=build(), ok=function(){var m=document.getElementById('rq-copied');m.hidden=false;setTimeout(function(){m.hidden=true;},4000);};
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(ok,fb);} else fb();
+ function fb(){var ta=document.createElement('textarea');ta.value=msg;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);ok();}
 });
 })();
 </script>
